@@ -1,0 +1,38 @@
+name: Daily Spanish Feed Auto Update
+
+on:
+  schedule:
+    # 每天北京时间早晨 07:00 (UTC 23:00) 自动触发
+    - cron: '0 23 * * *'
+  workflow_dispatch: # 支持手动点击随时测试更新
+
+permissions:
+  contents: write
+
+jobs:
+  update-daily-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          pip install edge-tts
+
+      - name: Generate Today's Spanish Stories & Audios
+        run: |
+          python scripts/daily_updater.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/ index.html data/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update: Daily Spanish 10 Stories & Audios $(date +'%Y-%m-%d')" && git push origin main)
