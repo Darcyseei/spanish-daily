@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>¡Hola! 西语每日 10 篇三语早报</title>
+  <style>
+    :root {
+      --primary: #E11D48;
+      --primary-hover: #BE123C;
+      --primary-light: #FFF1F2;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text-main: #0F172A;
+      --text-muted: #64748B;
+      --border: #F1F5F9;
+      --gold: #F59E0B;
+      --green: #10B981;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: #0F172A;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    .mobile-wrapper {
+      width: 100%;
+      max-width: 480px;
+      background-color: var(--bg);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+
+    .app-header {
+      background: #0F172A;
+      color: #FFFFFF;
+      padding: 24px 20px 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .app-header h1 {
+      font-size: 17px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .badge-count {
+      background: #E11D48;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+
+    .content-area {
+      flex: 1;
+      padding: 16px 16px 84px 16px;
+      overflow-y: auto;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+      border: 1px solid var(--border);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .badge-rose { background: #FFE4E6; color: #E11D48; }
+    .badge-amber { background: #FEF3C7; color: #D97706; }
+    .badge-green { background: #D1FAE5; color: #059669; }
+
+    .nav-bar-10 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #FFFFFF;
+      border-radius: 14px;
+      padding: 8px 14px;
+      margin-bottom: 14px;
+      border: 1px solid #E2E8F0;
+    }
+    .nav-btn {
+      background: #F1F5F9;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #334155;
+      cursor: pointer;
+    }
+    .nav-indicator {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .story-scroll {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      margin-bottom: 14px;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+    .story-scroll::-webkit-scrollbar { display: none; }
+    .story-pill {
+      padding: 6px 14px;
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      white-space: nowrap;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: all 0.2s;
+    }
+    .story-pill.active {
+      background: #0F172A;
+      color: #FFFFFF;
+      border-color: #0F172A;
+    }
+
+    .title-card {
+      border-left: 6px solid var(--primary);
+    }
+    .title-es {
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--text-main);
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+    .title-en {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 6px;
+    }
+    .title-cn {
+      font-size: 14px;
+      font-weight: 700;
+      color: #334155;
+      margin-bottom: 10px;
+    }
+    .story-intro {
+      background: #F1F5F9;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 12px;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    /* 播放器与语速组 */
+    .player-card {
+      background: linear-gradient(180deg, #FFFFFF 0%, #FFF7F8 100%);
+      border: 1px solid #FFE4E6;
+    }
+    .player-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .play-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+      color: #FFFFFF;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      cursor: pointer;
+      box-shadow: 0 6px 16px rgba(225, 29, 72, 0.35);
+      flex-shrink: 0;
+    }
+    .player-details { flex: 1; }
+    .player-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    .player-title { font-size: 13px; font-weight: 700; color: var(--text-main); }
+
+    /* 3段语速选择器 */
+    .speed-group {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .speed-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .speed-pills {
+      display: flex;
+      background: #FFF1F2;
+      border: 1px solid #FECDD3;
+      border-radius: 999px;
+      padding: 2px;
+    }
+    .speed-pill {
+      background: transparent;
+      border: none;
+      color: var(--primary);
+      padding: 2px 7px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .speed-pill.active {
+      background: var(--primary);
+      color: #FFFFFF;
+      box-shadow: 0 2px 6px rgba(225, 29, 72, 0.25);
+    }
+
+    .slider-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .progress-bar {
+      flex: 1;
+      height: 6px;
+      background: #E2E8F0;
+      border-radius: 999px;
+      position: relative;
+      cursor: pointer;
+    }
+    .progress-fill {
+      width: 0%;
+      height: 100%;
+      background: var(--primary);
+      border-radius: 999px;
+      transition: width 0.1s linear;
+    }
+    .time-text { font-size: 11px; color: var(--text-muted); min-width: 35px; }
+
+    .mode-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #F1F5F9;
+    }
+    .mode-bar span { font-size: 12px; color: var(--text-muted); }
+    .mode-pills {
+      display: flex;
+      background: #F1F5F9;
+      border-radius: 999px;
+      padding: 2px;
+    }
+    .mode-pill {
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .mode-pill.active {
+      background: #FFFFFF;
+      color: var(--text-main);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text-main);
+      margin: 22px 0 10px 4px;
+    }
+
+    .sentence-card {
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: all 0.2s;
+    }
+    .sentence-card.active {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      box-shadow: 0 6px 20px rgba(225, 29, 72, 0.12);
+    }
+    .sentence-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+    .sentence-num {
+      font-size: 11px;
+      font-weight: 800;
+      color: #94A3B8;
+      background: #F1F5F9;
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+    .sentence-play-tag { font-size: 11px; color: var(--primary); font-weight: 600; }
+    .sentence-es { font-size: 15px; font-weight: 700; color: var(--text-main); line-height: 1.5; margin-bottom: 6px; }
+    .sentence-en { font-size: 13px; color: var(--text-muted); margin-bottom: 4px; }
+    .sentence-cn { font-size: 13px; color: #334155; }
+
+    .vocab-card { margin-bottom: 10px; }
+    .vocab-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .vocab-left { display: flex; align-items: center; gap: 8px; }
+    .vocab-word { font-size: 16px; font-weight: 800; color: var(--text-main); }
+    .audio-icon-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #F1F5F9;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .save-btn {
+      background: #F1F5F9;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+    }
+    .save-btn.saved { background: #FEF3C7; color: #D97706; }
+    .vocab-meaning {
+      background: #F8FAFC;
+      padding: 8px 12px;
+      border-radius: 10px;
+      margin-bottom: 8px;
+    }
+    .meaning-cn { font-size: 13px; font-weight: 700; color: #1E293B; margin-bottom: 2px; }
+    .meaning-en { font-size: 12px; color: var(--text-muted); }
+    .vocab-example { border-left: 3px solid #CBD5E1; padding-left: 10px; }
+    .example-es { font-size: 12px; color: #334155; font-style: italic; }
+    .example-cn { font-size: 12px; color: var(--text-muted); }
+
+    .grammar-card {
+      background: linear-gradient(135deg, #FAF5FF 0%, #FFFFFF 100%);
+      border: 1px solid #E9D5FF;
+    }
+    .grammar-title-wrap { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+    .grammar-badge { background: #7E22CE; color: #FFFFFF; font-size: 10px; font-weight: 800; padding: 2px 8px; border-radius: 999px; }
+    .grammar-title { font-size: 15px; font-weight: 800; color: #581C87; }
+    .grammar-formula { background: #FFFFFF; padding: 8px 12px; border-radius: 8px; border: 1px dashed #D8B4FE; font-size: 12px; color: #6B21A8; font-weight: 700; margin-bottom: 8px; }
+    .grammar-exp { font-size: 13px; color: #3B0764; line-height: 1.6; margin-bottom: 8px; }
+    .grammar-sample { background: rgba(255, 255, 255, 0.7); padding: 8px 12px; border-radius: 8px; }
+    .sample-es { font-size: 13px; font-weight: 700; color: #581C87; }
+    .sample-cn { font-size: 12px; color: #6B21A8; }
+
+    .quiz-card { background: #FFFFFF; }
+    .quiz-q { font-size: 14px; font-weight: 700; margin-bottom: 12px; }
+    .quiz-options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+    .quiz-opt {
+      padding: 10px 14px;
+      background: #F8FAFC;
+      border: 1px solid #E2E8F0;
+      border-radius: 12px;
+      font-size: 13px;
+      color: #334155;
+      cursor: pointer;
+    }
+    .quiz-opt.correct { background: #ECFDF5; border-color: #10B981; color: #065F46; font-weight: 700; }
+    .quiz-opt.wrong { background: #FEF2F2; border-color: #EF4444; color: #991B1B; }
+    .quiz-feedback { background: #F8FAFC; padding: 10px; border-radius: 10px; font-size: 12px; margin-bottom: 12px; }
+    .checkin-btn {
+      width: 100%;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+      color: #FFFFFF;
+      border: none;
+      padding: 13px 0;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .checkedin-tag { text-align: center; padding: 10px; background: #ECFDF5; color: #059669; font-weight: 700; font-size: 13px; border-radius: 10px; }
+
+    .vocab-page-hero {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+      border-radius: 20px;
+      padding: 20px;
+      color: #FFFFFF;
+      margin-bottom: 16px;
+    }
+    .stats-row { display: flex; justify-content: space-around; text-align: center; margin-bottom: 14px; }
+    .stat-val { font-size: 26px; font-weight: 800; }
+    .stat-lbl { font-size: 11px; color: #94A3B8; margin-top: 2px; }
+    .flashcard-toggle {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 8px 14px;
+      border-radius: 999px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: #FFFFFF;
+      border: 1px solid #E2E8F0;
+      border-radius: 999px;
+      padding: 10px 16px;
+      margin-bottom: 14px;
+    }
+    .search-box input { border: none; outline: none; flex: 1; font-size: 13px; margin-left: 8px; }
+
+    .app-tabbar {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      max-width: 480px;
+      background: #FFFFFF;
+      border-top: 1px solid #E2E8F0;
+      display: flex;
+      justify-content: space-around;
+      padding: 8px 0;
+      z-index: 100;
+    }
+    .tab-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #64748B;
+      font-size: 11px;
+      font-weight: 600;
+      cursor: pointer;
+      gap: 3px;
+    }
+    .tab-item.active { color: var(--primary); font-weight: 700; }
+    .tab-icon { font-size: 20px; }
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+<div class="mobile-wrapper">
+
+  <header class="app-header">
+    <h1>¡Hola! 西语每日 10 篇早报 <span class="badge-count">10 篇全</span></h1>
+    <div style="background: #FFF1F2; border: 1px solid #FECDD3; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; color: #E11D48;">
+      🔥 <span id="streakDaysTop">连续打卡 1 天</span>
+    </div>
+  </header>
+
+  <div class="content-area">
+
+    <!-- TAB 1: 每日早报 -->
+    <div id="tabFeed">
+      
+      <!-- 10篇切页控制器 -->
+      <div class="nav-bar-10">
+        <button class="nav-btn" onclick="prevStory()">‹ 上一篇</button>
+        <span class="nav-indicator" id="storyIndicator">第 1 / 10 篇</span>
+        <button class="nav-btn" onclick="nextStory()">下一篇 ›</button>
+      </div>
+
+      <!-- 横向故事列表 -->
+      <div class="story-scroll" id="storyScroll"></div>
+
+      <!-- 标题卡片 -->
+      <div class="card title-card">
+        <div style="display: flex; gap: 8px; margin-bottom: 8px;">
+          <span class="badge badge-rose" id="storyTag"></span>
+          <span style="font-size: 12px; color: #64748B; font-weight: 600;" id="storyDate"></span>
+        </div>
+        <div class="title-es" id="storyTitleEs"></div>
+        <div class="title-en" id="storyTitleEn"></div>
+        <div class="title-cn" id="storyTitleCn"></div>
+        <div class="story-intro">
+          📌 <span id="storyIntro"></span>
+        </div>
+      </div>
+
+      <!-- 播放器与 3 档语速切换 (0.75x, 1.0x, 1.25x) -->
+      <div class="card player-card">
+        <div class="player-row">
+          <button class="play-btn" id="playFullBtn" onclick="togglePlayFull()">▶</button>
+          <div class="player-details">
+            <div class="player-header">
+              <span class="player-title" id="playerStatusText">母语者朗读全篇</span>
+              <!-- 3段语速选择按钮 -->
+              <div class="speed-group">
+                <span class="speed-label">语速:</span>
+                <div class="speed-pills">
+                  <button class="speed-pill" id="speed_0_75" onclick="setSpeed(0.75)">0.75x</button>
+                  <button class="speed-pill active" id="speed_1_0" onclick="setSpeed(1.0)">1.0x</button>
+                  <button class="speed-pill" id="speed_1_25" onclick="setSpeed(1.25)">1.25x</button>
+                </div>
+              </div>
+            </div>
+            <div class="slider-wrap">
+              <span class="time-text" id="curTimeText">00:00</span>
+              <div class="progress-bar" onclick="seekAudio(event)" id="progressBar">
+                <div class="progress-fill" id="progressFill"></div>
+              </div>
+              <span class="time-text" id="totalTimeText">00:00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mode-bar">
+          <span>对照模式：</span>
+          <div class="mode-pills">
+            <div class="mode-pill active" onclick="setDisplayMode('all')">西+中+英</div>
+            <div class="mode-pill" onclick="setDisplayMode('es_cn')">西+中</div>
+            <div class="mode-pill" onclick="setDisplayMode('es_only')">仅西语(盲听)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 逐句精读 -->
+      <div class="section-title">
+        <span>🎧</span> 逐句精读（点击句子播放纯正母语音频）
+      </div>
+      <div id="sentencesContainer"></div>
+
+      <!-- 核心词汇 -->
+      <div class="section-title">
+        <span>📚</span> 核心词汇卡片
+      </div>
+      <div id="vocabContainer"></div>
+
+      <!-- 语法透视 -->
+      <div class="section-title">
+        <span>💡</span> 极简语法透视
+      </div>
+      <div class="card grammar-card" id="grammarCard"></div>
+
+      <!-- 打卡小测 -->
+      <div class="section-title">
+        <span>🎯</span> 本篇 10 秒打卡小测
+      </div>
+      <div class="card quiz-card" id="quizCard"></div>
+    </div>
+
+    <!-- TAB 2: 生词本 -->
+    <div id="tabVocab" class="hidden">
+      <div class="vocab-page-hero">
+        <div class="stats-row">
+          <div>
+            <div class="stat-val" id="totalVocabCount">0</div>
+            <div class="stat-lbl">总收藏词汇</div>
+          </div>
+          <div>
+            <div class="stat-val" style="color: #34D399;" id="masteredVocabCount">0</div>
+            <div class="stat-lbl">已掌握</div>
+          </div>
+          <div>
+            <div class="stat-val" style="color: #FBBF24;" id="unmasteredVocabCount">0</div>
+            <div class="stat-lbl">待复习</div>
+          </div>
+        </div>
+        <div class="flashcard-toggle" onclick="toggleMemoryFlashcard()">
+          <span id="flashcardToggleText">🙈 开启背词模式 (隐藏中文释义)</span>
+        </div>
+      </div>
+
+      <div class="search-box">
+        <span>🔍</span>
+        <input type="text" placeholder="搜索生词、中文或英文..." id="vocabSearchInput" oninput="onSearchVocab(this.value)">
+      </div>
+
+      <div id="savedVocabList"></div>
+    </div>
+
+    <!-- TAB 3: 打卡记录 -->
+    <div id="tabProfile" class="hidden">
+      <div class="vocab-page-hero">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
+          <div style="font-size: 38px; background: rgba(255,255,255,0.1); padding: 8px; border-radius: 50%;">🇪🇸</div>
+          <div>
+            <div style="font-size: 17px; font-weight: 800;">西语探索者</div>
+            <div style="font-size: 12px; color: #94A3B8;">今日已解锁 10 篇西语原汁原味早报</div>
+          </div>
+        </div>
+        <div style="background: rgba(255,255,255,0.1); padding: 12px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <div style="font-weight: 800; color: #FBBF24;" id="profileStreakText">连续打卡 1 天</div>
+            <div style="font-size: 11px; color: #94A3B8;">坚持就是胜利！</div>
+          </div>
+          <span class="badge badge-green" id="profileTodayStatus">今日已打卡 ✓</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="font-size: 15px; font-weight: 800; margin-bottom: 12px;">今日全部 10 篇目录导航</div>
+        <div id="historyListContainer"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <nav class="app-tabbar">
+    <div class="tab-item active" onclick="switchTab('feed', this)">
+      <div class="tab-icon">📰</div>
+      <div>今日 10 篇</div>
+    </div>
+    <div class="tab-item" onclick="switchTab('vocab', this)">
+      <div class="tab-icon">📚</div>
+      <div>生词本</div>
+    </div>
+    <div class="tab-item" onclick="switchTab('profile', this)">
+      <div class="tab-icon">👤</div>
+      <div>打卡记录</div>
+    </div>
+  </nav>
+
+</div>
+
+<script>
+const STORIES_DATA = [{"id": "story_1", "date": "2026-11-05", "tag": "八卦 / 潮流", "title": {"es": "¡Rosalía sorprende a todos con su nuevo peinado en París!", "en": "Rosalía surprises everyone with her new hairstyle in Paris!", "cn": "01. 罗莎莉亚（Rosalía）在巴黎以复古发型惊艳亮相！"}, "intro": "西班牙天后现身巴黎时装周，复古造型引发全网热议与模仿潮。", "sentences": [{"id": 1, "es": "La famosa cantante española Rosalía ha llegado esta mañana a París para asistir a la Semana de la Moda.", "en": "The famous Spanish singer Rosalía arrived in Paris this morning to attend Fashion Week.", "cn": "西班牙著名歌手罗莎莉亚今晨现身巴黎，出席巴黎时装周。", "audio": "./assets/audios/story_1_s1.mp3"}, {"id": 2, "es": "Lo que más llamó la atención de todos fue su peinado retro inspirado en los años noventa.", "en": "What caught everyone's attention the most was her 90s-inspired retro hairstyle.", "cn": "最吸引大家目光的是她那款受90年代启发的复古发型。", "audio": "./assets/audios/story_1_s2.mp3"}, {"id": 3, "es": "Sus seguidores en redes sociales no tardaron en compartir las fotos y elogiar su estilo único.", "en": "Her followers on social media were quick to share photos and praise her unique style.", "cn": "社交平台上的粉丝们迅速转发照片，盛赞她独树一帜的风格。", "audio": "./assets/audios/story_1_s3.mp3"}], "vocabulary": [{"id": "v_1_1", "word": "llamar la atención", "pos": "短语", "cn": "吸引注意 / 引人注目", "en": "to catch attention", "example": "Su peinado llamó la atención de todos.", "example_cn": "她的发型吸引了所有人的目光。", "audio": "./assets/audios/vocab_story_1_1.mp3"}, {"id": "v_1_2", "word": "el peinado", "pos": "m.", "cn": "发型", "en": "hairstyle", "example": "Me encanta tu peinado retro.", "example_cn": "我非常喜欢你的复古发型。", "audio": "./assets/audios/vocab_story_1_2.mp3"}, {"id": "v_1_3", "word": "no tardar en", "pos": "短语", "cn": "很快就…… / 毫不迟疑地", "en": "to not hesitate to / be quick to", "example": "No tardaron en responder.", "example_cn": "他们很快做出了回应。", "audio": "./assets/audios/vocab_story_1_3.mp3"}], "grammar": {"title": "现在完成时 vs 简单过去时", "formula": "haber + 过去分词 (ha llegado) vs 简单过去式 (llamó)", "explanation": "在西班牙语中，动作发生在一个尚未结束的时间段内（如 esta mañana 今天早上、hoy 今天），习惯使用现在完成时（ha llegado）；而描述过去明确完成的独立事件，使用简单过去时（llamó）。", "sample_es": "Rosalía ha llegado esta mañana a París.", "sample_cn": "罗莎莉亚今晨已抵达巴黎（时间仍是今天）。"}, "quiz": {"question": "短语「llamar la atención」在文中表示什么含义？", "options": ["A. 大声呼唤注意", "B. 引起注意、吸睛", "C. 拨打电话联络"], "correct_index": 1, "explanation": "«llamar la atención» 是极高频动词短语，意为‘引人注目、吸引目光’。"}, "audio_full_normal": "./assets/audios/story_1_normal.mp3", "audio_full_slow": "./assets/audios/story_1_slow.mp3"}, {"id": "story_2", "date": "2026-11-05", "tag": "音乐 / 娱乐", "title": {"es": "Shakira agota las entradas de su gira en tiempo récord", "en": "Shakira sells out tour tickets in record time", "cn": "02. 夏奇拉世界巡演门票创纪录光速售罄！"}, "intro": "哥伦比亚天后夏奇拉发布真情致谢视频，宣布将在多国紧急加开巡演场次。", "sentences": [{"id": 1, "es": "La cantante colombiana Shakira ha agotado las entradas para sus próximos conciertos en pocas horas.", "en": "Colombian singer Shakira has sold out tickets for her upcoming concerts in just a few hours.", "cn": "哥伦比亚歌手夏奇拉在短短几小时内售罄了接下来的所有演唱会门票。", "audio": "./assets/audios/story_2_s1.mp3"}, {"id": 2, "es": "Tras el éxito increíble de ventas, su equipo anunció nuevas fechas para satisfacer la gran demanda de los fans.", "en": "Following the incredible sales success, her team announced new dates to meet the huge demand of fans.", "cn": "在惊人的售票成功之后，她的团队宣布加开新场次，以满足粉丝的巨大需求。", "audio": "./assets/audios/story_2_s2.mp3"}], "vocabulary": [{"id": "v_2_1", "word": "agotar", "pos": "v.", "cn": "售罄 / 耗尽", "en": "to sell out / exhaust", "example": "Se agotaron todas las entradas.", "example_cn": "所有的门票都卖光了。", "audio": "./assets/audios/vocab_story_2_1.mp3"}, {"id": "v_2_2", "word": "tras", "pos": "prep.", "cn": "在……之后（书面高频）", "en": "after / behind", "example": "Tras el concierto, todos aplaudieron.", "example_cn": "演唱会结束后，所有人都鼓掌了。", "audio": "./assets/audios/vocab_story_2_2.mp3"}], "grammar": {"title": "介词 tras 的高频用法", "formula": "tras + 名词 / 动词原形 (infinitivo)", "explanation": "tras 相当于 después de，在西语报刊中极其常见，用来引出‘紧接着某个事件之后发生的事情’。", "sample_es": "Tras el éxito de ventas, anunció nuevas fechas.", "sample_cn": "在售票大获成功后，她宣布了新巡演日期。"}, "quiz": {"question": "动词「agotar」在门票情境下最地道的中文翻译是？", "options": ["A. 退票", "B. 预售", "C. 售罄 / 抢光"], "correct_index": 2, "explanation": "agotar las entradas 是最典型的西语搭配，意为‘门票售罄’。"}, "audio_full_normal": "./assets/audios/story_2_normal.mp3", "audio_full_slow": "./assets/audios/story_2_slow.mp3"}, {"id": "story_3", "date": "2026-11-05", "tag": "体育 / 趣闻", "title": {"es": "Messi compra cereales en Miami y los fans se vuelven locos", "en": "Messi buys cereal in Miami and fans go crazy", "cn": "03. 梅西迈阿密超市买麦片被偶遇，粉丝全网狂欢！"}, "intro": "球王梅西推着超市购物车挑选早餐麦片，超接地气的平民举动冲上热搜。", "sentences": [{"id": 1, "es": "Lionel Messi fue visto ayer comprando tranquilamente en un supermercado local de Miami.", "en": "Lionel Messi was seen yesterday shopping calmly at a local supermarket in Miami.", "cn": "莱昂内尔·梅西昨天被看到在迈阿密一家当地超市悠闲地购物。", "audio": "./assets/audios/story_3_s1.mp3"}, {"id": 2, "es": "El astro argentino llevaba una caja de cereales en el carrito y sonrió a todos los que le pidieron una foto.", "en": "The Argentine superstar had a box of cereal in his cart and smiled at everyone who asked for a photo.", "cn": "这位阿根廷巨星购物车里放着一盒麦片，微笑着配合每位上前合影的粉丝。", "audio": "./assets/audios/story_3_s2.mp3"}], "vocabulary": [{"id": "v_3_1", "word": "tranquilamente", "pos": "adv.", "cn": "从容地 / 悠闲地", "en": "calmly / peacefully", "example": "Pasea tranquilamente por el parque.", "example_cn": "他在公园里悠闲地散步。", "audio": "./assets/audios/vocab_story_3_1.mp3"}, {"id": "v_3_2", "word": "el carrito", "pos": "m.", "cn": "手推车 / 购物车", "en": "shopping cart", "example": "Llenó el carrito de comida.", "example_cn": "他在购物车里装满了食物。", "audio": "./assets/audios/vocab_story_3_2.mp3"}], "grammar": {"title": "副词后缀 -mente 的构成", "formula": "阴性形容词 + mente (tranquila + mente = tranquilamente)", "explanation": "西语中绝大多数副词由形容词阴性形式加上 -mente 构成，表示动作的方式。", "sample_es": "Compraba tranquilamente en el supermercado.", "sample_cn": "他在超市里悠闲从容地购物。"}, "quiz": {"question": "单词「tranquilamente」由哪个形容词变形而来？", "options": ["A. transitorio", "B. tranquilo/a", "C. trágico"], "correct_index": 1, "explanation": "tranquilo (安静的) 的阴性形式 tranquila + mente 构成 tranquilamente (从容地)。"}, "audio_full_normal": "./assets/audios/story_3_normal.mp3", "audio_full_slow": "./assets/audios/story_3_slow.mp3"}, {"id": "story_4", "date": "2026-11-05", "tag": "影视 / 名人", "title": {"es": "El café de Pedro Pascal se convierte en meme viral", "en": "Pedro Pascal's coffee order becomes a viral meme", "cn": "04. 佩德罗·帕斯卡的“浓缩咖啡炸弹”成为全网热梗！"}, "intro": "好莱坞智利籍影星佩德罗·帕斯卡手拿加了6份浓缩的咖啡被拍，网友直呼心脏狂跳。", "sentences": [{"id": 1, "es": "El actor chileno Pedro Pascal fue fotografiado con un café que contenía seis dosis de espresso.", "en": "Chilean actor Pedro Pascal was photographed with a coffee containing six shots of espresso.", "cn": "智利男演员佩德罗·帕斯卡被拍到拿着一杯含有6份意式浓缩的超大咖啡。", "audio": "./assets/audios/story_4_s1.mp3"}, {"id": 2, "es": "Los usuarios bromearon diciendo que esa cantidad de cafeína podría despertar a un dinosaurio.", "en": "Users joked that that amount of caffeine could wake up a dinosaur.", "cn": "网友们开玩笑说，这么大剂量的咖啡因足以把一只恐龙叫醒。", "audio": "./assets/audios/story_4_s2.mp3"}], "vocabulary": [{"id": "v_4_1", "word": "bromear", "pos": "v.", "cn": "开玩笑", "en": "to joke", "example": "Solo estoy bromeando contigo.", "example_cn": "我只是在和你开玩笑。", "audio": "./assets/audios/vocab_story_4_1.mp3"}, {"id": "v_4_2", "word": "despertar", "pos": "v.", "cn": "唤醒 / 醒来", "en": "to wake up", "example": "La alarma me despertó temprano.", "example_cn": "闹钟很早就把我吵醒了。", "audio": "./assets/audios/vocab_story_4_2.mp3"}], "grammar": {"title": "情态动词 poder + 动词原形", "formula": "poder (podría) + infinitivo (despertar)", "explanation": "podría 是 poder 的条件式，表示委婉推测‘可能可以……’，后面直接连接动词原形。", "sample_es": "Podría despertar a un dinosaurio.", "sample_cn": "可能足以叫醒一只恐龙。"}, "quiz": {"question": "动词「bromear」的意思是？", "options": ["A. 愤怒抗议", "B. 开玩笑 / 打趣", "C. 认真阅读"], "correct_index": 1, "explanation": "broma 是名词玩笑，bromear 是动词‘开玩笑’。"}, "audio_full_normal": "./assets/audios/story_4_normal.mp3", "audio_full_slow": "./assets/audios/story_4_slow.mp3"}, {"id": "story_5", "date": "2026-11-05", "tag": "音乐 / 潮流", "title": {"es": "Bad Bunny canta en Puerto Rico y emociona a su pueblo", "en": "Bad Bunny sings in Puerto Rico and moves his hometown", "cn": "05. 坏痞兔（Bad Bunny）重返波多黎各，真情开唱引泪目！"}, "intro": "全球流媒体之王回到家乡岛屿免费举办露天派对，感谢所有陪伴他成长的故乡人。", "sentences": [{"id": 1, "es": "El cantante Bad Bunny ofreció un concierto sorpresa en las calles de San Juan.", "en": "Singer Bad Bunny gave a surprise concert in the streets of San Juan.", "cn": "歌手坏痞兔在圣胡安的街头举办了一场惊喜路演音乐会。", "audio": "./assets/audios/story_5_s1.mp3"}, {"id": 2, "es": "El artista afirmó con lágrimas que su corazón siempre pertenecerá a su isla natal.", "en": "The artist stated through tears that his heart will always belong to his native island.", "cn": "这位音乐人眼含热泪地表示，他的心将永远属于养育他的故乡岛屿。", "audio": "./assets/audios/story_5_s2.mp3"}], "vocabulary": [{"id": "v_5_1", "word": "ofrecer", "pos": "v.", "cn": "提供 / 呈现 / 举办", "en": "to offer / give", "example": "Ofreció una fiesta para sus amigos.", "example_cn": "他为朋友们举办了一场派对。", "audio": "./assets/audios/vocab_story_5_1.mp3"}, {"id": "v_5_2", "word": "pertenecer", "pos": "v.", "cn": "属于", "en": "to belong", "example": "Este libro me pertenece.", "example_cn": "这本书属于我。", "audio": "./assets/audios/vocab_story_5_2.mp3"}], "grammar": {"title": "动词 pertenecer a 的固定搭配", "formula": "pertenecer + a + 人或地点 (属于某人或某地)", "explanation": "pertenecer（属于）在西语中属于不规则第一人称动词（yo pertenezco），后面必须搭配介词 a。", "sample_es": "Mi corazón pertenece a esta tierra.", "sample_cn": "我的心属于这片土地。"}, "quiz": {"question": "句子「El libro pertenece a María」意思是？", "options": ["A. 玛丽亚买了一本书", "B. 这本书属于玛丽亚", "C. 这本书是关于玛丽亚的"], "correct_index": 1, "explanation": "pertenecer a 意为‘属于……’。"}, "audio_full_normal": "./assets/audios/story_5_normal.mp3", "audio_full_slow": "./assets/audios/story_5_slow.mp3"}, {"id": "story_6", "date": "2026-11-05", "tag": "文化 / 节日", "title": {"es": "La Tomatina de Buñol tiñe las calles de rojo pasión", "en": "La Tomatina of Buñol dyes the streets passionate red", "cn": "06. 西班牙番茄大战狂欢开幕，整座小镇染成鲜红色！"}, "intro": "布尼奥尔小镇迎来一年一度的番茄节，数万名狂欢者在番茄浆海中尽情释放。", "sentences": [{"id": 1, "es": "Más de veinte mil personas participaron hoy en la famosa fiesta de La Tomatina.", "en": "More than twenty thousand people participated today in the famous La Tomatina festival.", "cn": "两万多人今天参加了举世闻名的西班牙番茄大战节。", "audio": "./assets/audios/story_6_s1.mp3"}, {"id": 2, "es": "Se lanzaron más de ciento cincuenta toneladas de tomates maduros en apenas una hora de pura diversión.", "en": "Over one hundred and fifty tons of ripe tomatoes were thrown in just one hour of pure fun.", "cn": "在短短一小时的纯粹欢乐中，超过150吨成熟番茄被掷向空中。", "audio": "./assets/audios/story_6_s2.mp3"}], "vocabulary": [{"id": "v_6_1", "word": "lanzar", "pos": "v.", "cn": "投掷 / 发射", "en": "to throw / launch", "example": "Lanzaron la pelota muy lejos.", "example_cn": "他们把球扔得非常远。", "audio": "./assets/audios/vocab_story_6_1.mp3"}, {"id": "v_6_2", "word": "maduro/a", "pos": "adj.", "cn": "成熟的（水果或人）", "en": "ripe / mature", "example": "Los plátanos están maduros.", "example_cn": "香蕉已经熟了。", "audio": "./assets/audios/vocab_story_6_2.mp3"}], "grammar": {"title": "自复被动句 (Pasiva Refleja)", "formula": "se + 第三人称动词 (se lanzaron toneladas)", "explanation": "在西语新闻中，当动作执行者不明确或不重要时，常用 se + 复数动词表示‘被做某事’，如 se lanzaron 表示‘被投掷’。", "sample_es": "Se lanzaron muchos tomates.", "sample_cn": "许多番茄被掷了出去。"}, "quiz": {"question": "形容词「maduro」用来形容水果时表示？", "options": ["A. 酸涩的", "B. 腐烂的", "C. 成熟的"], "correct_index": 2, "explanation": "maduro/a 表示水果已成熟可食用；形容人时表示‘成熟沉稳’。"}, "audio_full_normal": "./assets/audios/story_6_normal.mp3", "audio_full_slow": "./assets/audios/story_6_slow.mp3"}, {"id": "story_7", "date": "2026-11-05", "tag": "电影 / 明星", "title": {"es": "Penélope Cruz y Javier Bardem deslumbran en la alfombra roja", "en": "Penélope Cruz and Javier Bardem dazzle on the red carpet", "cn": "07. 佩内洛普·克鲁兹夫妇合体走红毯，甜蜜互动羡煞众人！"}, "intro": "西班牙最高国宝级明星夫妻亮相电影节，举手投足间展现优雅与深厚默契。", "sentences": [{"id": 1, "es": "La pareja de actores españoles Penélope Cruz y Javier Bardem brilló anoche en la gala de cine.", "en": "Spanish actor couple Penélope Cruz and Javier Bardem shone last night at the film gala.", "cn": "西班牙演员夫妻佩内洛普·克鲁兹和哈维尔·巴登昨晚在电影盛典上大放异彩。", "audio": "./assets/audios/story_7_s1.mp3"}, {"id": 2, "es": "Ambos compartieron miradas cómplices que cautivaron a los fotógrafos presentes.", "en": "Both shared complicit looks that captivated the photographers present.", "cn": "两人之间流露出的默契眼神令现场的所有摄影师为之着迷。", "audio": "./assets/audios/story_7_s2.mp3"}], "vocabulary": [{"id": "v_7_1", "word": "brillar", "pos": "v.", "cn": "发光 / 闪耀 / 出众", "en": "to shine / sparkle", "example": "Las estrellas brillan en la noche.", "example_cn": "星星在夜空中闪烁。", "audio": "./assets/audios/vocab_story_7_1.mp3"}, {"id": "v_7_2", "word": "la mirada", "pos": "f.", "cn": "眼神 / 目光", "en": "look / gaze", "example": "Tiene una mirada muy dulce.", "example_cn": "她的眼神非常温柔。", "audio": "./assets/audios/vocab_story_7_2.mp3"}], "grammar": {"title": "不定代词 ambos (两者都)", "formula": "ambos / ambas + 复数名词或直接作主语", "explanation": "ambos 相当于 los dos，指两个人或事物，具有强烈的书面优雅色彩。", "sample_es": "Ambos sonreían ante las cámaras.", "sample_cn": "两人都在镜头前微笑。"}, "quiz": {"question": "名词「la mirada」来自哪个动词？", "options": ["A. mirífico", "B. mirar (看)", "C. marchar"], "correct_index": 1, "explanation": "mirar 是看，la mirada 是其衍生名词‘目光、眼神’。"}, "audio_full_normal": "./assets/audios/story_7_normal.mp3", "audio_full_slow": "./assets/audios/story_7_slow.mp3"}, {"id": "story_8", "date": "2026-11-05", "tag": "生活 / 健康", "title": {"es": "La ciencia confirma que la siesta española mejora la memoria", "en": "Science confirms that the Spanish siesta improves memory", "cn": "08. 科学实锤：西班牙午睡（Siesta）真能大幅提升记忆力！"}, "intro": "最新神经学研究表明，午饭后20分钟的西式小憩能让大脑工作效率翻倍。", "sentences": [{"id": 1, "es": "Un nuevo estudio científico ha revelado que dormir una siesta de veinte minutos aumenta la concentración.", "en": "A new scientific study has revealed that taking a twenty-minute nap increases focus.", "cn": "一项最新科学研究表明，睡上二十分钟的午觉能有效提高专注力。", "audio": "./assets/audios/story_8_s1.mp3"}, {"id": 2, "es": "Los expertos recomiendan esta costumbre tradicional para reducir el estrés del trabajo diario.", "en": "Experts recommend this traditional custom to reduce the stress of daily work.", "cn": "专家建议保持这一传统习俗，以减轻日常工作的压力。", "audio": "./assets/audios/story_8_s2.mp3"}], "vocabulary": [{"id": "v_8_1", "word": "la costumbre", "pos": "f.", "cn": "习惯 / 风俗", "en": "custom / habit", "example": "Es una costumbre muy antigua.", "example_cn": "这是一项非常古老的习俗。", "audio": "./assets/audios/vocab_story_8_1.mp3"}, {"id": "v_8_2", "word": "recomendar", "pos": "v.", "cn": "推荐 / 建议", "en": "to recommend", "example": "Te recomiendo este restaurante.", "example_cn": "我向你推荐这家餐厅。", "audio": "./assets/audios/vocab_story_8_2.mp3"}], "grammar": {"title": "动名词结构作主语 (Dormir la siesta...)", "formula": "动词原形 (infinitivo) + 谓语单数动词", "explanation": "在西语中，直接用动词原形作主语（如 dormir una siesta），动词视为阳性单数，相当于英语的 Gerund。", "sample_es": "Dormir bien es importante para la salud.", "sample_cn": "睡好觉对健康很重要。"}, "quiz": {"question": "动词「recomendar」是变位鞋子动词，它的现在时第一人称是？", "options": ["A. yo recomendo", "B. yo recomiendo", "C. yo recomiende"], "correct_index": 1, "explanation": "recomendar 发生 e -> ie 变位：yo recomiendo, tú recomiendas。"}, "audio_full_normal": "./assets/audios/story_8_normal.mp3", "audio_full_slow": "./assets/audios/story_8_slow.mp3"}, {"id": "story_9", "date": "2026-11-05", "tag": "美食 / 旅行", "title": {"es": "Churros con chocolate: la dulce tradición nocturna de Madrid", "en": "Churros with chocolate: Madrid's sweet nocturnal tradition", "cn": "09. 西班牙小油条（Churros）配浓热巧：马德里不夜城的甜美灵魂！"}, "intro": "深夜造访百年老字号圣希内斯，蘸满浓郁黑巧的小油条温暖无数旅人的胃。", "sentences": [{"id": 1, "es": "En el corazón de Madrid, miles de visitantes disfrutan cada noche de los crujientes churros recién hechos.", "en": "In the heart of Madrid, thousands of visitors enjoy crispy freshly-made churros every night.", "cn": "在马德里市中心，数千名食客每晚都在享用刚出锅、香脆可口的西班牙小油条。", "audio": "./assets/audios/story_9_s1.mp3"}, {"id": 2, "es": "Bañar el churro en chocolate caliente es un placer culinario que nadie debería perderse.", "en": "Dipping the churro in hot chocolate is a culinary pleasure no one should miss.", "cn": "将油条浸入浓郁的热巧克力中，是任何人都绝不该错过的美食享受。", "audio": "./assets/audios/story_9_s2.mp3"}], "vocabulary": [{"id": "v_9_1", "word": "crujiente", "pos": "adj.", "cn": "酥脆的 / 爽脆的", "en": "crispy / crunchy", "example": "El pan está muy crujiente.", "example_cn": "这面包非常香脆。", "audio": "./assets/audios/vocab_story_9_1.mp3"}, {"id": "v_9_2", "word": "perderse", "pos": "v. 自复", "cn": "错过（美好事物）/ 迷路", "en": "to miss out on / get lost", "example": "No te pierdas esta película.", "example_cn": "你可千万不要错过这部电影。", "audio": "./assets/audios/vocab_story_9_2.mp3"}], "grammar": {"title": "debería + infinitivo 委婉建议", "formula": "debería (deber条件式) + 动词原形 (perderse)", "explanation": "debería 表示‘应当、最好……’，比 direct 的 debe 更加委婉、礼貌。", "sample_es": "Nadie debería perderse esta oportunidad.", "sample_cn": "任何人都不该错过这个机会。"}, "quiz": {"question": "形容词「crujiente」用来形容食物时指？", "options": ["A. 滚烫的", "B. 酥脆的", "C. 软绵的"], "correct_index": 1, "explanation": "crujiente 专指烤得或炸得嘎嘣脆的口感。"}, "audio_full_normal": "./assets/audios/story_9_normal.mp3", "audio_full_slow": "./assets/audios/story_9_slow.mp3"}, {"id": "story_10", "date": "2026-11-05", "tag": "艺术 / 音乐", "title": {"es": "Una joven bailaora de flamenco conquista internet en Sevilla", "en": "A young flamenco dancer conquers the internet in Seville", "cn": "10. 塞维利亚街头小舞者一段弗拉门戈，震撼全球数亿网友！"}, "intro": "19岁街头弗拉门戈舞者在西班牙广场激情踏步，纯正吉普赛风骨惊艳世界。", "sentences": [{"id": 1, "es": "Un video grabado en la Plaza de España de Sevilla ha acumulado millones de reproducciones en pocas horas.", "en": "A video recorded in Seville's Plaza de España has racked up millions of views in a few hours.", "cn": "一段在塞维利亚西班牙广场录制的视频，短短几小时内获得了数百万播放量。", "audio": "./assets/audios/story_10_s1.mp3"}, {"id": 2, "es": "La joven bailó con tanta pasión y fuerza que conmovió profundamente al público internacional.", "en": "The young girl danced with so much passion and strength that she deeply moved the international audience.", "cn": "年轻舞者以如此充沛的热情与力量起舞，深深触动了世界各地的观众。", "audio": "./assets/audios/story_10_s2.mp3"}], "vocabulary": [{"id": "v_10_1", "word": "conmover", "pos": "v.", "cn": "打动 / 使感动", "en": "to move / touch emotionally", "example": "La historia conmovió a todos.", "example_cn": "这个故事打动了所有人。", "audio": "./assets/audios/vocab_story_10_1.mp3"}, {"id": "v_10_2", "word": "la pasión", "pos": "f.", "cn": "激情 / 热情", "en": "passion", "example": "Canta con mucha pasión.", "example_cn": "他饱含激情地歌唱。", "audio": "./assets/audios/vocab_story_10_2.mp3"}], "grammar": {"title": "tanto/a... que... 结果状语从句", "formula": "con tanta + 名词 + que + 句子 (如此多的……以至于……)", "explanation": "tanta pasión que... 表示程度之深，直接引出结果从句，修饰阴性名词 pasión 用 tanta。", "sample_es": "Habló con tanta fuerza que todos escucharon.", "sample_cn": "他说话如此有力，以至于全场都在聆听。"}, "quiz": {"question": "动词「conmover」属于 o -> ue 变位，它的现在时第三人称是？", "options": ["A. conmueve", "B. conmove", "C. conmovió"], "correct_index": 0, "explanation": "conmover 变位为 yo conmuevo, él/ella conmueve。"}, "audio_full_normal": "./assets/audios/story_10_normal.mp3", "audio_full_slow": "./assets/audios/story_10_slow.mp3"}];
+
+let currentIndex = 0;
+let currentStory = STORIES_DATA[0];
+let displayMode = 'all';
+let currentSpeed = 1.0; // 0.75 | 1.0 | 1.25
+let isMemoryFlashcard = false;
+let selectedQuizOpt = null;
+
+const fullAudio = new Audio();
+const singleAudio = new Audio();
+
+function getStorage(key, def) {
+  try {
+    const val = localStorage.getItem(key);
+    return val ? JSON.parse(val) : def;
+  } catch (e) { return def; }
+}
+function setStorage(key, val) {
+  try { localStorage.setItem(key, JSON.stringify(val)); } catch (e) {}
+}
+
+let myVocab = getStorage('my_vocab_web', STORIES_DATA.slice(0, 3).flatMap(s => s.vocabulary.slice(0, 1)));
+let streakDays = getStorage('streak_days_web', 1);
+let studyRecords = getStorage('study_records_web', {});
+
+function init() {
+  renderStoryPills();
+  loadStory(currentIndex);
+  updateStreakUI();
+  setupAudioListeners();
+}
+
+function updateStreakUI() {
+  document.getElementById('streakDaysTop').textContent = `打卡 ${streakDays} 天`;
+  document.getElementById('profileStreakText').textContent = `连续打卡 ${streakDays} 天`;
+  const isDone = !!studyRecords[currentStory.id];
+  document.getElementById('profileTodayStatus').textContent = isDone ? '本篇已打卡 ✓' : '待打卡';
+}
+
+function renderStoryPills() {
+  const container = document.getElementById('storyScroll');
+  container.innerHTML = STORIES_DATA.map((s, idx) => `
+    <div class="story-pill ${idx === currentIndex ? 'active' : ''}" onclick="loadStory(${idx})">
+      ${s.title.cn.slice(0, 14)}...
+    </div>
+  `).join('');
+
+  const hist = document.getElementById('historyListContainer');
+  hist.innerHTML = STORIES_DATA.map((s, idx) => `
+    <div style="padding: 10px 0; border-bottom: 1px solid #F1F5F9; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="loadStory(${idx}); switchTab('feed', document.querySelectorAll('.tab-item')[0]);">
+      <div>
+        <div style="font-size: 11px; color: #64748B;">第 ${idx + 1} 篇 · ${s.tag}</div>
+        <div style="font-weight: 700; font-size: 13px;">${s.title.cn}</div>
+      </div>
+      <span style="font-size: 12px; color: #E11D48;">阅读 ›</span>
+    </div>
+  `).join('');
+}
+
+function prevStory() {
+  if (currentIndex > 0) loadStory(currentIndex - 1);
+}
+function nextStory() {
+  if (currentIndex < STORIES_DATA.length - 1) loadStory(currentIndex + 1);
+}
+
+function loadStory(idx) {
+  fullAudio.pause();
+  document.getElementById('playFullBtn').textContent = '▶';
+  document.querySelectorAll('.sentence-card').forEach(el => el.classList.remove('active'));
+
+  currentIndex = idx;
+  currentStory = STORIES_DATA[currentIndex];
+  selectedQuizOpt = null;
+
+  document.getElementById('storyIndicator').textContent = `第 ${currentIndex + 1} / ${STORIES_DATA.length} 篇`;
+  document.getElementById('storyDate').textContent = currentStory.date;
+  document.getElementById('storyTag').textContent = currentStory.tag;
+  document.getElementById('storyTitleEs').textContent = currentStory.title.es;
+  document.getElementById('storyTitleEn').textContent = currentStory.title.en;
+  document.getElementById('storyTitleCn').textContent = currentStory.title.cn;
+  document.getElementById('storyIntro').textContent = currentStory.intro;
+
+  fullAudio.src = currentStory.audio_full_normal;
+  fullAudio.playbackRate = currentSpeed;
+
+  renderStoryPills();
+  renderSentences();
+  renderVocabulary();
+  renderGrammar();
+  renderQuiz();
+  updateStreakUI();
+}
+
+function renderSentences() {
+  const c = document.getElementById('sentencesContainer');
+  c.innerHTML = currentStory.sentences.map(s => `
+    <div class="card sentence-card" id="sent_${s.id}" onclick="playSentence(${s.id}, '${s.audio}')">
+      <div class="sentence-header">
+        <span class="sentence-num">${s.id < 10 ? '0' + s.id : s.id}</span>
+        <span class="sentence-play-tag">🔈 点此朗读</span>
+      </div>
+      <div class="sentence-es">${s.es}</div>
+      ${displayMode === 'all' ? `<div class="sentence-en">${s.en}</div>` : ''}
+      ${displayMode !== 'es_only' ? `<div class="sentence-cn">${s.cn}</div>` : ''}
+    </div>
+  `).join('');
+}
+
+function renderVocabulary() {
+  const c = document.getElementById('vocabContainer');
+  c.innerHTML = currentStory.vocabulary.map(v => {
+    const isSaved = myVocab.some(item => item.word === v.word);
+    return `
+      <div class="card vocab-card">
+        <div class="vocab-header">
+          <div class="vocab-left">
+            <span class="vocab-word">${v.word}</span>
+            <span class="badge badge-amber">${v.pos}</span>
+            <button class="audio-icon-btn" onclick="playSingleAudio('${v.audio}')">🔊</button>
+          </div>
+          <button class="save-btn ${isSaved ? 'saved' : ''}" onclick="toggleSaveWord('${v.word}')">
+            ${isSaved ? '★ 已收藏' : '☆ 存生词'}
+          </button>
+        </div>
+        <div class="vocab-meaning">
+          <div class="meaning-cn">🇨🇳 ${v.cn}</div>
+          <div class="meaning-en">🇬🇧 ${v.en}</div>
+        </div>
+        <div class="vocab-example">
+          <div class="example-es">“${v.example}”</div>
+          <div class="example-cn">${v.example_cn}</div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderGrammar() {
+  const g = currentStory.grammar;
+  document.getElementById('grammarCard').innerHTML = `
+    <div class="grammar-title-wrap">
+      <span class="grammar-badge">今日语法点</span>
+      <span class="grammar-title">${g.title}</span>
+    </div>
+    <div class="grammar-formula">句式：${g.formula}</div>
+    <div class="grammar-exp">${g.explanation}</div>
+    <div class="grammar-sample">
+      <div class="sample-es">🇪🇸 ${g.sample_es}</div>
+      <div class="sample-cn">🇨🇳 ${g.sample_cn}</div>
+    </div>
+  `;
+}
+
+function renderQuiz() {
+  const q = currentStory.quiz;
+  const isDone = !!studyRecords[currentStory.id];
+  const c = document.getElementById('quizCard');
+
+  let optsHtml = q.options.map((opt, i) => {
+    let cls = '';
+    if (selectedQuizOpt !== null) {
+      if (i === q.correct_index) cls = 'correct';
+      else if (i === selectedQuizOpt) cls = 'wrong';
+    }
+    return `<div class="quiz-opt ${cls}" onclick="selectQuiz(${i})">${opt}</div>`;
+  }).join('');
+
+  c.innerHTML = `
+    <div class="quiz-q">${q.question}</div>
+    <div class="quiz-options">${optsHtml}</div>
+    ${selectedQuizOpt !== null ? `
+      <div class="quiz-feedback">
+        <div style="font-weight: 700; margin-bottom: 4px; color: ${selectedQuizOpt === q.correct_index ? '#059669' : '#DC2626'}">
+          ${selectedQuizOpt === q.correct_index ? '🎉 答对啦！Muy bien!' : '💡 解析如下：'}
+        </div>
+        <div style="color: #475569;">${q.explanation}</div>
+      </div>
+    ` : ''}
+    ${!isDone ? `
+      <button class="checkin-btn" onclick="completeCheckin()">✨ 完成第 ${currentIndex + 1} 篇早报打卡 (+1天语感积累)</button>
+    ` : `
+      <div class="checkedin-tag">✅ 本篇已打卡，点击「下一篇 ›」继续探索！</div>
+    `}
+  `;
+}
+
+function selectQuiz(index) {
+  selectedQuizOpt = index;
+  renderQuiz();
+}
+
+function completeCheckin() {
+  studyRecords[currentStory.id] = { completed: true, date: currentStory.date };
+  streakDays += 1;
+  setStorage('study_records_web', studyRecords);
+  setStorage('streak_days_web', streakDays);
+  updateStreakUI();
+  renderQuiz();
+  alert(`🎉 恭喜完成第 ${currentIndex + 1} 篇打卡！
+西语积累 +1！连续打卡天数：${streakDays} 天`);
+}
+
+function togglePlayFull() {
+  singleAudio.pause();
+  document.querySelectorAll('.sentence-card').forEach(el => el.classList.remove('active'));
+
+  const btn = document.getElementById('playFullBtn');
+  if (fullAudio.paused) {
+    fullAudio.playbackRate = currentSpeed;
+    fullAudio.play();
+    btn.textContent = '⏸';
+    document.getElementById('playerStatusText').textContent = `正在以 ${currentSpeed}x 播报中...`;
+  } else {
+    fullAudio.pause();
+    btn.textContent = '▶';
+    document.getElementById('playerStatusText').textContent = '母语者朗读全篇';
+  }
+}
+
+// 3 档语速切换函数 (0.75x, 1.0x, 1.25x)
+function setSpeed(speed) {
+  currentSpeed = speed;
+  fullAudio.playbackRate = speed;
+  singleAudio.playbackRate = speed;
+
+  document.querySelectorAll('.speed-pill').forEach(el => el.classList.remove('active'));
+  const speedId = 'speed_' + speed.toString().replace('.', '_');
+  const target = document.getElementById(speedId);
+  if (target) target.classList.add('active');
+
+  if (!fullAudio.paused) {
+    document.getElementById('playerStatusText').textContent = `正在以 ${currentSpeed}x 播报中...`;
+  }
+}
+
+function setupAudioListeners() {
+  fullAudio.ontimeupdate = () => {
+    if (fullAudio.duration) {
+      const pct = (fullAudio.currentTime / fullAudio.duration) * 100;
+      document.getElementById('progressFill').style.width = pct + '%';
+      document.getElementById('curTimeText').textContent = formatTime(fullAudio.currentTime);
+      document.getElementById('totalTimeText').textContent = formatTime(fullAudio.duration);
+    }
+  };
+  fullAudio.onended = () => {
+    document.getElementById('playFullBtn').textContent = '▶';
+    document.getElementById('progressFill').style.width = '0%';
+    document.getElementById('playerStatusText').textContent = '母语者朗读全篇';
+  };
+}
+
+function seekAudio(e) {
+  const bar = document.getElementById('progressBar');
+  const rect = bar.getBoundingClientRect();
+  const pct = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+  if (fullAudio.duration) fullAudio.currentTime = pct * fullAudio.duration;
+}
+
+function playSentence(id, src) {
+  fullAudio.pause();
+  document.getElementById('playFullBtn').textContent = '▶';
+  document.querySelectorAll('.sentence-card').forEach(el => el.classList.remove('active'));
+  const card = document.getElementById('sent_' + id);
+  if (card) card.classList.add('active');
+
+  singleAudio.src = src;
+  singleAudio.playbackRate = currentSpeed;
+  singleAudio.play();
+  singleAudio.onended = () => {
+    if (card) card.classList.remove('active');
+  };
+}
+
+function playSingleAudio(src) {
+  fullAudio.pause();
+  document.getElementById('playFullBtn').textContent = '▶';
+  singleAudio.src = src;
+  singleAudio.playbackRate = currentSpeed;
+  singleAudio.play();
+}
+
+function setDisplayMode(mode) {
+  displayMode = mode;
+  document.querySelectorAll('.mode-pill').forEach(el => el.classList.remove('active'));
+  event.target.classList.add('active');
+  renderSentences();
+}
+
+function formatTime(s) {
+  if (!s || isNaN(s)) return "00:00";
+  const m = Math.floor(s / 60);
+  const sec = Math.floor(s % 60);
+  return `${m < 10 ? '0' + m : m}:${sec < 10 ? '0' + sec : sec}`;
+}
+
+function toggleSaveWord(word) {
+  const idx = myVocab.findIndex(w => w.word === word);
+  if (idx > -1) {
+    myVocab.splice(idx, 1);
+  } else {
+    for (let s of STORIES_DATA) {
+      const found = s.vocabulary.find(v => v.word === word);
+      if (found) {
+        myVocab.unshift({ ...found, mastered: false });
+        break;
+      }
+    }
+  }
+  setStorage('my_vocab_web', myVocab);
+  renderVocabulary();
+}
+
+function switchTab(tab, el) {
+  document.querySelectorAll('.tab-item').forEach(item => item.classList.remove('active'));
+  el.classList.add('active');
+
+  document.getElementById('tabFeed').classList.add('hidden');
+  document.getElementById('tabVocab').classList.add('hidden');
+  document.getElementById('tabProfile').classList.add('hidden');
+
+  if (tab === 'feed') document.getElementById('tabFeed').classList.remove('hidden');
+  else if (tab === 'vocab') {
+    document.getElementById('tabVocab').classList.remove('hidden');
+    renderVocabPage();
+  } else if (tab === 'profile') {
+    document.getElementById('tabProfile').classList.remove('hidden');
+    updateStreakUI();
+  }
+}
+
+function renderVocabPage() {
+  const mastered = myVocab.filter(v => v.mastered).length;
+  document.getElementById('totalVocabCount').textContent = myVocab.length;
+  document.getElementById('masteredVocabCount').textContent = mastered;
+  document.getElementById('unmasteredVocabCount').textContent = myVocab.length - mastered;
+  onSearchVocab(document.getElementById('vocabSearchInput').value);
+}
+
+function onSearchVocab(q) {
+  q = (q || '').trim().toLowerCase();
+  const filtered = myVocab.filter(v => v.word.toLowerCase().includes(q) || v.cn.toLowerCase().includes(q) || v.en.toLowerCase().includes(q));
+
+  const c = document.getElementById('savedVocabList');
+  if (filtered.length === 0) {
+    c.innerHTML = `<div style="text-align: center; padding: 40px; color: #94A3B8;">暂无生词，快去每日早报中收藏吧！</div>`;
+    return;
+  }
+
+  c.innerHTML = filtered.map(v => `
+    <div class="card vocab-card" style="cursor: pointer;" onclick="toggleFlashcardReveal('${v.id}')">
+      <div class="vocab-header">
+        <div class="vocab-left">
+          <span class="vocab-word">${v.word}</span>
+          <span class="badge badge-amber">${v.pos}</span>
+          <button class="audio-icon-btn" onclick="event.stopPropagation(); playSingleAudio('${v.audio}')">🔊</button>
+        </div>
+        <span class="badge ${v.mastered ? 'badge-green' : 'badge-rose'}">${v.mastered ? '已掌握' : '待复习'}</span>
+      </div>
+      <div class="vocab-meaning" id="vocab_meaning_${v.id}">
+        <div class="meaning-cn">🇨🇳 ${v.cn}</div>
+        <div class="meaning-en">🇬🇧 ${v.en}</div>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
+        <span style="font-size: 11px; color: #94A3B8;">例：${v.example}</span>
+        <button class="save-btn" onclick="event.stopPropagation(); toggleMasteredWord('${v.word}')">
+          ${v.mastered ? '重回复习' : '标为掌握'}
+        </button>
+      </div>
+    </div>
+  `).join('');
+
+  if (isMemoryFlashcard) {
+    filtered.forEach(v => {
+      const el = document.getElementById('vocab_meaning_' + v.id);
+      if (el) el.style.display = 'none';
+    });
+  }
+}
+
+function toggleMemoryFlashcard() {
+  isMemoryFlashcard = !isMemoryFlashcard;
+  document.getElementById('flashcardToggleText').textContent = isMemoryFlashcard 
+    ? '👀 关闭背词模式' 
+    : '🙈 开启背词模式 (隐藏中文释义)';
+  renderVocabPage();
+}
+
+function toggleFlashcardReveal(id) {
+  if (!isMemoryFlashcard) return;
+  const el = document.getElementById('vocab_meaning_' + id);
+  if (el) el.style.display = (el.style.display === 'none') ? 'block' : 'none';
+}
+
+function toggleMasteredWord(word) {
+  const item = myVocab.find(v => v.word === word);
+  if (item) {
+    item.mastered = !item.mastered;
+    setStorage('my_vocab_web', myVocab);
+    renderVocabPage();
+  }
+}
+
+window.onload = init;
+</script>
+</body>
+</html>
