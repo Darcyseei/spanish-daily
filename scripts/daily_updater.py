@@ -8,6 +8,8 @@ import datetime
 import json
 import os
 import sys
+import urllib.request
+import urllib.error
 import edge_tts
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -429,14 +431,157 @@ async def generate_speech(text: str, filename: str, rate: str = "+0%"):
     await communicator.save(path)
     print(f"  [TTS] {filename}")
 
+def fetch_gemini_stories(today_str: str, api_key: str):
+    """通过 Google Gemini 1.5 Flash 免费模型实时生成当天 10 篇三语西语热点早报"""
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+    
+    prompt = f"""
+Eres un redactor y profesor experto de español para estudiantes extranjeros.
+Fecha de hoy: {today_str}.
+
+Por favor, crea exactamente 10 noticias/tendencias/anécdotas BREVES, DIVERTIDAS y ACTUALES del mundo hispanohablante (España y Latinoamérica) para estudiantes de español (nivel A2-B1).
+Temas variados: cultura pop, música (Rosalía, Shakira, Bad Bunny, etc.), deportes (fútbol, Alcaraz), festivales y tradiciones, gastronomía (tapas, churros, jamón), cine y series, curiosidades de la vida cotidiana.
+El español debe ser claro, natural, ameno y moderno.
+
+IMPORTANTE: Devuelve ÚNICAMENTE un array JSON válido con exactamente 10 objetos, sin bloques de markdown adicionales.
+El esquema de cada objeto DEBE ser:
+[
+  {{
+    "tag": "八卦 / 潮流",
+    "title": {{
+      "es": "Título en español",
+      "en": "Title in English",
+      "cn": "01. 中文大标题（编号 01 到 10）"
+    }},
+    "intro": "1-2句中文生动导读",
+    "sentences": [
+      {{
+        "id": 1,
+        "es": "Primera frase en español sencillo y claro.",
+        "en": "English translation.",
+        "cn": "中文翻译。"
+      }},
+      {{
+        "id": 2,
+        "es": "Segunda frase en español.",
+        "en": "English translation.",
+        "cn": "中文翻译。"
+      }}
+    ],
+    "vocabulary": [
+      {{
+        "word": "palabra1",
+        "pos": "n.m. / v. / adj.",
+        "cn": "中文释义",
+        "en": "English definition",
+        "example": "Breve frase de ejemplo en español"
+      }},
+      {{
+        "word": "palabra2",
+        "pos": "adj.",
+        "cn": "中文释义",
+        "en": "English definition",
+        "example": "Breve frase de ejemplo"
+      }}
+    ],
+    "grammar": {{
+      "point": "语法考点名称（如：现在完成时用法）",
+      "detail": "中文简明解析"
+    }},
+    "quiz": {{
+      "question": "西语小测验题目（围绕本文生词或语法）",
+      "options": ["A. 正确选项", "B. 混淆选项1", "C. 混淆选项2"],
+      "correct_index": 0,
+      "explanation": "简要中文解析"
+    }}
+  }}
+]
+"""
+    body = {
+        "contents": [{
+            "role": "user",
+            "parts": [{"text": prompt}]
+        }],
+        "generationConfig": {
+            "responseMimeType": "application/json",
+            "temperature": 0.7
+        }
+    }
+    
+    req = urllib.request.Request(
+        url,
+        data=json.dumps(body).encode("utf-8"),
+        headers={"Content-Type": "application/json"},
+        method="POST"
+    )
+    
+    with urllib.request.urlopen(req, timeout=45) as resp:
+        res_data = json.loads(resp.read().decode("utf-8"))
+        raw_text = res_data["candidates"][0]["content"]["parts"][0]["text"].strip()
+        
+        if raw_text.startswith("```"):
+            raw_text = raw_text.split("\n", 1)[1]
+            if raw_text.endswith("```"):
+                raw_text = raw_text.rsplit("\n", 1)[0]
+        
+        parsed = json.loads(raw_text)
+        stories = parsed if isinstance(parsed, list) else parsed.get("stories", [])
+        
+        if len(stories) < 10:
+            raise ValueError(f"Gemini 返回故事数量不足 10 篇 (仅返回 {len(stories)} 篇)")
+            
+        valid_stories = []
+        for i, s in enumerate(stories[:10], 1):
+            s_dict = dict(s)
+            s_dict["id"] = f"story_{i}"
+            s_dict["date"] = today_str
+            if "quiz" not in s_dict or not isinstance(s_dict["quiz"], dict):
+                v_word = s_dict.get("vocabulary", [{}])[0].get("word", "este término")
+                v_cn = s_dict.get("vocabulary", [{}])[0].get("cn", "该词含义")
+                s_dict["quiz"] = {
+                    "question": f"西语单词「{v_word}」的中文含义是？",
+                    "options": [f"A. {v_cn}", "B. 另一个意思", "C. 错误含义"],
+                    "correct_index": 0,
+                    "explanation": f"「{v_word}」的意思是：{v_cn}。"
+                }
+            valid_stories.append(s_dict)
+            
+        return valid_stories
+
+def get_fallback_stories(today_str: str):
+    """备用故事库：当未配置 API Key 或网络请求受限时无缝保底"""
+    stories = []
+    for idx, item in enumerate(TOPICS_POOL, 1):
+        s = dict(item)
+        s["id"] = f"story_{idx}"
+        s["date"] = today_str
+        stories.append(s)
+    return stories
+
 async def main():
     # 统一使用中国北京时间 (UTC+8)，确保国内用户早晨访问时看到当天最新日期
     tz_cst = datetime.timezone(datetime.timedelta(hours=8))
     today_str = datetime.datetime.now(tz_cst).strftime("%Y-%m-%d")
     print(f"开始更新 {today_str} 西语每日早报...")
 
+    gemini_key = os.environ.get("GEMINI_API_KEY", "").strip()
+    raw_stories = None
+
+    if gemini_key:
+        print("检测到已配置 GEMINI_API_KEY，正在呼叫 Google Gemini 生成今日全新 10 篇西语热点...")
+        try:
+            raw_stories = fetch_gemini_stories(today_str, gemini_key)
+            print(f"✓ 成功通过 Google Gemini AI 生成了 {len(raw_stories)} 篇全新三语早报！")
+        except Exception as e:
+            print(f"⚠️ 呼叫 Gemini AI 接口异常 ({e})，自动切换为备用精选故事库...")
+    else:
+        print("未检测到 GEMINI_API_KEY 环境变量，使用内置精选故事库...")
+
+    if not raw_stories:
+        raw_stories = get_fallback_stories(today_str)
+
     stories = []
-    for idx, item in enumerate(TOPICS_POOL, 1):
+    for idx, item in enumerate(raw_stories, 1):
         s_id = f"story_{idx}"
         story = dict(item)
         story["id"] = s_id
