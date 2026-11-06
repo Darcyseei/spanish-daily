@@ -7,9 +7,13 @@ import asyncio
 import datetime
 import json
 import os
+import sys
 import edge_tts
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
+if SCRIPTS_DIR not in sys.path:
+    sys.path.insert(0, SCRIPTS_DIR)
 AUDIOS_DIR = os.path.join(BASE_DIR, "assets", "audios")
 DATA_DIR = os.path.join(BASE_DIR, "data")
 os.makedirs(AUDIOS_DIR, exist_ok=True)
@@ -426,7 +430,9 @@ async def generate_speech(text: str, filename: str, rate: str = "+0%"):
     print(f"  [TTS] {filename}")
 
 async def main():
-    today_str = datetime.datetime.now().strftime("%Y-%m-%d")
+    # 统一使用中国北京时间 (UTC+8)，确保国内用户早晨访问时看到当天最新日期
+    tz_cst = datetime.timezone(datetime.timedelta(hours=8))
+    today_str = datetime.datetime.now(tz_cst).strftime("%Y-%m-%d")
     print(f"开始更新 {today_str} 西语每日早报...")
 
     stories = []

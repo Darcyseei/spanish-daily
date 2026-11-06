@@ -1423,27 +1423,32 @@ window.onload = init;
 </html>'''
     return html_template
 
-# 1. 写入 root index.html
-root_html = generate_html(is_root=True)
-with open(os.path.join(BASE_DIR, "index.html"), "w", encoding="utf-8") as f:
-    f.write(root_html)
+if __name__ == "__main__":
+    # 1. 写入 root index.html
+    root_html = generate_html(is_root=True)
+    with open(os.path.join(BASE_DIR, "index.html"), "w", encoding="utf-8") as f:
+        f.write(root_html)
 
-# 2. 写入 web/index.html
-web_html = generate_html(is_root=False)
-with open(os.path.join(BASE_DIR, "web", "index.html"), "w", encoding="utf-8") as f:
-    f.write(web_html)
+    # 2. 如果存在 web 目录，写入 web/index.html
+    web_dir = os.path.join(BASE_DIR, "web")
+    if os.path.exists(web_dir):
+        web_html = generate_html(is_root=False)
+        with open(os.path.join(web_dir, "index.html"), "w", encoding="utf-8") as f:
+            f.write(web_html)
 
-# 3. 更新 gh-pages-ready
-dist_dir = os.path.join(BASE_DIR, "gh-pages-ready")
-shutil.copy2(os.path.join(BASE_DIR, "index.html"), os.path.join(dist_dir, "index.html"))
+    # 3. 如果存在 gh-pages-ready 目录，更新 gh-pages-ready
+    dist_dir = os.path.join(BASE_DIR, "gh-pages-ready")
+    if os.path.exists(dist_dir):
+        shutil.copy2(os.path.join(BASE_DIR, "index.html"), os.path.join(dist_dir, "index.html"))
 
-# 4. 更新 zip 包
-zip_path = os.path.join(BASE_DIR, "spanish-daily-pages.zip")
-with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
-    for root, dirs, files in os.walk(dist_dir):
-        for file in files:
-            full_p = os.path.join(root, file)
-            rel_p = os.path.relpath(full_p, dist_dir)
-            zipf.write(full_p, rel_p)
+    # 4. 如果存在 gh-pages-ready，更新 zip 包
+    if os.path.exists(dist_dir):
+        zip_path = os.path.join(BASE_DIR, "spanish-daily-pages.zip")
+        with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+            for root, dirs, files in os.walk(dist_dir):
+                for file in files:
+                    full_p = os.path.join(root, file)
+                    rel_p = os.path.relpath(full_p, dist_dir)
+                    zipf.write(full_p, rel_p)
 
-print("划词翻译与发音功能构建完成！")
+    print("构建完成！")
