@@ -1,13 +1,11 @@
 // 每日 10 篇西语早报数据包
 const DAILY_STORIES = [
   {
-    "id": "story_1",
-    "date": "2026-11-05",
     "tag": "八卦 / 潮流",
     "title": {
       "es": "¡Rosalía sorprende a todos con su nuevo peinado en París!",
       "en": "Rosalía surprises everyone with her new hairstyle in Paris!",
-      "cn": "01. 罗莎莉亚（Rosalía）在巴黎以复古发型惊艳亮相！"
+      "cn": "01. 罗莎莉亚在巴黎时装周以复古发型惊艳亮相！"
     },
     "intro": "西班牙天后现身巴黎时装周，复古造型引发全网热议与模仿潮。",
     "sentences": [
@@ -24,70 +22,53 @@ const DAILY_STORIES = [
         "en": "What caught everyone's attention the most was her 90s-inspired retro hairstyle.",
         "cn": "最吸引大家目光的是她那款受90年代启发的复古发型。",
         "audio": "./assets/audios/story_1_s2.mp3"
-      },
-      {
-        "id": 3,
-        "es": "Sus seguidores en redes sociales no tardaron en compartir las fotos y elogiar su estilo único.",
-        "en": "Her followers on social media were quick to share photos and praise her unique style.",
-        "cn": "社交平台上的粉丝们迅速转发照片，盛赞她独树一帜的风格。",
-        "audio": "./assets/audios/story_1_s3.mp3"
       }
     ],
     "vocabulary": [
       {
-        "id": "v_1_1",
+        "id": "v1_1",
         "word": "llamar la atención",
         "pos": "短语",
-        "cn": "吸引注意 / 引人注目",
+        "cn": "引起注意 / 吸睛",
         "en": "to catch attention",
-        "example": "Su peinado llamó la atención de todos.",
+        "example": "Su peinado llamó la atención.",
         "example_cn": "她的发型吸引了所有人的目光。",
         "audio": "./assets/audios/vocab_story_1_1.mp3"
       },
       {
-        "id": "v_1_2",
+        "id": "v1_2",
         "word": "el peinado",
         "pos": "m.",
         "cn": "发型",
         "en": "hairstyle",
-        "example": "Me encanta tu peinado retro.",
-        "example_cn": "我非常喜欢你的复古发型。",
+        "example": "Me gusta tu nuevo peinado.",
+        "example_cn": "我喜欢你的新发型。",
         "audio": "./assets/audios/vocab_story_1_2.mp3"
-      },
-      {
-        "id": "v_1_3",
-        "word": "no tardar en",
-        "pos": "短语",
-        "cn": "很快就…… / 毫不迟疑地",
-        "en": "to not hesitate to / be quick to",
-        "example": "No tardaron en responder.",
-        "example_cn": "他们很快做出了回应。",
-        "audio": "./assets/audios/vocab_story_1_3.mp3"
       }
     ],
     "grammar": {
       "title": "现在完成时 vs 简单过去时",
-      "formula": "haber + 过去分词 (ha llegado) vs 简单过去式 (llamó)",
-      "explanation": "在西班牙语中，动作发生在一个尚未结束的时间段内（如 esta mañana 今天早上、hoy 今天），习惯使用现在完成时（ha llegado）；而描述过去明确完成的独立事件，使用简单过去时（llamó）。",
+      "formula": "haber + 过去分词 (ha llegado) vs 简单过去时 (llamó)",
+      "explanation": "在西语中，如果时间段尚未过去（如 esta mañana 今天早上、hoy 今天），习惯使用现在完成时。",
       "sample_es": "Rosalía ha llegado esta mañana a París.",
-      "sample_cn": "罗莎莉亚今晨已抵达巴黎（时间仍是今天）。"
+      "sample_cn": "罗莎莉亚今晨抵达了巴黎。"
     },
     "quiz": {
-      "question": "短语「llamar la atención」在文中表示什么含义？",
+      "question": "短语「llamar la atención」表示什么含义？",
       "options": [
-        "A. 大声呼唤注意",
+        "A. 大声呼唤",
         "B. 引起注意、吸睛",
-        "C. 拨打电话联络"
+        "C. 拨打电话"
       ],
       "correct_index": 1,
-      "explanation": "«llamar la atención» 是极高频动词短语，意为‘引人注目、吸引目光’。"
+      "explanation": "llamar la atención 意为‘引人注目、吸引目光’。"
     },
+    "id": "story_1",
+    "date": "2026-11-06",
     "audio_full_normal": "./assets/audios/story_1_normal.mp3",
     "audio_full_slow": "./assets/audios/story_1_slow.mp3"
   },
   {
-    "id": "story_2",
-    "date": "2026-11-05",
     "tag": "音乐 / 娱乐",
     "title": {
       "es": "Shakira agota las entradas de su gira en tiempo récord",
@@ -105,40 +86,40 @@ const DAILY_STORIES = [
       },
       {
         "id": 2,
-        "es": "Tras el éxito increíble de ventas, su equipo anunció nuevas fechas para satisfacer la gran demanda de los fans.",
-        "en": "Following the incredible sales success, her team announced new dates to meet the huge demand of fans.",
+        "es": "Tras el éxito de ventas, su equipo anunció nuevas fechas para satisfacer la gran demanda de los fans.",
+        "en": "Following the sales success, her team announced new dates to meet the huge demand of fans.",
         "cn": "在惊人的售票成功之后，她的团队宣布加开新场次，以满足粉丝的巨大需求。",
         "audio": "./assets/audios/story_2_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "id": "v_2_1",
+        "id": "v2_1",
         "word": "agotar",
         "pos": "v.",
         "cn": "售罄 / 耗尽",
-        "en": "to sell out / exhaust",
-        "example": "Se agotaron todas las entradas.",
-        "example_cn": "所有的门票都卖光了。",
+        "en": "to sell out",
+        "example": "Se agotaron las entradas.",
+        "example_cn": "门票全卖光了。",
         "audio": "./assets/audios/vocab_story_2_1.mp3"
       },
       {
-        "id": "v_2_2",
+        "id": "v2_2",
         "word": "tras",
         "pos": "prep.",
-        "cn": "在……之后（书面高频）",
-        "en": "after / behind",
+        "cn": "在……之后",
+        "en": "after",
         "example": "Tras el concierto, todos aplaudieron.",
-        "example_cn": "演唱会结束后，所有人都鼓掌了。",
+        "example_cn": "音乐会结束后大家鼓掌。",
         "audio": "./assets/audios/vocab_story_2_2.mp3"
       }
     ],
     "grammar": {
       "title": "介词 tras 的高频用法",
-      "formula": "tras + 名词 / 动词原形 (infinitivo)",
-      "explanation": "tras 相当于 después de，在西语报刊中极其常见，用来引出‘紧接着某个事件之后发生的事情’。",
+      "formula": "tras + 名词 / 动词原形",
+      "explanation": "tras 相当于 después de，在西语报刊中极高频，用来引出紧接在某事之后的动作。",
       "sample_es": "Tras el éxito de ventas, anunció nuevas fechas.",
-      "sample_cn": "在售票大获成功后，她宣布了新巡演日期。"
+      "sample_cn": "在售票大获成功后，她宣布了新日期。"
     },
     "quiz": {
       "question": "动词「agotar」在门票情境下最地道的中文翻译是？",
@@ -148,14 +129,14 @@ const DAILY_STORIES = [
         "C. 售罄 / 抢光"
       ],
       "correct_index": 2,
-      "explanation": "agotar las entradas 是最典型的西语搭配，意为‘门票售罄’。"
+      "explanation": "agotar las entradas 是演唱会和电影场景中最典型的搭配，意为‘门票售罄’。"
     },
+    "id": "story_2",
+    "date": "2026-11-06",
     "audio_full_normal": "./assets/audios/story_2_normal.mp3",
     "audio_full_slow": "./assets/audios/story_2_slow.mp3"
   },
   {
-    "id": "story_3",
-    "date": "2026-11-05",
     "tag": "体育 / 趣闻",
     "title": {
       "es": "Messi compra cereales en Miami y los fans se vuelven locos",
@@ -173,37 +154,37 @@ const DAILY_STORIES = [
       },
       {
         "id": 2,
-        "es": "El astro argentino llevaba una caja de cereales en el carrito y sonrió a todos los que le pidieron una foto.",
-        "en": "The Argentine superstar had a box of cereal in his cart and smiled at everyone who asked for a photo.",
-        "cn": "这位阿根廷巨星购物车里放着一盒麦片，微笑着配合每位上前合影的粉丝。",
+        "es": "El astro argentino llevaba una caja de cereales en el carrito y sonrió a todos con amabilidad.",
+        "en": "The Argentine star had a box of cereal in his cart and smiled at everyone with kindness.",
+        "cn": "这位阿根廷巨星购物车里放着一盒麦片，亲切地对身边的所有人微笑致意。",
         "audio": "./assets/audios/story_3_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "id": "v_3_1",
+        "id": "v3_1",
         "word": "tranquilamente",
         "pos": "adv.",
         "cn": "从容地 / 悠闲地",
-        "en": "calmly / peacefully",
-        "example": "Pasea tranquilamente por el parque.",
-        "example_cn": "他在公园里悠闲地散步。",
+        "en": "calmly",
+        "example": "Pasea tranquilamente.",
+        "example_cn": "他悠闲地散步。",
         "audio": "./assets/audios/vocab_story_3_1.mp3"
       },
       {
-        "id": "v_3_2",
-        "word": "el carrito",
-        "pos": "m.",
-        "cn": "手推车 / 购物车",
-        "en": "shopping cart",
-        "example": "Llenó el carrito de comida.",
-        "example_cn": "他在购物车里装满了食物。",
+        "id": "v3_2",
+        "word": "la amabilidad",
+        "pos": "f.",
+        "cn": "亲切 / 和蔼",
+        "en": "kindness",
+        "example": "Gracias por su amabilidad.",
+        "example_cn": "感谢您的亲切与热心。",
         "audio": "./assets/audios/vocab_story_3_2.mp3"
       }
     ],
     "grammar": {
       "title": "副词后缀 -mente 的构成",
-      "formula": "阴性形容词 + mente (tranquila + mente = tranquilamente)",
+      "formula": "阴性形容词 + mente (tranquila + mente)",
       "explanation": "西语中绝大多数副词由形容词阴性形式加上 -mente 构成，表示动作的方式。",
       "sample_es": "Compraba tranquilamente en el supermercado.",
       "sample_cn": "他在超市里悠闲从容地购物。"
@@ -216,14 +197,14 @@ const DAILY_STORIES = [
         "C. trágico"
       ],
       "correct_index": 1,
-      "explanation": "tranquilo (安静的) 的阴性形式 tranquila + mente 构成 tranquilamente (从容地)。"
+      "explanation": "tranquilo/a + mente 构成副词 tranquilamente。"
     },
+    "id": "story_3",
+    "date": "2026-11-06",
     "audio_full_normal": "./assets/audios/story_3_normal.mp3",
     "audio_full_slow": "./assets/audios/story_3_slow.mp3"
   },
   {
-    "id": "story_4",
-    "date": "2026-11-05",
     "tag": "影视 / 名人",
     "title": {
       "es": "El café de Pedro Pascal se convierte en meme viral",
@@ -249,29 +230,29 @@ const DAILY_STORIES = [
     ],
     "vocabulary": [
       {
-        "id": "v_4_1",
+        "id": "v4_1",
         "word": "bromear",
         "pos": "v.",
         "cn": "开玩笑",
         "en": "to joke",
-        "example": "Solo estoy bromeando contigo.",
-        "example_cn": "我只是在和你开玩笑。",
+        "example": "Solo estoy bromeando.",
+        "example_cn": "我只是在开玩笑。",
         "audio": "./assets/audios/vocab_story_4_1.mp3"
       },
       {
-        "id": "v_4_2",
+        "id": "v4_2",
         "word": "despertar",
         "pos": "v.",
         "cn": "唤醒 / 醒来",
         "en": "to wake up",
-        "example": "La alarma me despertó temprano.",
-        "example_cn": "闹钟很早就把我吵醒了。",
+        "example": "Me desperté temprano.",
+        "example_cn": "我很早就醒了。",
         "audio": "./assets/audios/vocab_story_4_2.mp3"
       }
     ],
     "grammar": {
       "title": "情态动词 poder + 动词原形",
-      "formula": "poder (podría) + infinitivo (despertar)",
+      "formula": "poder (podría) + infinitivo",
       "explanation": "podría 是 poder 的条件式，表示委婉推测‘可能可以……’，后面直接连接动词原形。",
       "sample_es": "Podría despertar a un dinosaurio.",
       "sample_cn": "可能足以叫醒一只恐龙。"
@@ -286,17 +267,17 @@ const DAILY_STORIES = [
       "correct_index": 1,
       "explanation": "broma 是名词玩笑，bromear 是动词‘开玩笑’。"
     },
+    "id": "story_4",
+    "date": "2026-11-06",
     "audio_full_normal": "./assets/audios/story_4_normal.mp3",
     "audio_full_slow": "./assets/audios/story_4_slow.mp3"
   },
   {
-    "id": "story_5",
-    "date": "2026-11-05",
-    "tag": "音乐 / 潮流",
+    "tag": "音乐 / 故乡",
     "title": {
       "es": "Bad Bunny canta en Puerto Rico y emociona a su pueblo",
       "en": "Bad Bunny sings in Puerto Rico and moves his hometown",
-      "cn": "05. 坏痞兔（Bad Bunny）重返波多黎各，真情开唱引泪目！"
+      "cn": "05. 坏痞兔重返波多黎各，真情开唱引泪目！"
     },
     "intro": "全球流媒体之王回到家乡岛屿免费举办露天派对，感谢所有陪伴他成长的故乡人。",
     "sentences": [
@@ -317,30 +298,30 @@ const DAILY_STORIES = [
     ],
     "vocabulary": [
       {
-        "id": "v_5_1",
+        "id": "v5_1",
         "word": "ofrecer",
         "pos": "v.",
-        "cn": "提供 / 呈现 / 举办",
+        "cn": "提供 / 举办",
         "en": "to offer / give",
-        "example": "Ofreció una fiesta para sus amigos.",
-        "example_cn": "他为朋友们举办了一场派对。",
+        "example": "Ofreció una fiesta.",
+        "example_cn": "他举办了一场派对。",
         "audio": "./assets/audios/vocab_story_5_1.mp3"
       },
       {
-        "id": "v_5_2",
+        "id": "v5_2",
         "word": "pertenecer",
         "pos": "v.",
         "cn": "属于",
         "en": "to belong",
-        "example": "Este libro me pertenece.",
-        "example_cn": "这本书属于我。",
+        "example": "Me pertenece.",
+        "example_cn": "这属于我。",
         "audio": "./assets/audios/vocab_story_5_2.mp3"
       }
     ],
     "grammar": {
       "title": "动词 pertenecer a 的固定搭配",
-      "formula": "pertenecer + a + 人或地点 (属于某人或某地)",
-      "explanation": "pertenecer（属于）在西语中属于不规则第一人称动词（yo pertenezco），后面必须搭配介词 a。",
+      "formula": "pertenecer + a + 人或地点",
+      "explanation": "pertenecer（属于）后面必须搭配介词 a。",
       "sample_es": "Mi corazón pertenece a esta tierra.",
       "sample_cn": "我的心属于这片土地。"
     },
@@ -354,12 +335,12 @@ const DAILY_STORIES = [
       "correct_index": 1,
       "explanation": "pertenecer a 意为‘属于……’。"
     },
+    "id": "story_5",
+    "date": "2026-11-06",
     "audio_full_normal": "./assets/audios/story_5_normal.mp3",
     "audio_full_slow": "./assets/audios/story_5_slow.mp3"
   },
   {
-    "id": "story_6",
-    "date": "2026-11-05",
     "tag": "文化 / 节日",
     "title": {
       "es": "La Tomatina de Buñol tiñe las calles de rojo pasión",
@@ -377,38 +358,38 @@ const DAILY_STORIES = [
       },
       {
         "id": 2,
-        "es": "Se lanzaron más de ciento cincuenta toneladas de tomates maduros en apenas una hora de pura diversión.",
-        "en": "Over one hundred and fifty tons of ripe tomatoes were thrown in just one hour of pure fun.",
-        "cn": "在短短一小时的纯粹欢乐中，超过150吨成熟番茄被掷向空中。",
+        "es": "Se lanzaron más de ciento cincuenta toneladas de tomates maduros en apenas una hora de diversión.",
+        "en": "Over one hundred and fifty tons of ripe tomatoes were thrown in just one hour of fun.",
+        "cn": "在短短一小时的狂欢中，超过150吨成熟番茄被掷向空中。",
         "audio": "./assets/audios/story_6_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "id": "v_6_1",
+        "id": "v6_1",
         "word": "lanzar",
         "pos": "v.",
         "cn": "投掷 / 发射",
-        "en": "to throw / launch",
-        "example": "Lanzaron la pelota muy lejos.",
-        "example_cn": "他们把球扔得非常远。",
+        "en": "to throw",
+        "example": "Lanzaron la pelota.",
+        "example_cn": "他们扔了球。",
         "audio": "./assets/audios/vocab_story_6_1.mp3"
       },
       {
-        "id": "v_6_2",
+        "id": "v6_2",
         "word": "maduro/a",
         "pos": "adj.",
-        "cn": "成熟的（水果或人）",
+        "cn": "成熟的",
         "en": "ripe / mature",
-        "example": "Los plátanos están maduros.",
-        "example_cn": "香蕉已经熟了。",
+        "example": "El tomate está maduro.",
+        "example_cn": "西红柿熟了。",
         "audio": "./assets/audios/vocab_story_6_2.mp3"
       }
     ],
     "grammar": {
       "title": "自复被动句 (Pasiva Refleja)",
-      "formula": "se + 第三人称动词 (se lanzaron toneladas)",
-      "explanation": "在西语新闻中，当动作执行者不明确或不重要时，常用 se + 复数动词表示‘被做某事’，如 se lanzaron 表示‘被投掷’。",
+      "formula": "se + 复数动词 (se lanzaron toneladas)",
+      "explanation": "西语中常用 se + 动词表示‘某物被做……’，动作执行者省略。",
       "sample_es": "Se lanzaron muchos tomates.",
       "sample_cn": "许多番茄被掷了出去。"
     },
@@ -420,14 +401,14 @@ const DAILY_STORIES = [
         "C. 成熟的"
       ],
       "correct_index": 2,
-      "explanation": "maduro/a 表示水果已成熟可食用；形容人时表示‘成熟沉稳’。"
+      "explanation": "maduro 表示成熟。"
     },
+    "id": "story_6",
+    "date": "2026-11-06",
     "audio_full_normal": "./assets/audios/story_6_normal.mp3",
     "audio_full_slow": "./assets/audios/story_6_slow.mp3"
   },
   {
-    "id": "story_7",
-    "date": "2026-11-05",
     "tag": "电影 / 明星",
     "title": {
       "es": "Penélope Cruz y Javier Bardem deslumbran en la alfombra roja",
@@ -453,23 +434,23 @@ const DAILY_STORIES = [
     ],
     "vocabulary": [
       {
-        "id": "v_7_1",
+        "id": "v7_1",
         "word": "brillar",
         "pos": "v.",
-        "cn": "发光 / 闪耀 / 出众",
-        "en": "to shine / sparkle",
-        "example": "Las estrellas brillan en la noche.",
-        "example_cn": "星星在夜空中闪烁。",
+        "cn": "闪耀 / 出众",
+        "en": "to shine",
+        "example": "Las estrellas brillan.",
+        "example_cn": "星星闪闪发光。",
         "audio": "./assets/audios/vocab_story_7_1.mp3"
       },
       {
-        "id": "v_7_2",
+        "id": "v7_2",
         "word": "la mirada",
         "pos": "f.",
         "cn": "眼神 / 目光",
         "en": "look / gaze",
-        "example": "Tiene una mirada muy dulce.",
-        "example_cn": "她的眼神非常温柔。",
+        "example": "Una mirada dulce.",
+        "example_cn": "温柔的目光。",
         "audio": "./assets/audios/vocab_story_7_2.mp3"
       }
     ],
@@ -490,17 +471,17 @@ const DAILY_STORIES = [
       "correct_index": 1,
       "explanation": "mirar 是看，la mirada 是其衍生名词‘目光、眼神’。"
     },
+    "id": "story_7",
+    "date": "2026-11-06",
     "audio_full_normal": "./assets/audios/story_7_normal.mp3",
     "audio_full_slow": "./assets/audios/story_7_slow.mp3"
   },
   {
-    "id": "story_8",
-    "date": "2026-11-05",
     "tag": "生活 / 健康",
     "title": {
       "es": "La ciencia confirma que la siesta española mejora la memoria",
       "en": "Science confirms that the Spanish siesta improves memory",
-      "cn": "08. 科学实锤：西班牙午睡（Siesta）真能大幅提升记忆力！"
+      "cn": "08. 科学实锤：西班牙午睡真能大幅提升记忆力！"
     },
     "intro": "最新神经学研究表明，午饭后20分钟的西式小憩能让大脑工作效率翻倍。",
     "sentences": [
@@ -521,32 +502,32 @@ const DAILY_STORIES = [
     ],
     "vocabulary": [
       {
-        "id": "v_8_1",
+        "id": "v8_1",
         "word": "la costumbre",
         "pos": "f.",
         "cn": "习惯 / 风俗",
         "en": "custom / habit",
-        "example": "Es una costumbre muy antigua.",
-        "example_cn": "这是一项非常古老的习俗。",
+        "example": "Es una costumbre antigua.",
+        "example_cn": "这是个古老习俗。",
         "audio": "./assets/audios/vocab_story_8_1.mp3"
       },
       {
-        "id": "v_8_2",
+        "id": "v8_2",
         "word": "recomendar",
         "pos": "v.",
         "cn": "推荐 / 建议",
         "en": "to recommend",
-        "example": "Te recomiendo este restaurante.",
-        "example_cn": "我向你推荐这家餐厅。",
+        "example": "Te recomiendo este libro.",
+        "example_cn": "我向你推荐这本书。",
         "audio": "./assets/audios/vocab_story_8_2.mp3"
       }
     ],
     "grammar": {
-      "title": "动名词结构作主语 (Dormir la siesta...)",
+      "title": "动词原形作主语 (Dormir la siesta...)",
       "formula": "动词原形 (infinitivo) + 谓语单数动词",
-      "explanation": "在西语中，直接用动词原形作主语（如 dormir una siesta），动词视为阳性单数，相当于英语的 Gerund。",
-      "sample_es": "Dormir bien es importante para la salud.",
-      "sample_cn": "睡好觉对健康很重要。"
+      "explanation": "在西语中，直接用动词原形作主语（如 dormir una siesta），动词视为阳性单数。",
+      "sample_es": "Dormir bien es importante.",
+      "sample_cn": "睡好觉很重要。"
     },
     "quiz": {
       "question": "动词「recomendar」是变位鞋子动词，它的现在时第一人称是？",
@@ -556,19 +537,19 @@ const DAILY_STORIES = [
         "C. yo recomiende"
       ],
       "correct_index": 1,
-      "explanation": "recomendar 发生 e -> ie 变位：yo recomiendo, tú recomiendas。"
+      "explanation": "recomendar 发生 e -> ie 变位：yo recomiendo。"
     },
+    "id": "story_8",
+    "date": "2026-11-06",
     "audio_full_normal": "./assets/audios/story_8_normal.mp3",
     "audio_full_slow": "./assets/audios/story_8_slow.mp3"
   },
   {
-    "id": "story_9",
-    "date": "2026-11-05",
     "tag": "美食 / 旅行",
     "title": {
       "es": "Churros con chocolate: la dulce tradición nocturna de Madrid",
       "en": "Churros with chocolate: Madrid's sweet nocturnal tradition",
-      "cn": "09. 西班牙小油条（Churros）配浓热巧：马德里不夜城的甜美灵魂！"
+      "cn": "09. 西班牙小油条配浓热巧：马德里不夜城的甜美灵魂！"
     },
     "intro": "深夜造访百年老字号圣希内斯，蘸满浓郁黑巧的小油条温暖无数旅人的胃。",
     "sentences": [
@@ -589,29 +570,29 @@ const DAILY_STORIES = [
     ],
     "vocabulary": [
       {
-        "id": "v_9_1",
+        "id": "v9_1",
         "word": "crujiente",
         "pos": "adj.",
-        "cn": "酥脆的 / 爽脆的",
-        "en": "crispy / crunchy",
-        "example": "El pan está muy crujiente.",
-        "example_cn": "这面包非常香脆。",
+        "cn": "酥脆的",
+        "en": "crispy",
+        "example": "Pan muy crujiente.",
+        "example_cn": "非常酥脆的面包。",
         "audio": "./assets/audios/vocab_story_9_1.mp3"
       },
       {
-        "id": "v_9_2",
+        "id": "v9_2",
         "word": "perderse",
-        "pos": "v. 自复",
-        "cn": "错过（美好事物）/ 迷路",
-        "en": "to miss out on / get lost",
-        "example": "No te pierdas esta película.",
-        "example_cn": "你可千万不要错过这部电影。",
+        "pos": "v.",
+        "cn": "错过 / 迷路",
+        "en": "to miss out",
+        "example": "No te lo pierdas.",
+        "example_cn": "别错过它。",
         "audio": "./assets/audios/vocab_story_9_2.mp3"
       }
     ],
     "grammar": {
       "title": "debería + infinitivo 委婉建议",
-      "formula": "debería (deber条件式) + 动词原形 (perderse)",
+      "formula": "debería (deber条件式) + 动词原形",
       "explanation": "debería 表示‘应当、最好……’，比 direct 的 debe 更加委婉、礼貌。",
       "sample_es": "Nadie debería perderse esta oportunidad.",
       "sample_cn": "任何人都不该错过这个机会。"
@@ -624,14 +605,14 @@ const DAILY_STORIES = [
         "C. 软绵的"
       ],
       "correct_index": 1,
-      "explanation": "crujiente 专指烤得或炸得嘎嘣脆的口感。"
+      "explanation": "crujiente 专指酥脆的口感。"
     },
+    "id": "story_9",
+    "date": "2026-11-06",
     "audio_full_normal": "./assets/audios/story_9_normal.mp3",
     "audio_full_slow": "./assets/audios/story_9_slow.mp3"
   },
   {
-    "id": "story_10",
-    "date": "2026-11-05",
     "tag": "艺术 / 音乐",
     "title": {
       "es": "Una joven bailaora de flamenco conquista internet en Sevilla",
@@ -657,17 +638,17 @@ const DAILY_STORIES = [
     ],
     "vocabulary": [
       {
-        "id": "v_10_1",
+        "id": "v10_1",
         "word": "conmover",
         "pos": "v.",
-        "cn": "打动 / 使感动",
-        "en": "to move / touch emotionally",
+        "cn": "打动 / 感动",
+        "en": "to move emotionally",
         "example": "La historia conmovió a todos.",
-        "example_cn": "这个故事打动了所有人。",
+        "example_cn": "故事打动了所有人。",
         "audio": "./assets/audios/vocab_story_10_1.mp3"
       },
       {
-        "id": "v_10_2",
+        "id": "v10_2",
         "word": "la pasión",
         "pos": "f.",
         "cn": "激情 / 热情",
@@ -679,7 +660,7 @@ const DAILY_STORIES = [
     ],
     "grammar": {
       "title": "tanto/a... que... 结果状语从句",
-      "formula": "con tanta + 名词 + que + 句子 (如此多的……以至于……)",
+      "formula": "con tanta + 名词 + que + 句子",
       "explanation": "tanta pasión que... 表示程度之深，直接引出结果从句，修饰阴性名词 pasión 用 tanta。",
       "sample_es": "Habló con tanta fuerza que todos escucharon.",
       "sample_cn": "他说话如此有力，以至于全场都在聆听。"
@@ -694,6 +675,8 @@ const DAILY_STORIES = [
       "correct_index": 0,
       "explanation": "conmover 变位为 yo conmuevo, él/ella conmueve。"
     },
+    "id": "story_10",
+    "date": "2026-11-06",
     "audio_full_normal": "./assets/audios/story_10_normal.mp3",
     "audio_full_slow": "./assets/audios/story_10_slow.mp3"
   }
