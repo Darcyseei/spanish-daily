@@ -4,7 +4,7 @@ on:
   schedule:
     # 每天北京时间早晨 07:00 (UTC 23:00) 自动触发
     - cron: '0 23 * * *'
-  workflow_dispatch: # 支持手动点击随时测试更新
+  workflow_dispatch: # 支持在 GitHub 网页上随时点击按钮立即手动更新
 
 permissions:
   contents: write
@@ -27,6 +27,8 @@ jobs:
           pip install edge-tts
 
       - name: Generate Today's Spanish Stories & Audios
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python scripts/daily_updater.py
 
