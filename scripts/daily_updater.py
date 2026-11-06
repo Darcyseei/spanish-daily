@@ -1,19 +1,20 @@
 # -*- coding: utf-8 -*-
 """
 GitHub Actions 专用：每日定时自动生成 10 篇三语西语早报与母语级 Edge-TTS 音频
+完全自包含，无任何本地硬编码路径，兼容 Linux / Windows / GitHub Actions
 """
 import asyncio
 import datetime
 import json
 import os
-import random
 import edge_tts
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AUDIOS_DIR = os.path.join(BASE_DIR, "assets", "audios")
+DATA_DIR = os.path.join(BASE_DIR, "data")
 os.makedirs(AUDIOS_DIR, exist_ok=True)
+os.makedirs(DATA_DIR, exist_ok=True)
 
-# 丰富的多主题内容语料库池（按日期轮转生成，涵盖语法、时事八卦与文化）
 TOPICS_POOL = [
     {
         "tag": "八卦 / 潮流",
@@ -453,9 +454,14 @@ async def main():
 
         stories.append(story)
 
-    # 导出到 build_pages 重新打包
+    # 1. 保存 data/daily_data.js
+    js_content = f"// 每日 10 篇西语早报数据包\nconst DAILY_STORIES = {json.dumps(stories, ensure_ascii=False, indent=2)};\n\nmodule.exports = {{\n  DAILY_STORIES\n}};\n"
+    with open(os.path.join(DATA_DIR, "daily_data.js"), "w", encoding="utf-8") as f:
+        f.write(js_content)
+
+    # 2. 调用 build_pages 自动编译 root index.html
     import build_pages
-    print("重新生成 index.html 与 GitHub Pages 资源包...")
+    print("正在重新编译 index.html 与 GitHub Pages 资源包...")
     html_content = build_pages.generate_html(is_root=True)
     with open(os.path.join(BASE_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(html_content)

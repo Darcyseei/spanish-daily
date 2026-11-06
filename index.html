@@ -221,7 +221,6 @@
     }
     .player-title { font-size: 13px; font-weight: 700; color: var(--text-main); }
 
-    /* 3段语速选择器 */
     .speed-group {
       display: flex;
       align-items: center;
@@ -317,10 +316,12 @@
       margin: 22px 0 10px 4px;
     }
 
+    /* 逐句卡片 */
     .sentence-card {
       cursor: pointer;
       border: 2px solid transparent;
       transition: all 0.2s;
+      user-select: text;
     }
     .sentence-card.active {
       border-color: var(--primary);
@@ -346,6 +347,7 @@
     .sentence-en { font-size: 13px; color: var(--text-muted); margin-bottom: 4px; }
     .sentence-cn { font-size: 13px; color: #334155; }
 
+    /* 词汇 */
     .vocab-card { margin-bottom: 10px; }
     .vocab-header {
       display: flex;
@@ -390,6 +392,7 @@
     .example-es { font-size: 12px; color: #334155; font-style: italic; }
     .example-cn { font-size: 12px; color: var(--text-muted); }
 
+    /* 语法卡片 */
     .grammar-card {
       background: linear-gradient(135deg, #FAF5FF 0%, #FFFFFF 100%);
       border: 1px solid #E9D5FF;
@@ -403,6 +406,7 @@
     .sample-es { font-size: 13px; font-weight: 700; color: #581C87; }
     .sample-cn { font-size: 12px; color: #6B21A8; }
 
+    /* 小测 */
     .quiz-card { background: #FFFFFF; }
     .quiz-q { font-size: 14px; font-weight: 700; margin-bottom: 12px; }
     .quiz-options { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
@@ -430,6 +434,121 @@
       cursor: pointer;
     }
     .checkedin-tag { text-align: center; padding: 10px; background: #ECFDF5; color: #059669; font-weight: 700; font-size: 13px; border-radius: 10px; }
+
+    /* 划词翻译悬浮气泡 */
+    .selection-tooltip {
+      position: absolute;
+      background: #FFFFFF;
+      color: #0F172A;
+      border-radius: 16px;
+      padding: 14px 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18), 0 2px 6px rgba(0, 0, 0, 0.08);
+      border: 1px solid #E2E8F0;
+      z-index: 1000;
+      max-width: 280px;
+      display: none;
+      transform: translate(-50%, -100%);
+      margin-top: -12px;
+      animation: tooltipPop 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes tooltipPop {
+      0% { opacity: 0; transform: translate(-50%, -90%) scale(0.92); }
+      100% { opacity: 1; transform: translate(-50%, -100%) scale(1); }
+    }
+    .selection-tooltip::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 50%;
+      transform: translateX(-50%) rotate(45deg);
+      width: 12px;
+      height: 12px;
+      background: #FFFFFF;
+      border-right: 1px solid #E2E8F0;
+      border-bottom: 1px solid #E2E8F0;
+    }
+    .tooltip-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    .tooltip-word {
+      font-size: 16px;
+      font-weight: 800;
+      color: #E11D48;
+      max-width: 180px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .tooltip-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .tooltip-voice-btn {
+      background: #FFE4E6;
+      border: none;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .tooltip-close {
+      background: transparent;
+      border: none;
+      color: #94A3B8;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 0 4px;
+    }
+    .tooltip-meaning {
+      font-size: 14px;
+      font-weight: 700;
+      color: #1E293B;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    .tooltip-loading {
+      font-size: 12px;
+      color: #64748B;
+      margin-bottom: 8px;
+    }
+    .tooltip-add-btn {
+      width: 100%;
+      background: #F1F5F9;
+      border: none;
+      border-radius: 999px;
+      padding: 6px 0;
+      font-size: 12px;
+      font-weight: 700;
+      color: #334155;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tooltip-add-btn.saved {
+      background: #FEF3C7;
+      color: #D97706;
+    }
+
+    /* 划词小提示浮窗 */
+    .lookup-tip-banner {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: #F0FDF4;
+      border: 1px solid #BBF7D0;
+      padding: 6px 12px;
+      border-radius: 10px;
+      font-size: 11px;
+      color: #166534;
+      margin-bottom: 12px;
+    }
 
     .vocab-page-hero {
       background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
@@ -491,7 +610,20 @@
 </head>
 <body>
 
-<div class="mobile-wrapper">
+<div class="mobile-wrapper" id="appWrapper">
+
+  <!-- 划词翻译悬浮卡片 -->
+  <div class="selection-tooltip" id="selectionTooltip">
+    <div class="tooltip-header">
+      <span class="tooltip-word" id="tooltipWord">palabra</span>
+      <div class="tooltip-actions">
+        <button class="tooltip-voice-btn" onclick="speakLookupWord()" title="播放发音">🔊</button>
+        <button class="tooltip-close" onclick="closeTooltip()">✕</button>
+      </div>
+    </div>
+    <div class="tooltip-meaning" id="tooltipMeaning">查词中...</div>
+    <button class="tooltip-add-btn" id="tooltipAddBtn" onclick="toggleSaveLookupWord()">☆ 存入生词本</button>
+  </div>
 
   <header class="app-header">
     <h1>¡Hola! 西语每日 10 篇早报 <span class="badge-count">10 篇全</span></h1>
@@ -505,6 +637,12 @@
     <!-- TAB 1: 每日早报 -->
     <div id="tabFeed">
       
+      <!-- 划词功能提示条 -->
+      <div class="lookup-tip-banner">
+        <span>💡</span>
+        <span><b>划词翻译已就绪</b>：在文章中鼠标选中或长按任意单词，立即看释义、听发音、存入生词本！</span>
+      </div>
+
       <!-- 10篇切页控制器 -->
       <div class="nav-bar-10">
         <button class="nav-btn" onclick="prevStory()">‹ 上一篇</button>
@@ -536,7 +674,6 @@
           <div class="player-details">
             <div class="player-header">
               <span class="player-title" id="playerStatusText">母语者朗读全篇</span>
-              <!-- 3段语速选择按钮 -->
               <div class="speed-group">
                 <span class="speed-label">语速:</span>
                 <div class="speed-pills">
@@ -671,9 +808,10 @@ const STORIES_DATA = [{"id": "story_1", "date": "2026-11-05", "tag": "八卦 / �
 let currentIndex = 0;
 let currentStory = STORIES_DATA[0];
 let displayMode = 'all';
-let currentSpeed = 1.0; // 0.75 | 1.0 | 1.25
+let currentSpeed = 1.0;
 let isMemoryFlashcard = false;
 let selectedQuizOpt = null;
+let currentLookupWord = null;
 
 const fullAudio = new Audio();
 const singleAudio = new Audio();
@@ -697,6 +835,7 @@ function init() {
   loadStory(currentIndex);
   updateStreakUI();
   setupAudioListeners();
+  setupSelectionTranslation();
 }
 
 function updateStreakUI() {
@@ -764,7 +903,7 @@ function loadStory(idx) {
 function renderSentences() {
   const c = document.getElementById('sentencesContainer');
   c.innerHTML = currentStory.sentences.map(s => `
-    <div class="card sentence-card" id="sent_${s.id}" onclick="playSentence(${s.id}, '${s.audio}')">
+    <div class="card sentence-card" id="sent_${s.id}" onclick="onSentenceCardClick(event, ${s.id}, '${s.audio}')">
       <div class="sentence-header">
         <span class="sentence-num">${s.id < 10 ? '0' + s.id : s.id}</span>
         <span class="sentence-play-tag">🔈 点此朗读</span>
@@ -774,6 +913,13 @@ function renderSentences() {
       ${displayMode !== 'es_only' ? `<div class="sentence-cn">${s.cn}</div>` : ''}
     </div>
   `).join('');
+}
+
+function onSentenceCardClick(e, id, audio) {
+  // 如果用户正在划词选择文本，不触发整句播放
+  const sel = window.getSelection().toString().trim();
+  if (sel && sel.length > 0) return;
+  playSentence(id, audio);
 }
 
 function renderVocabulary() {
@@ -887,7 +1033,6 @@ function togglePlayFull() {
   }
 }
 
-// 3 档语速切换函数 (0.75x, 1.0x, 1.25x)
 function setSpeed(speed) {
   currentSpeed = speed;
   fullAudio.playbackRate = speed;
@@ -963,6 +1108,155 @@ function formatTime(s) {
   return `${m < 10 ? '0' + m : m}:${sec < 10 ? '0' + sec : sec}`;
 }
 
+/* ================= 划词翻译引擎 (Selection Translation) ================= */
+function setupSelectionTranslation() {
+  const tooltip = document.getElementById('selectionTooltip');
+
+  // 监听鼠标划选 / 移动端划词
+  const handleSelection = async (e) => {
+    const selection = window.getSelection();
+    let text = selection ? selection.toString().trim() : '';
+
+    // 清理两边标点符号 (如 ¡ ¿ " . ,)
+    text = text.replace(/^[¡¿"'«\(\[\s]+|[!?"'»\)\]\.,;\:\s]+$/g, '');
+
+    // 选中文本在 1 到 40 个字符之间
+    if (text.length >= 1 && text.length <= 40) {
+      const range = selection.getRangeAt(0);
+      const rect = range.getBoundingClientRect();
+      const wrapperRect = document.getElementById('appWrapper').getBoundingClientRect();
+
+      // 计算相对于移动端外壳的位置
+      let top = rect.top - wrapperRect.top + window.scrollY;
+      let left = rect.left - wrapperRect.left + (rect.width / 2);
+
+      // 防止溢出左右边界
+      left = Math.max(140, Math.min(wrapperRect.width - 140, left));
+
+      tooltip.style.top = top + 'px';
+      tooltip.style.left = left + 'px';
+      tooltip.style.display = 'block';
+
+      document.getElementById('tooltipWord').textContent = text;
+      document.getElementById('tooltipMeaning').textContent = '🔍 正在翻译...';
+      
+      const isSaved = myVocab.some(v => v.word.toLowerCase() === text.toLowerCase());
+      const addBtn = document.getElementById('tooltipAddBtn');
+      addBtn.textContent = isSaved ? '★ 已在生词本' : '☆ 存入生词本';
+      addBtn.className = 'tooltip-add-btn' + (isSaved ? ' saved' : '');
+
+      currentLookupWord = { word: text, cn: '', pos: '单词' };
+
+      // 执行翻译查询
+      const result = await fetchTranslation(text);
+      document.getElementById('tooltipMeaning').textContent = result.cn || '未查到释义';
+      currentLookupWord.cn = result.cn;
+    }
+  };
+
+  document.addEventListener('mouseup', handleSelection);
+  document.addEventListener('touchend', (e) => {
+    setTimeout(handleSelection, 200);
+  });
+
+  // 点击其他区域关闭悬浮窗
+  document.addEventListener('mousedown', (e) => {
+    if (!tooltip.contains(e.target)) {
+      closeTooltip();
+    }
+  });
+}
+
+function closeTooltip() {
+  document.getElementById('selectionTooltip').style.display = 'none';
+}
+
+// 智能翻译查询（先查 10 篇词库，再查在线翻译）
+async function fetchTranslation(word) {
+  const lower = word.toLowerCase();
+  
+  // 1. 本地内置词库匹配
+  for (let s of STORIES_DATA) {
+    for (let v of s.vocabulary) {
+      if (v.word.toLowerCase() === lower || lower.includes(v.word.toLowerCase())) {
+        return { cn: v.cn };
+      }
+    }
+  }
+
+  // 2. 尝试在线免费翻译接口 MyMemory
+  try {
+    const res = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=es|zh-CN`);
+    const data = await res.json();
+    if (data && data.responseData && data.responseData.translatedText) {
+      return { cn: data.responseData.translatedText };
+    }
+  } catch (e) {}
+
+  // 3. 备用翻译接口 Google GTX
+  try {
+    const res2 = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl=zh-CN&dt=t&q=${encodeURIComponent(word)}`);
+    const data2 = await res2.json();
+    if (data2 && data2[0] && data2[0][0] && data2[0][0][0]) {
+      return { cn: data2[0][0][0] };
+    }
+  } catch (e2) {}
+
+  return { cn: '网络查询超时' };
+}
+
+// 划词母语朗读
+function speakLookupWord() {
+  if (!currentLookupWord || !currentLookupWord.word) return;
+  const word = currentLookupWord.word;
+
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(word);
+    u.lang = 'es-ES';
+    u.rate = currentSpeed || 1.0;
+    window.speechSynthesis.speak(u);
+  } else {
+    // 备用：单句播放器
+    singleAudio.src = `https://dict.youdao.com/dictvoice?audio=${encodeURIComponent(word)}&type=2`;
+    singleAudio.play();
+  }
+}
+
+// 划词一键加入生词本
+function toggleSaveLookupWord() {
+  if (!currentLookupWord || !currentLookupWord.word) return;
+  const word = currentLookupWord.word;
+  const cn = currentLookupWord.cn || '自定义生词';
+
+  const idx = myVocab.findIndex(w => w.word.toLowerCase() === word.toLowerCase());
+  const addBtn = document.getElementById('tooltipAddBtn');
+
+  if (idx > -1) {
+    myVocab.splice(idx, 1);
+    addBtn.textContent = '☆ 存入生词本';
+    addBtn.className = 'tooltip-add-btn';
+    alert(`已从生词本移除「${word}」`);
+  } else {
+    myVocab.unshift({
+      id: 'lookup_' + Date.now(),
+      word: word,
+      pos: '生词',
+      cn: cn,
+      en: '',
+      example: '',
+      example_cn: '',
+      audio: '',
+      mastered: false,
+      addTime: '划词收藏'
+    });
+    addBtn.textContent = '★ 已在生词本';
+    addBtn.className = 'tooltip-add-btn saved';
+    alert(`⭐ 成功将「${word}」(${cn}) 存入生词本！`);
+  }
+  setStorage('my_vocab_web', myVocab);
+}
+
 function toggleSaveWord(word) {
   const idx = myVocab.findIndex(w => w.word === word);
   if (idx > -1) {
@@ -1008,11 +1302,13 @@ function renderVocabPage() {
 
 function onSearchVocab(q) {
   q = (q || '').trim().toLowerCase();
-  const filtered = myVocab.filter(v => v.word.toLowerCase().includes(q) || v.cn.toLowerCase().includes(q) || v.en.toLowerCase().includes(q));
+  const filtered = myVocab.filter(v => {
+    return v.word.toLowerCase().includes(q) || (v.cn && v.cn.toLowerCase().includes(q)) || (v.en && v.en.toLowerCase().includes(q));
+  });
 
   const c = document.getElementById('savedVocabList');
   if (filtered.length === 0) {
-    c.innerHTML = `<div style="text-align: center; padding: 40px; color: #94A3B8;">暂无生词，快去每日早报中收藏吧！</div>`;
+    c.innerHTML = `<div style="text-align: center; padding: 40px; color: #94A3B8;">暂无生词，快去文章中划词或点击收藏吧！</div>`;
     return;
   }
 
@@ -1021,17 +1317,17 @@ function onSearchVocab(q) {
       <div class="vocab-header">
         <div class="vocab-left">
           <span class="vocab-word">${v.word}</span>
-          <span class="badge badge-amber">${v.pos}</span>
-          <button class="audio-icon-btn" onclick="event.stopPropagation(); playSingleAudio('${v.audio}')">🔊</button>
+          <span class="badge badge-amber">${v.pos || '词'}</span>
+          <button class="audio-icon-btn" onclick="event.stopPropagation(); playVocabSpeech('${v.word}', '${v.audio || ''}')">🔊</button>
         </div>
         <span class="badge ${v.mastered ? 'badge-green' : 'badge-rose'}">${v.mastered ? '已掌握' : '待复习'}</span>
       </div>
       <div class="vocab-meaning" id="vocab_meaning_${v.id}">
         <div class="meaning-cn">🇨🇳 ${v.cn}</div>
-        <div class="meaning-en">🇬🇧 ${v.en}</div>
+        ${v.en ? `<div class="meaning-en">🇬🇧 ${v.en}</div>` : ''}
       </div>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px;">
-        <span style="font-size: 11px; color: #94A3B8;">例：${v.example}</span>
+        <span style="font-size: 11px; color: #94A3B8;">${v.addTime || '生词'}</span>
         <button class="save-btn" onclick="event.stopPropagation(); toggleMasteredWord('${v.word}')">
           ${v.mastered ? '重回复习' : '标为掌握'}
         </button>
@@ -1044,6 +1340,24 @@ function onSearchVocab(q) {
       const el = document.getElementById('vocab_meaning_' + v.id);
       if (el) el.style.display = 'none';
     });
+  }
+}
+
+function playVocabSpeech(word, audioSrc) {
+  if (audioSrc) {
+    playSingleAudio(audioSrc);
+  } else {
+    speakLookupWordText(word);
+  }
+}
+
+function speakLookupWordText(word) {
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(word);
+    u.lang = 'es-ES';
+    u.rate = currentSpeed || 1.0;
+    window.speechSynthesis.speak(u);
   }
 }
 
