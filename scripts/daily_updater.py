@@ -432,8 +432,14 @@ async def generate_speech(text: str, filename: str, rate: str = "+0%"):
     print(f"  [TTS] {filename}")
 
 def fetch_gemini_stories(today_str: str, api_key: str):
-    """通过 Google Gemini 1.5 Flash 免费模型实时生成当天 10 篇三语西语热点早报"""
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}"
+    """通过 Google Gemini 免费模型实时生成当天 10 篇三语西语热点早报"""
+    candidate_models = [
+        "gemini-2.5-flash",
+        "gemini-2.0-flash",
+        "gemini-1.5-flash",
+        "gemini-1.5-flash-latest",
+        "gemini-2.0-flash-exp"
+    ]
     
     prompt = f"""
 Eres un redactor y profesor experto de español para estudiantes extranjeros.
@@ -507,46 +513,56 @@ El esquema de cada objeto DEBE ser:
             "temperature": 0.7
         }
     }
-    
-    req = urllib.request.Request(
-        url,
-        data=json.dumps(body).encode("utf-8"),
-        headers={"Content-Type": "application/json"},
-        method="POST"
-    )
-    
-    with urllib.request.urlopen(req, timeout=45) as resp:
-        res_data = json.loads(resp.read().decode("utf-8"))
-        raw_text = res_data["candidates"][0]["content"]["parts"][0]["text"].strip()
-        
-        if raw_text.startswith("```"):
-            raw_text = raw_text.split("\n", 1)[1]
-            if raw_text.endswith("```"):
-                raw_text = raw_text.rsplit("\n", 1)[0]
-        
-        parsed = json.loads(raw_text)
-        stories = parsed if isinstance(parsed, list) else parsed.get("stories", [])
-        
-        if len(stories) < 10:
-            raise ValueError(f"Gemini 返回故事数量不足 10 篇 (仅返回 {len(stories)} 篇)")
-            
-        valid_stories = []
-        for i, s in enumerate(stories[:10], 1):
-            s_dict = dict(s)
-            s_dict["id"] = f"story_{i}"
-            s_dict["date"] = today_str
-            if "quiz" not in s_dict or not isinstance(s_dict["quiz"], dict):
-                v_word = s_dict.get("vocabulary", [{}])[0].get("word", "este término")
-                v_cn = s_dict.get("vocabulary", [{}])[0].get("cn", "该词含义")
-                s_dict["quiz"] = {
-                    "question": f"西语单词「{v_word}」的中文含义是？",
-                    "options": [f"A. {v_cn}", "B. 另一个意思", "C. 错误含义"],
-                    "correct_index": 0,
-                    "explanation": f"「{v_word}」的意思是：{v_cn}。"
-                }
-            valid_stories.append(s_dict)
-            
-        return valid_stories
+    data_bytes = json.dumps(body).encode("utf-8")
+
+    last_error = None
+    for model_name in candidate_models:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
+        headers = {
+            "Content-Type": "application/json",
+            "x-goog-api-key": api_key,
+            "User-Agent": "Mozilla/5.0"
+        }
+        req = urllib.request.Request(url, data=data_bytes, headers=headers, method="POST")
+        try:
+            print(f"正在尝试调用 Google Gemini 模型: {model_name} ...")
+            with urllib.request.urlopen(req, timeout=45) as resp:
+                res_data = json.loads(resp.read().decode("utf-8"))
+                raw_text = res_data["candidates"][0]["content"]["parts"][0]["text"].strip()
+                
+                if raw_text.startswith("```"):
+                    raw_text = raw_text.split("\n", 1)[1]
+                    if raw_text.endswith("```"):
+                        raw_text = raw_text.rsplit("\n", 1)[0]
+                
+                parsed = json.loads(raw_text)
+                stories = parsed if isinstance(parsed, list) else parsed.get("stories", [])
+                
+                if len(stories) < 10:
+                    raise ValueError(f"Gemini 返回故事数量不足 10 篇 (仅返回 {len(stories)} 篇)")
+                    
+                valid_stories = []
+                for i, s in enumerate(stories[:10], 1):
+                    s_dict = dict(s)
+                    s_dict["id"] = f"story_{i}"
+                    s_dict["date"] = today_str
+                    if "quiz" not in s_dict or not isinstance(s_dict["quiz"], dict):
+                        v_word = s_dict.get("vocabulary", [{}])[0].get("word", "este término")
+                        v_cn = s_dict.get("vocabulary", [{}])[0].get("cn", "该词含义")
+                        s_dict["quiz"] = {
+                            "question": f"西语单词「{v_word}」的中文含义是？",
+                            "options": [f"A. {v_cn}", "B. 另一个意思", "C. 错误含义"],
+                            "correct_index": 0,
+                            "explanation": f"「{v_word}」的意思是：{v_cn}。"
+                        }
+                    valid_stories.append(s_dict)
+                print(f"✓ 模型 {model_name} 调用成功！")
+                return valid_stories
+        except Exception as e:
+            print(f"  模型 {model_name} 暂不可用: {e}")
+            last_error = e
+
+    raise last_error or RuntimeError("所有 Gemini 候选模型均调用失败")
 
 def get_fallback_stories(today_str: str):
     """备用故事库：当未配置 API Key 或网络请求受限时无缝保底"""
