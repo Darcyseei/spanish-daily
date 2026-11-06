@@ -432,13 +432,12 @@ async def generate_speech(text: str, filename: str, rate: str = "+0%"):
     print(f"  [TTS] {filename}")
 
 def fetch_gemini_stories(today_str: str, api_key: str):
-    """通过 Google Gemini 免费模型实时生成当天 10 篇三语西语热点早报"""
+    """通过 Google 官方生成的标准 gemini-flash-latest 模型实时生成当天 10 篇三语西语热点早报"""
     candidate_models = [
+        "gemini-flash-latest",
         "gemini-2.5-flash",
         "gemini-2.0-flash",
-        "gemini-1.5-flash",
-        "gemini-1.5-flash-latest",
-        "gemini-2.0-flash-exp"
+        "gemini-1.5-flash"
     ]
     
     prompt = f"""
@@ -517,10 +516,10 @@ El esquema de cada objeto DEBE ser:
 
     last_error = None
     for model_name in candidate_models:
-        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent"
         headers = {
             "Content-Type": "application/json",
-            "x-goog-api-key": api_key,
+            "X-goog-api-key": api_key.strip(),
             "User-Agent": "Mozilla/5.0"
         }
         req = urllib.request.Request(url, data=data_bytes, headers=headers, method="POST")
