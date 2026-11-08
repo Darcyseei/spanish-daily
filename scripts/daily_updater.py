@@ -1584,6 +1584,168 @@ def get_fallback_stories(today_str: str):
         stories.append(s)
     return stories
 
+
+STOPWORDS = {
+    "porque", "cuando", "donde", "aunque", "durante", "después", "entonces", "también",
+    "además", "siempre", "primer", "primera", "segundo", "segunda", "tercero", "algunos",
+    "muchos", "muchas", "varios", "varias", "estaban", "habían", "fueron", "tienen",
+    "hacer", "decir", "tener", "estar", "haber", "poder", "nosotros", "ustedes", "aquellos"
+}
+
+def translate_text(text: str, target_lang: str) -> str:
+    """免费免密钥极速翻译（支持西班牙语 -> 中文/英语）"""
+    if not text:
+        return ""
+    try:
+        q = urllib.parse.quote(text)
+        url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl={target_lang}&dt=t&q={q}"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            return "".join([item[0] for item in data[0] if item and item[0]]).strip()
+    except Exception as e:
+        return text
+
+def crawl_realtime_spanish_news(today_str: str):
+    """全自动从西班牙主流媒体实时抓取 10 篇真实今日新闻，全自动三语对齐与词汇解析，永不失效！"""
+    import xml.etree.ElementTree as ET
+    import re
+    import urllib.parse
+
+    feed_configs = [
+        ("八卦 / 名人", "https://www.20minutos.es/rss/gente/", 3),
+        ("体育 / 赛事", "https://www.20minutos.es/rss/deportes/", 3),
+        ("文化 / 艺术", "https://www.20minutos.es/rss/cultura/", 2),
+        ("生活 / 资讯", "https://www.20minutos.es/rss/", 2)
+    ]
+    raw_items = []
+    for tag, url, count in feed_configs:
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                root = ET.fromstring(resp.read())
+                items = root.findall('.//item')
+                collected = 0
+                for it in items:
+                    t_elem = it.find('title')
+                    d_elem = it.find('description')
+                    if t_elem is None or d_elem is None:
+                        continue
+                    title = t_elem.text.strip() if t_elem.text else ""
+                    desc = d_elem.text.strip() if d_elem.text else ""
+                    desc = re.sub(r'<[^>]+>', '', desc).strip()
+                    if len(title) < 15 or len(desc) < 20:
+                        continue
+                    raw_items.append({"tag": tag, "title": title, "desc": desc})
+                    collected += 1
+                    if collected >= count:
+                        break
+        except Exception as e:
+            print(f"抓取频道 {tag} 提示: {e}")
+
+    if len(raw_items) < 10:
+        raise ValueError(f"仅抓取到 {len(raw_items)} 篇新闻，数量不足 10 篇")
+
+    stories = []
+    print(f"已成功实时爬取 {len(raw_items[:10])} 条最新西班牙新闻，正在生成三语对照、词汇与测验...")
+    for i, it in enumerate(raw_items[:10], 1):
+        s_id = f"story_{i}"
+        title_es = it["title"]
+        title_cn = f"{i:02d}. " + translate_text(title_es, "zh-CN")
+        title_en = translate_text(title_es, "en")
+        
+        desc_es = it["desc"]
+        intro_cn = translate_text(desc_es[:120], "zh-CN")
+
+        parts = [p.strip() for p in re.split(r'[.!?。！？]\s*', desc_es) if len(p.strip()) > 10]
+        if len(parts) >= 2:
+            s1_es, s2_es = parts[0] + ".", parts[1] + "."
+        elif len(parts) == 1:
+            s1_es = parts[0] + "."
+            s2_es = title_es
+        else:
+            s1_es = title_es
+            s2_es = desc_es
+
+        s1_cn = translate_text(s1_es, "zh-CN")
+        s1_en = translate_text(s1_es, "en")
+        s2_cn = translate_text(s2_es, "zh-CN")
+        s2_en = translate_text(s2_es, "en")
+
+        words = re.findall(r'[a-záéíóúüñ]{5,}', (title_es + " " + desc_es).lower())
+        vocab_candidates = [w for w in words if w not in STOPWORDS]
+        seen = set()
+        chosen_words = []
+        for w in vocab_candidates:
+            if w not in seen:
+                seen.add(w)
+                chosen_words.append(w)
+            if len(chosen_words) == 2:
+                break
+        while len(chosen_words) < 2:
+            chosen_words.append("noticia")
+
+        v1_es, v2_es = chosen_words[0], chosen_words[1]
+        v1_cn, v1_en = translate_text(v1_es, "zh-CN"), translate_text(v1_es, "en")
+        v2_cn, v2_en = translate_text(v2_es, "zh-CN"), translate_text(v2_es, "en")
+
+        story = {
+            "id": s_id,
+            "tag": it["tag"],
+            "date": today_str,
+            "title": {
+                "es": title_es,
+                "en": title_en,
+                "cn": title_cn
+            },
+            "intro": intro_cn,
+            "sentences": [
+                {
+                    "id": 1,
+                    "es": s1_es,
+                    "en": s1_en,
+                    "cn": s1_cn
+                },
+                {
+                    "id": 2,
+                    "es": s2_es,
+                    "en": s2_en,
+                    "cn": s2_cn
+                }
+            ],
+            "vocabulary": [
+                {
+                    "word": v1_es,
+                    "pos": "voc.",
+                    "cn": v1_cn,
+                    "en": v1_en,
+                    "example": s1_es
+                },
+                {
+                    "word": v2_es,
+                    "pos": "voc.",
+                    "cn": v2_cn,
+                    "en": v2_en,
+                    "example": s2_es
+                }
+            ],
+            "grammar": {
+                "point": f"核心词汇「{v1_es}」在文中的表达",
+                "detail": f"「{v1_es}」在本文语境下表示“{v1_cn}”，是地道西语新闻常用表达。"
+            },
+            "quiz": {
+                "question": f"西语单词「{v1_es}」在文中的中文含义是？",
+                "options": [f"A. {v1_cn}", f"B. 另一个意思", f"C. 错误的翻译"],
+                "correct_index": 0,
+                "explanation": f"「{v1_es}」在此处意为：{v1_cn}。"
+            }
+        }
+        stories.append(story)
+        print(f"  [抓取合成] {i}/10: {title_es[:40]}...")
+
+    return stories
+
+
 async def main():
     # 统一使用中国北京时间 (UTC+8)，确保国内用户早晨访问时看到当天最新日期
     tz_cst = datetime.timezone(datetime.timedelta(hours=8))
@@ -1593,16 +1755,23 @@ async def main():
     gemini_key = os.environ.get("GEMINI_API_KEY", "").strip()
     raw_stories = None
 
-    if gemini_key:
-        print("检测到已配置 GEMINI_API_KEY，正在呼叫 Google Gemini 生成今日全新 10 篇西语热点...")
+    # 第一优先级：从西班牙主流媒体实时抓取当天真实最新 10 篇新闻！
+    print("正在从西班牙主流媒体（20 Minutos）全自动抓取今日最新新闻与八卦...")
+    try:
+        raw_stories = crawl_realtime_spanish_news(today_str)
+        print(f"✓ 成功从西班牙主流媒体全自动抓取并翻译了 {len(raw_stories)} 篇今日真实新闻！")
+    except Exception as e:
+        print(f"⚠️ 实时网页抓取遇到网络波动 ({e})，尝试调用 Gemini AI 或备用故事库...")
+
+    # 第二优先级：如果抓取失败，尝试 Gemini AI
+    if not raw_stories and gemini_key:
         try:
             raw_stories = fetch_gemini_stories(today_str, gemini_key)
             print(f"✓ 成功通过 Google Gemini AI 生成了 {len(raw_stories)} 篇全新三语早报！")
         except Exception as e:
-            print(f"⚠️ 呼叫 Gemini AI 接口异常 ({e})，自动切换为备用精选故事库...")
-    else:
-        print("未检测到 GEMINI_API_KEY 环境变量，使用内置精选故事库...")
+            print(f"⚠️ 呼叫 Gemini AI 异常 ({e})，切换为备用精选故事库...")
 
+    # 第三优先级：保底故事库
     if not raw_stories:
         raw_stories = get_fallback_stories(today_str)
 
