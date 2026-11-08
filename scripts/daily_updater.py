@@ -927,12 +927,510 @@ TOPICS_POOL_SET2 = [
 ]
 
 
+
+TOPICS_POOL_SET3 = [
+    {
+        "tag": "体育 / 巅峰",
+        "title": {
+            "es": "El Clásico mundial: Real Madrid y Barcelona paralizan el planeta",
+            "en": "The World Classic: Real Madrid and Barcelona paralyze the planet",
+            "cn": "01. 国家德比巅峰对决：皇马与巴萨上演世纪大战，全球球迷彻夜狂欢！"
+        },
+        "intro": "足坛最高水平的世纪德比在伯纳乌球场震撼上演，年轻新星绝杀进球引爆全球社交网络。",
+        "sentences": [
+            {
+                "id": 1,
+                "es": "El enfrentamiento entre los dos gigantes del fútbol español ofreció noventa minutos de pura intensidad.",
+                "en": "The clash between the two giants of Spanish football offered ninety minutes of pure intensity.",
+                "cn": "这两家西班牙足球豪门之间的正面对决奉献了整整九十分钟令人屏息的高强度较量。"
+            },
+            {
+                "id": 2,
+                "es": "Los aficionados de todo el mundo vibraron con las jugadas espectaculares de las jóvenes promesas.",
+                "en": "Fans all over the world were thrilled by the spectacular plays of the young prospects.",
+                "cn": "全球球迷为年轻新星们令人惊叹的精彩配合而欢呼雀跃。"
+            }
+        ],
+        "vocabulary": [
+            {
+                "word": "enfrentamiento",
+                "pos": "n.m.",
+                "cn": "对决，交锋",
+                "en": "clash, confrontation",
+                "example": "El enfrentamiento de anoche fue memorable."
+            },
+            {
+                "word": "espectacular",
+                "pos": "adj.",
+                "cn": "壮观的，精彩绝伦的",
+                "en": "spectacular, dramatic",
+                "example": "Un gol espectacular desde el centro del campo."
+            }
+        ],
+        "grammar": {
+            "point": "简单过去时表达完成事件（ofreció / vibraron）",
+            "detail": "ofrecer 变位为 ofreció；vibrar 变位为 vibraron，叙述已发生历史比赛。"
+        },
+        "quiz": {
+            "question": "单词「enfrentamiento」表示什么含义？",
+            "options": ["A. 对决、交锋", "B. 合作、协助", "C. 放弃、退赛"],
+            "correct_index": 0,
+            "explanation": "enfrentamiento 指双方正面对峙或激烈交锋。"
+        }
+    },
+    {
+        "tag": "艺术 / 潮流",
+        "title": {
+            "es": "El Museo del Prado abre de noche gratis y conquista a los jóvenes",
+            "en": "The Prado Museum opens at night for free and wins over young crowds",
+            "cn": "02. 普拉多博物馆首次深夜免费开放，马德里年轻人排长队打卡世界名画！"
+        },
+        "intro": "世界顶尖艺术殿堂打破常规在星光下开门迎客，古典油画与现代潮流在马德里深夜交汇。",
+        "sentences": [
+            {
+                "id": 1,
+                "es": "Miles de personas hicieron cola pacientemente para contemplar las obras maestras de Velázquez y Goya bajo la luz nocturna.",
+                "en": "Thousands of people queued patiently to gaze upon the masterpieces of Velázquez and Goya under the night light.",
+                "cn": "成千上万的人在夜幕下耐心排起长队，只为亲眼一睹委拉斯凯兹与戈雅的传世名作。"
+            },
+            {
+                "id": 2,
+                "es": "Esta iniciativa cultural busca acercar el patrimonio histórico a las nuevas generaciones de una forma amena.",
+                "en": "This cultural initiative aims to bring historical heritage closer to new generations in an enjoyable way.",
+                "cn": "这项文化举措旨在以生动亲切的方式拉近历史文化遗产与年轻一代的距离。"
+            }
+        ],
+        "vocabulary": [
+            {
+                "word": "hacer cola",
+                "pos": "fr.",
+                "cn": "排队",
+                "en": "to queue, to stand in line",
+                "example": "Tuvimos que hacer cola durante una hora para entrar."
+            },
+            {
+                "word": "patrimonio",
+                "pos": "n.m.",
+                "cn": "文化遗产，财富",
+                "en": "heritage, legacy",
+                "example": "España cuenta con un rico patrimonio histórico."
+            }
+        ],
+        "grammar": {
+            "point": "常用短语动词 acercar ... a ...",
+            "detail": "acercar 表示“使靠近、拉近距离”，搭配介词 a。"
+        },
+        "quiz": {
+            "question": "短语「hacer cola」的意思是？",
+            "options": ["A. 排队", "B. 缝衣服", "C. 快速奔跑"],
+            "correct_index": 0,
+            "explanation": "hacer cola 是西语中极为日常地道的“排队”表达。"
+        }
+    },
+    {
+        "tag": "美食 / 骄傲",
+        "title": {
+            "es": "La auténtica Paella Valenciana conquista el reconocimiento mundial",
+            "en": "Authentic Valencian Paella conquers global recognition",
+            "cn": "03. 瓦伦西亚海鲜饭火爆全球：全球名厨齐聚西班牙共烹“锅巴灵魂”！"
+        },
+        "intro": "西班牙最负盛名的传统稻米盛宴迎来国际烹饪大赛，金黄酥脆的 socarrat 锅巴成为全场焦点。",
+        "sentences": [
+            {
+                "id": 1,
+                "es": "Cocineros de más de treinta países compitieron en Valencia utilizando ingredientes frescos y leña de naranjo.",
+                "en": "Chefs from more than thirty countries competed in Valencia using fresh ingredients and orange wood.",
+                "cn": "来自三十多个国家的厨师齐聚瓦伦西亚，选用最地道的新鲜食材与橙木柴火同台竞技。"
+            },
+            {
+                "id": 2,
+                "es": "El secreto de una buena paella reside en el punto exacto del arroz y el fuego lento.",
+                "en": "The secret of a great paella lies in the exact cooking of the rice and the gentle simmer.",
+                "cn": "一锅顶尖海鲜饭的秘诀在于稻米的恰当火候与温和文火慢煨。"
+            }
+        ],
+        "vocabulary": [
+            {
+                "word": "ingrediente",
+                "pos": "n.m.",
+                "cn": "配料，原料",
+                "en": "ingredient",
+                "example": "El azafrán es un ingrediente esencial."
+            },
+            {
+                "word": "leña",
+                "pos": "n.f.",
+                "cn": "木柴，柴火",
+                "en": "firewood",
+                "example": "Cocinamos la comida con leña en el campo."
+            }
+        ],
+        "grammar": {
+            "point": "短语动词 residir en",
+            "detail": "residir en 此处并非指“居住在”，而是引申为“在于、存在于某处关键点”。"
+        },
+        "quiz": {
+            "question": "单词「leña」指的是？",
+            "options": ["A. 木柴", "B. 调味盐", "C. 平底锅"],
+            "correct_index": 0,
+            "explanation": "la leña 是做传统西班牙海鲜饭必不可少的柴火。"
+        }
+    },
+    {
+        "tag": "音乐 / 盛典",
+        "title": {
+            "es": "Shakira anuncia nuevas fechas de conciertos y desata la euforia",
+            "en": "Shakira announces new concert dates and sparks euphoria",
+            "cn": "04. 夏奇拉加开巡回演唱会，万张门票瞬间秒罄引发全网狂欢！"
+        },
+        "intro": "拉丁天后宣布将在西班牙与拉美多国加开十余场大型体育场演唱会，歌迷热情彻底点燃。",
+        "sentences": [
+            {
+                "id": 1,
+                "es": "La cantante colombiana confirmó a través de sus redes sociales que ampliará su gira internacional.",
+                "en": "The Colombian singer confirmed through her social media that she will expand her international tour.",
+                "cn": "这位哥伦比亚天后通过社交媒体确认她将大幅拓展自己的全球巡回演出版图。"
+            },
+            {
+                "id": 2,
+                "es": "Millones de seguidores intentaron adquirir sus entradas en cuestión de pocos minutos.",
+                "en": "Millions of followers tried to acquire their tickets in a matter of a few minutes.",
+                "cn": "数以百万计的歌迷在短短几分钟内同时涌入购票平台抢购门票。"
+            }
+        ],
+        "vocabulary": [
+            {
+                "word": "adquirir",
+                "pos": "v.",
+                "cn": "获得，购得",
+                "en": "to acquire, to purchase",
+                "example": "Quiero adquirir una entrada para el concierto."
+            },
+            {
+                "word": "en cuestión de",
+                "pos": "fr.",
+                "cn": "在……之内，仅仅在……之间",
+                "en": "in a matter of",
+                "example": "Todo cambió en cuestión de segundos."
+            }
+        ],
+        "grammar": {
+            "point": "动词 adquirir 的变位特点",
+            "detail": "adquirir 在现在时变位时词干 i 变为 ie：yo adquiero, tú adquieres。"
+        },
+        "quiz": {
+            "question": "短语「en cuestión de minutos」表示？",
+            "options": ["A. 在短短数分钟内", "B. 提出关于时间的问题", "C. 耗费很长时间"],
+            "correct_index": 0,
+            "explanation": "en cuestión de + 时间 表示“仅仅在很短的时间之内”。"
+        }
+    },
+    {
+        "tag": "传奇 / 温情",
+        "title": {
+            "es": "Rafa Nadal inspira a las futuras promesas en su academia de Mallorca",
+            "en": "Rafa Nadal inspires future prospects at his Mallorca academy",
+            "cn": "05. 纳达尔现身马略卡网校亲授球技，传奇球王寄语感动无数球迷！"
+        },
+        "intro": "红土之王身着训练服亲自走上球场给年轻小学员纠正动作，分享三十年坚毅拼搏的运动精神。",
+        "sentences": [
+            {
+                "id": 1,
+                "es": "El legendario tenista mallorquín dedicó la mañana a entrenar con jóvenes talentos llegados de todo el planeta.",
+                "en": "The legendary Mallorcan tennis player dedicated the morning to training with young talents from all over the planet.",
+                "cn": "这位传奇马略卡网球大师将整个上午用于陪伴来自世界各地的年轻天才学员训练。"
+            },
+            {
+                "id": 2,
+                "es": "Les transmitió que el esfuerzo diario y la humildad son más importantes que cualquier trofeo.",
+                "en": "He conveyed to them that daily effort and humility are more important than any trophy.",
+                "cn": "他真诚地告诉孩子们，日复一日的汗水付出与谦逊态度远比任何冠军奖杯都更为珍贵。"
+            }
+        ],
+        "vocabulary": [
+            {
+                "word": "humildad",
+                "pos": "n.f.",
+                "cn": "谦逊，低调",
+                "en": "humility, modesty",
+                "example": "La humildad es la cualidad de los grandes campeones."
+            },
+            {
+                "word": "transmitir",
+                "pos": "v.",
+                "cn": "传递，传达",
+                "en": "to transmit, to convey",
+                "example": "El maestro transmitió su pasión por el arte."
+            }
+        ],
+        "grammar": {
+            "point": "间接宾语代词 les 的用法",
+            "detail": "Les transmitió que... 中的 les 指代复数听众“给孩子们传达”。"
+        },
+        "quiz": {
+            "question": "名词「humildad」的中文含义是？",
+            "options": ["A. 谦逊", "B. 骄傲", "C. 幽默"],
+            "correct_index": 0,
+            "explanation": "humildad 表示不骄不躁的谦逊与谦卑品德。"
+        }
+    },
+    {
+        "tag": "生活 / 惬意",
+        "title": {
+            "es": "La cultura del aperitivo al sol triunfa en las terrazas de Madrid",
+            "en": "The sunshine aperitif culture triumphs on Madrid terraces",
+            "cn": "06. 阳光下的西班牙午后：小酒馆露天座座无虚席，开胃酒慢生活治愈全城！"
+        },
+        "intro": "点一杯冰爽的苦艾酒配上香脆橄榄与土豆蛋饼，西班牙人最懂如何在阳光露天座里享受生活。",
+        "sentences": [
+            {
+                "id": 1,
+                "es": "Al llegar el fin de semana, amigos y familias se reúnen en las plazas para tomar un vermut artesanal con aceitunas.",
+                "en": "When the weekend arrives, friends and families gather in the squares to have an artisan vermouth with olives.",
+                "cn": "周末一到，亲朋好友纷纷相约在阳光明媚的广场露天座，品尝手作苦艾酒与腌水榄。"
+            },
+            {
+                "id": 2,
+                "es": "Esta costumbre tan típica de charlar sin prisas representa la verdadera esencia de la alegría mediterránea.",
+                "en": "This typical custom of unhurried conversation represents the true essence of Mediterranean joy.",
+                "cn": "这种不疾不徐促膝长谈的悠闲生活方式，完美体现了地中海式松弛与欢愉的精髓。"
+            }
+        ],
+        "vocabulary": [
+            {
+                "word": "sin prisas",
+                "pos": "fr.",
+                "cn": "不慌不忙，悠闲地",
+                "en": "without haste, unhurried",
+                "example": "Caminamos por el parque sin prisas."
+            },
+            {
+                "word": "esencia",
+                "pos": "n.f.",
+                "cn": "本质，精髓",
+                "en": "essence",
+                "example": "Capturó la verdadera esencia del lugar."
+            }
+        ],
+        "grammar": {
+            "point": "结构 al + 动词原形 表示“当……的时候”",
+            "detail": "Al llegar el fin de semana 相当于 Cuando llega el fin de semana，表达更加精练优雅。"
+        },
+        "quiz": {
+            "question": "短语「sin prisas」表示什么心态？",
+            "options": ["A. 悠闲自在，不急躁", "B. 匆匆忙忙", "C. 感到悲伤"],
+            "correct_index": 0,
+            "explanation": "prisa 是匆忙，sin prisas 就是悠哉游哉、不紧不慢。"
+        }
+    },
+    {
+        "tag": "旅游 / 奇迹",
+        "title": {
+            "es": "La Alhambra de Granada ilumina sus fuentes con magia nocturna",
+            "en": "Granada's Alhambra illuminates its fountains with night magic",
+            "cn": "07. 格拉纳达阿尔罕布拉宫开启夜间光影秀，阿拉伯喷泉与星空美如幻境！"
+        },
+        "intro": "世界文化遗产阿宫推出全新沉浸式夜游，微波荡漾的桃金娘中庭在幽兰光影下宛如天方夜谭。",
+        "sentences": [
+            {
+                "id": 1,
+                "es": "Los antiguos palacios nazaríes abrieron sus puertas bajo las estrellas para ofrecer una experiencia mágica.",
+                "en": "The ancient Nasrid palaces opened their doors under the stars to offer a magical experience.",
+                "cn": "古老的纳斯里德王宫在浩瀚星空下敞开大门，为游人呈现出一场如梦似幻的奇妙体验。"
+            },
+            {
+                "id": 2,
+                "es": "El susurro del agua en los patios históricos cautivó a los visitantes de todas las nacionalidades.",
+                "en": "The whisper of water in the historic courtyards captivated visitors of all nationalities.",
+                "cn": "历史中庭内潺潺作响的灵动水声令来自世界各国的游客沉醉其中久久流连。"
+            }
+        ],
+        "vocabulary": [
+            {
+                "word": "susurro",
+                "pos": "n.m.",
+                "cn": "潺潺流水声，低语",
+                "en": "whisper, murmur",
+                "example": "El susurro del viento entre los árboles."
+            },
+            {
+                "word": "cautivar",
+                "pos": "v.",
+                "cn": "迷住，吸引，征服",
+                "en": "to captivate, to charm",
+                "example": "Su hermosa voz cautivó al público."
+            }
+        ],
+        "grammar": {
+            "point": "动词 cautivar 的过去时变位",
+            "detail": "cautivó 是第三人称单数简单过去时，主语为 el susurro del agua。"
+        },
+        "quiz": {
+            "question": "单词「susurro」一般形容什么声音？",
+            "options": ["A. 轻声低语或细水潺潺", "B. 巨大的爆炸声", "C. 汽车鸣笛声"],
+            "correct_index": 0,
+            "explanation": "el susurro 是轻柔优美的细微低吟或水声。"
+        }
+    },
+    {
+        "tag": "趣闻 / 爆笑",
+        "title": {
+            "es": "Un gato travieso interrumpe un telediario en directo y enamora a internet",
+            "en": "A mischievous cat interrupts a live news broadcast and charms the internet",
+            "cn": "08. 西班牙电视台直播突发“猫咪入侵”，主播憋笑播报萌翻千万网友！"
+        },
+        "intro": "一只贪玩的灰猫趁演播室换景溜进镜头并淡定趴在提词器前，严肃的新闻直播秒变大型吸猫现场。",
+        "sentences": [
+            {
+                "id": 1,
+                "es": "Durante la emisión de las noticias del mediodía, un simpático felino apareció caminando sobre la mesa del presentador.",
+                "en": "During the midday news broadcast, a cute feline appeared walking across the presenter's desk.",
+                "cn": "在午间新闻的电视直播过程中，一只调皮可爱的小猫突然大摇大摆地漫步在主播台上。"
+            },
+            {
+                "id": 2,
+                "es": "El periodista mantuvo la calma con una sonrisa y el vídeo se convirtió en lo más visto del día.",
+                "en": "The journalist kept his composure with a smile and the video became the most watched clip of the day.",
+                "cn": "主持人忍俊不禁地保持了镇定与微笑，该片段瞬间成为当天全网播放量最高的短视频。"
+            }
+        ],
+        "vocabulary": [
+            {
+                "word": "felino",
+                "pos": "n.m. / adj.",
+                "cn": "猫科动物，猫咪",
+                "en": "feline, cat",
+                "example": "Los gatos son felinos fascinantes."
+            },
+            {
+                "word": "mantener la calma",
+                "pos": "fr.",
+                "cn": "保持镇定，保持冷静",
+                "en": "to keep calm, stay cool",
+                "example": "Hay que mantener la calma en todo momento."
+            }
+        ],
+        "grammar": {
+            "point": "动词 mantener 的不规则简单过去时",
+            "detail": "mantener 过去时与 tener 一致：él mantuvo，变位特殊需熟记。"
+        },
+        "quiz": {
+            "question": "短语「mantener la calma」的意思是？",
+            "options": ["A. 保持冷静沉着", "B. 大声吵闹", "C. 快速逃跑"],
+            "correct_index": 0,
+            "explanation": "mantener la calma 意为临危不乱、处变不惊。"
+        }
+    },
+    {
+        "tag": "语言 / 文化",
+        "title": {
+            "es": "El idioma español supera los 600 millones de hablantes en el mundo",
+            "en": "The Spanish language surpasses 600 million speakers worldwide",
+            "cn": "09. 最新塞万提斯报告：全球西语人口突破6亿，成为世界第二大母语！"
+        },
+        "intro": "西语学习热潮席卷五大洲，不论是流行音乐、影视文化还是国际商务，西班牙语影响力持续攀升。",
+        "sentences": [
+            {
+                "id": 1,
+                "es": "El nuevo anuario del Instituto Cervantes confirma el impresionante crecimiento global de la lengua española.",
+                "en": "The new Instituto Cervantes yearbook confirms the impressive global growth of the Spanish language.",
+                "cn": "塞万提斯学院最新发布的年报证实了西班牙语在世界范围内的惊人迅猛增长势头。"
+            },
+            {
+                "id": 2,
+                "es": "Cada año, millones de estudiantes eligen el español atraídos por su riqueza cultural y calidez humana.",
+                "en": "Every year, millions of students choose Spanish attracted by its cultural richness and human warmth.",
+                "cn": "每年都有数以百万计的学子被西语浓厚的文化底蕴与热情好客的人文魅力所吸引而投身学习。"
+            }
+        ],
+        "vocabulary": [
+            {
+                "word": "crecimiento",
+                "pos": "n.m.",
+                "cn": "增长，发展",
+                "en": "growth, increase",
+                "example": "El crecimiento económico del país."
+            },
+            {
+                "word": "calidez",
+                "pos": "n.f.",
+                "cn": "温情，温暖",
+                "en": "warmth, friendliness",
+                "example": "Agradezco la calidez con la que me recibieron."
+            }
+        ],
+        "grammar": {
+            "point": "动词 elegir 的变位与搭配",
+            "detail": "elegir 发生 e -> i 变位：ellos eligen，意为“选择”。"
+        },
+        "quiz": {
+            "question": "名词「calidez」通常用来形容？",
+            "options": ["A. 热情与温暖", "B. 严寒与冷漠", "C. 速度与敏捷"],
+            "correct_index": 0,
+            "explanation": "calidez humana 专门形容人与人之间的温暖与真挚热情。"
+        }
+    },
+    {
+        "tag": "科技 / 出行",
+        "title": {
+            "es": "La Alta Velocidad conecta España y Francia con billetes accesibles",
+            "en": "High Speed connects Spain and France with affordable tickets",
+            "cn": "10. 西班牙高铁直通法国低价票开抢，跨国“一日生活圈”引爆欧洲旅行潮！"
+        },
+        "intro": "舒适环保的跨国高铁列车成为欧陆出行新宠，从马德里、巴塞罗那一路向北饱览比利牛斯山壮丽风光。",
+        "sentences": [
+            {
+                "id": 1,
+                "es": "Los nuevos trenes de alta velocidad permiten viajar cómodamente entre las principales ciudades europeas sin contaminar.",
+                "en": "The new high-speed trains allow comfortable travel between major European cities without polluting.",
+                "cn": "全新的高速动车组让旅客能够在各大欧洲核心城市之间舒适穿梭，同时兼顾零碳低排放环保理念。"
+            },
+            {
+                "id": 2,
+                "es": "Los viajeros celebran la comodidad de contemplar el paisaje montañoso mientras disfrutan de wifi gratuito.",
+                "en": "Travelers celebrate the comfort of admiring the mountain scenery while enjoying free Wi-Fi.",
+                "cn": "旅客们对在车厢内一边饱览沿途巍峨雪山风光、一边享受免费高速无线网络的惬意赞不绝口。"
+            }
+        ],
+        "vocabulary": [
+            {
+                "word": "cómodamente",
+                "pos": "adv.",
+                "cn": "舒适地，惬意地",
+                "en": "comfortably",
+                "example": "Viajamos muy cómodamente en el tren."
+            },
+            {
+                "word": "contaminar",
+                "pos": "v.",
+                "cn": "污染",
+                "en": "to pollute, to contaminate",
+                "example": "Es importante no contaminar el medio ambiente."
+            }
+        ],
+        "grammar": {
+            "point": "短语 mientras + 动词 进行时态",
+            "detail": "mientras disfrutan 表示“在……的同时”，用于表示两件事同时进行。"
+        },
+        "quiz": {
+            "question": "副词「cómodamente」是由哪个形容词变来的？",
+            "options": ["A. cómodo (舒适的)", "B. común (普通的)", "C. cómico (滑稽的)"],
+            "correct_index": 0,
+            "explanation": "形容词阴性形式 cómoda + -mente 构成副词 cómodamente。"
+        }
+    }
+]
+
+
 def fetch_gemini_stories(today_str: str, api_key: str):
     """通过 Google 官方生成的标准 gemini-flash-latest 模型实时生成当天 10 篇三语西语热点早报"""
     candidate_models = [
-        "gemini-flash-latest",
-        "gemini-pro-latest",
-        "gemini-1.5-pro-latest"
+        "gemini-3.8-flash",
+        "gemini-3.1-flash-lite",
+        "gemini-2.5-flash-lite",
+        "gemini-3.7-flash",
+        "gemini-3.5-flash",
+        "gemini-flash-latest"
     ]
     
     prompt = f"""
@@ -1074,7 +1572,10 @@ def get_fallback_stories(today_str: str):
         day = int(today_str.split("-")[-1])
     except Exception:
         day = 1
-    pool = TOPICS_POOL_SET2 if (day % 2 == 0) else TOPICS_POOL
+    # 轮换 3 大精编热点库，8 号取 set3，9 号取 set1，10 号取 set2，绝不每天重复
+    pools = [TOPICS_POOL, TOPICS_POOL_SET2, TOPICS_POOL_SET3]
+    # 8 % 3 = 2 -> 选取 TOPICS_POOL_SET3
+    pool = pools[day % len(pools)]
     stories = []
     for idx, item in enumerate(pool, 1):
         s = dict(item)
