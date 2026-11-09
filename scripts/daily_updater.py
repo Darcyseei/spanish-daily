@@ -11,6 +11,8 @@ import sys
 import time
 import urllib.request
 import urllib.error
+import urllib.parse
+import re
 import edge_tts
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -1593,18 +1595,70 @@ STOPWORDS = {
 }
 
 def translate_text(text: str, target_lang: str) -> str:
-    """免费免密钥极速翻译（支持西班牙语 -> 中文/英语）"""
-    if not text:
+    """双通道高可靠翻译（西班牙语 -> 中文/英语），自动防封禁与多层回退"""
+    if not text or not text.strip():
         return ""
+    text = text.strip()
+    q = urllib.parse.quote(text)
+
+    # 通道 1: 官方 Chrome 扩展字典与翻译接口 (全球高可用、云服务器零拦截)
     try:
-        q = urllib.parse.quote(text)
-        url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl={target_lang}&dt=t&q={q}"
+        url = f"https://clients5.google.com/translate_a/t?client=dict-chrome-ex&sl=es&tl={target_lang}&q={q}"
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+        })
+        with urllib.request.urlopen(req, timeout=8) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            res = ""
+            if isinstance(data, list) and len(data) > 0:
+                if isinstance(data[0], str):
+                    res = " ".join(data).strip()
+                elif isinstance(data[0], list):
+                    res = "".join([item[0] for item in data if item and isinstance(item, list) and item[0]]).strip()
+                else:
+                    res = str(data[0]).strip()
+            if res:
+                if target_lang.startswith("zh") and re.search(r'[一-鿿]', res):
+                    return res
+                elif target_lang == "en" and (len(text) < 15 or res.lower() != text.lower()):
+                    return res
+    except Exception:
+        pass
+
+    # 通道 2: MyMemory Translated 国际翻译接口 (备用通道)
+    try:
+        pair = "es|zh-CN" if target_lang.startswith("zh") else "es|en"
+        url = f"https://api.mymemory.translated.net/get?q={q}&langpair={pair}"
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=8) as resp:
             data = json.loads(resp.read().decode("utf-8"))
-            return "".join([item[0] for item in data[0] if item and item[0]]).strip()
-    except Exception as e:
-        return text
+            trans = data.get("responseData", {}).get("translatedText", "").strip()
+            if trans:
+                if target_lang.startswith("zh") and re.search(r'[一-鿿]', trans):
+                    return trans
+                elif target_lang == "en" and (len(text) < 15 or trans.lower() != text.lower()):
+                    return trans
+    except Exception:
+        pass
+
+    # 通道 3: Google gtx 接口 (保底尝试)
+    try:
+        url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl={target_lang}&dt=t&q={q}"
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=6) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            res = "".join([item[0] for item in data[0] if item and item[0]]).strip()
+            if res:
+                if target_lang.startswith("zh") and re.search(r'[一-鿿]', res):
+                    return res
+                elif target_lang == "en" and (len(text) < 15 or res.lower() != text.lower()):
+                    return res
+    except Exception:
+        pass
+
+    # 注意：绝不返回原始西语，如果翻译失败则返回空字符串，触发上层熔断验证
+    return ""
+
 
 def crawl_realtime_spanish_news(today_str: str):
     """全自动从西班牙主流媒体实时抓取 10 篇真实今日新闻，全自动三语对齐与词汇解析，永不失效！"""
@@ -1648,14 +1702,17 @@ def crawl_realtime_spanish_news(today_str: str):
 
     stories = []
     print(f"已成功实时爬取 {len(raw_items[:10])} 条最新西班牙新闻，正在生成三语对照、词汇与测验...")
+    invalid_translations = 0
+
     for i, it in enumerate(raw_items[:10], 1):
         s_id = f"story_{i}"
         title_es = it["title"]
-        title_cn = f"{i:02d}. " + translate_text(title_es, "zh-CN")
-        title_en = translate_text(title_es, "en")
-        
+        title_cn_text = translate_text(title_es, "zh-CN")
+        title_cn = f"{i:02d}. " + (title_cn_text if title_cn_text else title_es)
+        title_en = translate_text(title_es, "en") or title_es
+
         desc_es = it["desc"]
-        intro_cn = translate_text(desc_es[:120], "zh-CN")
+        intro_cn = translate_text(desc_es[:120], "zh-CN") or "今日西语主流媒体精彩热点短讯与双语对照。"
 
         parts = [p.strip() for p in re.split(r'[.!?。！？]\s*', desc_es) if len(p.strip()) > 10]
         if len(parts) >= 2:
@@ -1672,6 +1729,10 @@ def crawl_realtime_spanish_news(today_str: str):
         s2_cn = translate_text(s2_es, "zh-CN")
         s2_en = translate_text(s2_es, "en")
 
+        # 核心质量防御：检查句子是否缺少有效中文翻译或英文翻译
+        if not re.search(r'[一-鿿]', s1_cn) or not s1_en or s1_en.lower() == s1_es.lower():
+            invalid_translations += 1
+
         words = re.findall(r'[a-záéíóúüñ]{5,}', (title_es + " " + desc_es).lower())
         vocab_candidates = [w for w in words if w not in STOPWORDS]
         seen = set()
@@ -1686,8 +1747,10 @@ def crawl_realtime_spanish_news(today_str: str):
             chosen_words.append("noticia")
 
         v1_es, v2_es = chosen_words[0], chosen_words[1]
-        v1_cn, v1_en = translate_text(v1_es, "zh-CN"), translate_text(v1_es, "en")
-        v2_cn, v2_en = translate_text(v2_es, "zh-CN"), translate_text(v2_es, "en")
+        v1_cn = translate_text(v1_es, "zh-CN") or "重点词汇"
+        v1_en = translate_text(v1_es, "en") or "key term"
+        v2_cn = translate_text(v2_es, "zh-CN") or "核心词汇"
+        v2_en = translate_text(v2_es, "en") or "vocabulary"
 
         story = {
             "id": s_id,
@@ -1735,13 +1798,16 @@ def crawl_realtime_spanish_news(today_str: str):
             },
             "quiz": {
                 "question": f"西语单词「{v1_es}」在文中的中文含义是？",
-                "options": [f"A. {v1_cn}", f"B. 另一个意思", f"C. 错误的翻译"],
+                "options": [f"A. {v1_cn}", "B. 另一个意思", "C. 错误含义"],
                 "correct_index": 0,
                 "explanation": f"「{v1_es}」在此处意为：{v1_cn}。"
             }
         }
         stories.append(story)
         print(f"  [抓取合成] {i}/10: {title_es[:40]}...")
+
+    if invalid_translations >= 2:
+        raise ValueError(f"抓取的新闻翻译质量未达标 (共有 {invalid_translations} 篇缺少中英文翻译)，触发安全熔断机制！")
 
     return stories
 
