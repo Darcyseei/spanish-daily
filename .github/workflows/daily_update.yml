@@ -2,8 +2,8 @@ name: Daily Spanish Feed Auto Update
 
 on:
   schedule:
-    # 每天北京时间早晨 07:00 (UTC 23:00) 自动触发
-    - cron: '0 23 * * *'
+    # 提前至北京时间清晨 05:37 (UTC 21:37 / 东京时间 06:37) 错峰自动触发，避开整点拥堵排队
+    - cron: '37 21 * * *'
   workflow_dispatch: # 支持在 GitHub 网页上随时点击按钮立即手动更新
 
 permissions:
