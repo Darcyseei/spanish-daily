@@ -3,11 +3,11 @@ const DAILY_STORIES = [
   {
     "id": "story_1",
     "tag": "八卦 / 名人",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "title": {
-      "es": "Tu horóscopo diario: jueves 12 de noviembre de 2026",
-      "en": "Your daily horoscope: Thursday, November 12, 2026",
-      "cn": "01. 您的每日星座运势：2026 年 11 月 12 日，星期四"
+      "es": "Tu horóscopo diario: viernes 13 de noviembre de 2026",
+      "en": "Your daily horoscope: Friday, November 13, 2026",
+      "cn": "01. 您的每日星座运势：2026 年 11 月 13 日星期五"
     },
     "intro": "在 20minutos.es 中查看昨天、今天和明天的星座运势",
     "sentences": [
@@ -20,9 +20,9 @@ const DAILY_STORIES = [
       },
       {
         "id": 2,
-        "es": "Tu horóscopo diario: jueves 12 de noviembre de 2026",
-        "en": "Your daily horoscope: Thursday, November 12, 2026",
-        "cn": "您的每日星座运势：2026 年 11 月 12 日，星期四",
+        "es": "Tu horóscopo diario: viernes 13 de noviembre de 2026",
+        "en": "Your daily horoscope: Friday, November 13, 2026",
+        "cn": "您的每日星座运势：2026 年 11 月 13 日星期五",
         "audio": "./assets/audios/story_1_s2.mp3"
       }
     ],
@@ -40,7 +40,7 @@ const DAILY_STORIES = [
         "pos": "voc.",
         "cn": "日记",
         "en": "diary",
-        "example": "Tu horóscopo diario: jueves 12 de noviembre de 2026",
+        "example": "Tu horóscopo diario: viernes 13 de noviembre de 2026",
         "audio": "./assets/audios/vocab_story_1_2.mp3"
       }
     ],
@@ -64,60 +64,60 @@ const DAILY_STORIES = [
   {
     "id": "story_2",
     "tag": "八卦 / 名人",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "title": {
-      "es": "Actriz, escultora y diseñadora de joyas: así es María Bernardeu, la hija menor de Ana Duato",
-      "en": "Actress, sculptor and jewelry designer: this is María Bernardeu, the youngest daughter of Ana Duato",
-      "cn": "02. 女演员、雕塑家和珠宝设计师：这是玛丽亚·贝尔纳多 (María Bernardeu)，安娜·杜阿托 (Ana Duato) 最小的女儿"
+      "es": "Cristina Rodríguez reacciona a la advertencia de Pelayo Díaz: \"Que cada uno haga lo que quiera\"",
+      "en": "Cristina Rodríguez reacts to Pelayo Díaz's warning: \"Let everyone do what they want\"",
+      "cn": "02. 克里斯蒂娜·罗德里格斯对佩拉约·迪亚斯的警告做出反应：“让每个人都做他们想做的事”"
     },
-    "intro": "这位年轻女子一边学习美术和时装设计，一边继续接受演员培训。",
+    "intro": "阿尔贝托·古兹曼 (Alberto Guzmán) 在《El Sóta》的现场通话中向服装设计师传达了这些声明",
     "sentences": [
       {
         "id": 1,
-        "es": "La joven estudia Bellas Artes y Diseño de moda mientras continúa con su formación como actriz.",
-        "en": "The young woman studies Fine Arts and Fashion Design while continuing her training as an actress.",
-        "cn": "这位年轻女子一边学习美术和时装设计，一边继续接受演员培训。",
+        "es": "Alberto Guzmán ha trasladado estas declaraciones a la diseñadora de vestuario durante una llamada en directo en 'El Sótano'.",
+        "en": "Alberto Guzmán conveyed these statements to the costume designer during a live call on 'El Sótano'.",
+        "cn": "阿尔贝托·古兹曼 (Alberto Guzmán) 在“El Sótano”的现场通话中向服装设计师传达了这些声明。",
         "audio": "./assets/audios/story_2_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Actriz, escultora y diseñadora de joyas: así es María Bernardeu, la hija menor de Ana Duato",
-        "en": "Actress, sculptor and jewelry designer: this is María Bernardeu, the youngest daughter of Ana Duato",
-        "cn": "女演员、雕塑家和珠宝设计师：这是玛丽亚·贝尔纳多 (María Bernardeu)，安娜·杜阿托 (Ana Duato) 最小的女儿",
+        "es": "Cristina Rodríguez reacciona a la advertencia de Pelayo Díaz: \"Que cada uno haga lo que quiera\"",
+        "en": "Cristina Rodríguez reacts to Pelayo Díaz's warning: \"Let everyone do what they want\"",
+        "cn": "克里斯蒂娜·罗德里格斯对佩拉约·迪亚斯的警告做出反应：“让每个人都做他们想做的事”",
         "audio": "./assets/audios/story_2_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "actriz",
+        "word": "cristina",
         "pos": "voc.",
-        "cn": "演员",
-        "en": "actress",
-        "example": "La joven estudia Bellas Artes y Diseño de moda mientras continúa con su formación como actriz.",
+        "cn": "克里斯蒂娜",
+        "en": "christina",
+        "example": "Alberto Guzmán ha trasladado estas declaraciones a la diseñadora de vestuario durante una llamada en directo en 'El Sótano'.",
         "audio": "./assets/audios/vocab_story_2_1.mp3"
       },
       {
-        "word": "escultora",
+        "word": "rodríguez",
         "pos": "voc.",
-        "cn": "雕塑家",
-        "en": "sculptress",
-        "example": "Actriz, escultora y diseñadora de joyas: así es María Bernardeu, la hija menor de Ana Duato",
+        "cn": "罗德里格斯",
+        "en": "rodriguez",
+        "example": "Cristina Rodríguez reacciona a la advertencia de Pelayo Díaz: \"Que cada uno haga lo que quiera\"",
         "audio": "./assets/audios/vocab_story_2_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「actriz」在文中的表达",
-      "detail": "「actriz」在本文语境下表示“演员”，是地道西语新闻常用表达。"
+      "point": "核心词汇「cristina」在文中的表达",
+      "detail": "「cristina」在本文语境下表示“克里斯蒂娜”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「actriz」在文中的中文含义是？",
+      "question": "西语单词「cristina」在文中的中文含义是？",
       "options": [
-        "A. 演员",
+        "A. 克里斯蒂娜",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「actriz」在此处意为：演员。"
+      "explanation": "「cristina」在此处意为：克里斯蒂娜。"
     },
     "audio_full_normal": "./assets/audios/story_2_normal.mp3",
     "audio_full_slow": "./assets/audios/story_2_slow.mp3"
@@ -125,60 +125,60 @@ const DAILY_STORIES = [
   {
     "id": "story_3",
     "tag": "八卦 / 名人",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "title": {
-      "es": "Rocío Flores y Manuel Bedmar han roto: él confirma que llevan dos años separados y que trabajan juntos",
-      "en": "Rocío Flores and Manuel Bedmar have broken up: he confirms that they have been separated for two years and that they work together",
-      "cn": "03. 罗西奥·弗洛雷斯 (Rocío Flores) 和曼努埃尔·贝德玛 (Manuel Bedmar) 分手：他证实他们已经分居两年，并且一起工作"
+      "es": "Las redes sociales de Russell Brand, ex de Katy Perry, suspendidas tras su condena de 10 años y medio de cárcel por violación",
+      "en": "The social networks of Russell Brand, Katy Perry's ex, suspended after his sentence of 10 and a half years in prison for rape",
+      "cn": "03. 凯蒂·佩里 (Katy Perry) 的前男友罗素·布兰德 (Russell Brand) 因强奸罪被判处 10 年半监禁，其社交媒体账号已被停用。"
     },
-    "intro": "这位来自马拉加的男子在《下午行动》中宣布了这一消息，尽管他避免澄清有关的谣言",
+    "intro": "正如该演员的团队在其 X 个人资料中报告的那样，Meta 已关闭其在 Facebook 和 Instagram 上的账户，但",
     "sentences": [
       {
         "id": 1,
-        "es": "El malagueño ha dado a conocer la noticia la noticia en 'La tarde se mueve', aunque ha evitado aclarar los rumores sobre una presunta deslealtad.",
-        "en": "The man from Málaga announced the news in 'The afternoon moves', although he has avoided clarifying the rumors about alleged disloyalty.",
-        "cn": "这位来自马拉加的男子在《下午行动》中宣布了这一消息，尽管他避免澄清有关涉嫌不忠的谣言。",
+        "es": "Meta ha cerrado las cuentas del actor en Facebook e Instagram, tal y como ha informado su equipo en su perfil de X, aún activo.",
+        "en": "Meta has closed the actor's Facebook and Instagram accounts, as reported by his team on his still-active X profile.",
+        "cn": "据他的团队在他仍然活跃的 X 个人资料中报道，Meta 已经关闭了这位演员的 Facebook 和 Instagram 帐户。",
         "audio": "./assets/audios/story_3_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Rocío Flores y Manuel Bedmar han roto: él confirma que llevan dos años separados y que trabajan juntos",
-        "en": "Rocío Flores and Manuel Bedmar have broken up: he confirms that they have been separated for two years and that they work together",
-        "cn": "罗西奥·弗洛雷斯 (Rocío Flores) 和曼努埃尔·贝德玛 (Manuel Bedmar) 分手：他证实他们已经分居两年，并且一起工作",
+        "es": "Las redes sociales de Russell Brand, ex de Katy Perry, suspendidas tras su condena de 10 años y medio de cárcel por violación",
+        "en": "The social networks of Russell Brand, Katy Perry's ex, suspended after his sentence of 10 and a half years in prison for rape",
+        "cn": "凯蒂·佩里 (Katy Perry) 的前男友拉塞尔·布兰德 (Russell Brand) 因强奸罪被判入狱 10 年半，其社交网络被暂停",
         "audio": "./assets/audios/story_3_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "rocío",
+        "word": "redes",
         "pos": "voc.",
-        "cn": "露",
-        "en": "dew",
-        "example": "El malagueño ha dado a conocer la noticia la noticia en 'La tarde se mueve', aunque ha evitado aclarar los rumores sobre una presunta deslealtad.",
+        "cn": "网络",
+        "en": "networks",
+        "example": "Meta ha cerrado las cuentas del actor en Facebook e Instagram, tal y como ha informado su equipo en su perfil de X, aún activo.",
         "audio": "./assets/audios/vocab_story_3_1.mp3"
       },
       {
-        "word": "flores",
+        "word": "sociales",
         "pos": "voc.",
-        "cn": "花朵",
-        "en": "flowers",
-        "example": "Rocío Flores y Manuel Bedmar han roto: él confirma que llevan dos años separados y que trabajan juntos",
+        "cn": "社会的",
+        "en": "social",
+        "example": "Las redes sociales de Russell Brand, ex de Katy Perry, suspendidas tras su condena de 10 años y medio de cárcel por violación",
         "audio": "./assets/audios/vocab_story_3_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「rocío」在文中的表达",
-      "detail": "「rocío」在本文语境下表示“露”，是地道西语新闻常用表达。"
+      "point": "核心词汇「redes」在文中的表达",
+      "detail": "「redes」在本文语境下表示“网络”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「rocío」在文中的中文含义是？",
+      "question": "西语单词「redes」在文中的中文含义是？",
       "options": [
-        "A. 露",
+        "A. 网络",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「rocío」在此处意为：露。"
+      "explanation": "「redes」在此处意为：网络。"
     },
     "audio_full_normal": "./assets/audios/story_3_normal.mp3",
     "audio_full_slow": "./assets/audios/story_3_slow.mp3"
@@ -186,60 +186,60 @@ const DAILY_STORIES = [
   {
     "id": "story_4",
     "tag": "体育 / 赛事",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "title": {
-      "es": "La razón por la que los jugadores de España no hacen huelga: \"No pueden acogerse a ese derecho\"",
-      "en": "The reason why Spain's players do not strike: \"They cannot avail themselves of that right\"",
-      "cn": "04. 西班牙球员不罢工的原因：“他们无法利用这一权利”"
+      "es": "La FIFA visita y evalúa el Bernabéu en plena pelea por la final del Mundial 2030 con el Camp Nou y el Hasan II",
+      "en": "FIFA visits and evaluates the Bernabéu in the midst of the fight for the 2030 World Cup final with Camp Nou and Hasan II",
+      "cn": "04. 国际足联在与诺坎普和哈桑二世争夺2030年世界杯决赛之际访问并评估伯纳乌"
     },
-    "intro": "看看国家队球员是否有罢工权。",
+    "intro": "该组织的代表团参观了白队体育场的内部房间以及更衣室，",
     "sentences": [
       {
         "id": 1,
-        "es": "Descubre si los jugadores del combinado nacional tienen derecho a huelga.",
-        "en": "Find out if the national team players have the right to strike.",
-        "cn": "看看国家队球员是否有罢工权。",
+        "es": "Una delegación del organismo recorrió las dependencias interiores del estadio del club blanco, así como los vestuarios, las gradas y el césped.",
+        "en": "A delegation from the organization toured the interior of the white club's stadium, as well as the locker rooms, the stands and the grass.",
+        "cn": "该组织的一个代表团参观了白色俱乐部体育场的内部、更衣室、看台和草坪。",
         "audio": "./assets/audios/story_4_s1.mp3"
       },
       {
         "id": 2,
-        "es": "La razón por la que los jugadores de España no hacen huelga: \"No pueden acogerse a ese derecho\"",
-        "en": "The reason why Spain's players do not strike: \"They cannot avail themselves of that right\"",
-        "cn": "西班牙球员不罢工的原因：“他们无法利用这一权利”",
+        "es": "La FIFA visita y evalúa el Bernabéu en plena pelea por la final del Mundial 2030 con el Camp Nou y el Hasan II",
+        "en": "FIFA visits and evaluates the Bernabéu in the midst of the fight for the 2030 World Cup final with Camp Nou and Hasan II",
+        "cn": "国际足联在与诺坎普和哈桑二世争夺2030年世界杯决赛之际访问并评估伯纳乌",
         "audio": "./assets/audios/story_4_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "razón",
+        "word": "visita",
         "pos": "voc.",
-        "cn": "原因",
-        "en": "reason",
-        "example": "Descubre si los jugadores del combinado nacional tienen derecho a huelga.",
+        "cn": "访问",
+        "en": "visit",
+        "example": "Una delegación del organismo recorrió las dependencias interiores del estadio del club blanco, así como los vestuarios, las gradas y el césped.",
         "audio": "./assets/audios/vocab_story_4_1.mp3"
       },
       {
-        "word": "jugadores",
+        "word": "evalúa",
         "pos": "voc.",
-        "cn": "玩家",
-        "en": "players",
-        "example": "La razón por la que los jugadores de España no hacen huelga: \"No pueden acogerse a ese derecho\"",
+        "cn": "评价",
+        "en": "evaluate",
+        "example": "La FIFA visita y evalúa el Bernabéu en plena pelea por la final del Mundial 2030 con el Camp Nou y el Hasan II",
         "audio": "./assets/audios/vocab_story_4_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「razón」在文中的表达",
-      "detail": "「razón」在本文语境下表示“原因”，是地道西语新闻常用表达。"
+      "point": "核心词汇「visita」在文中的表达",
+      "detail": "「visita」在本文语境下表示“访问”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「razón」在文中的中文含义是？",
+      "question": "西语单词「visita」在文中的中文含义是？",
       "options": [
-        "A. 原因",
+        "A. 访问",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「razón」在此处意为：原因。"
+      "explanation": "「visita」在此处意为：访问。"
     },
     "audio_full_normal": "./assets/audios/story_4_normal.mp3",
     "audio_full_slow": "./assets/audios/story_4_slow.mp3"
@@ -247,60 +247,60 @@ const DAILY_STORIES = [
   {
     "id": "story_5",
     "tag": "体育 / 赛事",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "title": {
-      "es": "Luis de la Fuente, indignado tras las insinuaciones sobre el caso Lamine Yamal: \"No tiene privilegios, ¿ha quedado claro?\"",
-      "en": "Luis de la Fuente, outraged after insinuations about the Lamine Yamal case: \"He has no privileges, is that clear?\"",
-      "cn": "05. 路易斯·德拉富恩特在对拉明·亚马尔案的暗示后感到愤怒：“他没有特权，明白吗？”"
+      "es": "España no se cansa de ganar: tumba a República Checa y acaricia el liderato en la Nations League",
+      "en": "Spain never tires of winning: it knocks down the Czech Republic and takes the lead in the Nations League",
+      "cn": "05. 西班牙永不厌倦胜利：击败捷克并在国家联赛中取得领先"
     },
-    "intro": "在对阵捷克共和国的几个小时前，这位里奥哈教练出现在捷克境内的媒体面前。",
+    "intro": "凭借巴埃纳和普比尔的进球，拉罗亚队将不败纪录扩大到 44 场，尽管球队还需要",
     "sentences": [
       {
         "id": 1,
-        "es": "El técnico riojano compareció ante los medios de comunicación en territorio checo, horas antes de medirse a República Checa en la Nations League.",
-        "en": "The Riojan coach appeared before the media in Czech territory, hours before facing the Czech Republic in the Nations League.",
-        "cn": "这位里奥哈教练在捷克境内出现在媒体面前，几个小时后将在国家联赛中对阵捷克共和国。",
+        "es": "La Roja prolonga su racha de imbatibilidad hasta los 44 partidos gracias a los goles de Baena y Pubill, aunque tendrá que esperar a certificar el primer puesto de su grupo en la última jornada.",
+        "en": "La Roja extends its unbeaten streak to 44 games thanks to goals from Baena and Pubill, although it will have to wait to certify first place in its group on the last day.",
+        "cn": "凭借巴埃纳和普比尔的进球，拉罗亚队将不败纪录扩大到44场，不过要等到最后一天才能确定小组第一。",
         "audio": "./assets/audios/story_5_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Luis de la Fuente, indignado tras las insinuaciones sobre el caso Lamine Yamal: \"No tiene privilegios, ¿ha quedado claro?\"",
-        "en": "Luis de la Fuente, outraged after insinuations about the Lamine Yamal case: \"He has no privileges, is that clear?\"",
-        "cn": "路易斯·德拉富恩特在对拉明·亚马尔案的暗示后感到愤怒：“他没有特权，明白吗？”",
+        "es": "España no se cansa de ganar: tumba a República Checa y acaricia el liderato en la Nations League",
+        "en": "Spain never tires of winning: it knocks down the Czech Republic and takes the lead in the Nations League",
+        "cn": "西班牙永不厌倦胜利：击败捷克并在国家联赛中取得领先",
         "audio": "./assets/audios/story_5_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "fuente",
+        "word": "españa",
         "pos": "voc.",
-        "cn": "喷泉",
-        "en": "fountain",
-        "example": "El técnico riojano compareció ante los medios de comunicación en territorio checo, horas antes de medirse a República Checa en la Nations League.",
+        "cn": "西班牙",
+        "en": "Spain",
+        "example": "La Roja prolonga su racha de imbatibilidad hasta los 44 partidos gracias a los goles de Baena y Pubill, aunque tendrá que esperar a certificar el primer puesto de su grupo en la última jornada.",
         "audio": "./assets/audios/vocab_story_5_1.mp3"
       },
       {
-        "word": "indignado",
+        "word": "cansa",
         "pos": "voc.",
-        "cn": "愤怒",
-        "en": "indignant",
-        "example": "Luis de la Fuente, indignado tras las insinuaciones sobre el caso Lamine Yamal: \"No tiene privilegios, ¿ha quedado claro?\"",
+        "cn": "疲劳的",
+        "en": "tired",
+        "example": "España no se cansa de ganar: tumba a República Checa y acaricia el liderato en la Nations League",
         "audio": "./assets/audios/vocab_story_5_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「fuente」在文中的表达",
-      "detail": "「fuente」在本文语境下表示“喷泉”，是地道西语新闻常用表达。"
+      "point": "核心词汇「españa」在文中的表达",
+      "detail": "「españa」在本文语境下表示“西班牙”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「fuente」在文中的中文含义是？",
+      "question": "西语单词「españa」在文中的中文含义是？",
       "options": [
-        "A. 喷泉",
+        "A. 西班牙",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「fuente」在此处意为：喷泉。"
+      "explanation": "「españa」在此处意为：西班牙。"
     },
     "audio_full_normal": "./assets/audios/story_5_normal.mp3",
     "audio_full_slow": "./assets/audios/story_5_slow.mp3"
@@ -308,60 +308,60 @@ const DAILY_STORIES = [
   {
     "id": "story_6",
     "tag": "体育 / 赛事",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "title": {
-      "es": "Robert Sánchez destroza un Ferrari tras sufrir un grave accidente: \"Circulaba a 113 km/h por una curva\"",
-      "en": "Robert Sánchez destroys a Ferrari after suffering a serious accident: \"It was traveling at 113 km/h through a curve\"",
-      "cn": "06. 罗伯特·桑切斯 (Robert Sánchez) 在遭遇严重事故后毁坏了一辆法拉利：“当时它以 113 公里/小时的速度通过弯道”"
+      "es": "Oihan Sancet: \"Ojalá el día de mañana podamos jugar el Mundial con la selección de nuestro país, Euskadi\"",
+      "en": "Oihan Sancet: \"Hopefully tomorrow we can play in the World Cup with the national team of our country, Euskadi\"",
+      "cn": "06. Oihan Sancet：“希望明天我们能够与我们国家尤斯卡迪队一起参加世界杯”"
     },
-    "intro": "据《The》报道，这些事件于上周一（11 月 9 日）发生在德国纽博格林赛道上。",
+    "intro": "这位运动员出现在下周六巴斯卡迪与委内瑞拉比赛前的新闻发布会上 1",
     "sentences": [
       {
         "id": 1,
-        "es": "Los hechos se produjeron en el trazado de Nürburgring, en Alemania, este pasado lunes 9 de noviembre, según desveló 'The Sun'.",
-        "en": "The events occurred on the Nürburgring track, in Germany, this past Monday, November 9, according to 'The Sun'.",
-        "cn": "据《太阳报》报道，这起事件于 11 月 9 日星期一在德国纽博格林赛道上发生。",
+        "es": "El jugador del Athletic compareció en la rueda de prensa previa al choque entre Euskadi y Venezuela del próximo sábado 14.",
+        "en": "The Athletic player appeared at the press conference prior to the clash between Euskadi and Venezuela next Saturday the 14th.",
+        "cn": "这位运动员出现在下周六14日巴斯卡迪与委内瑞拉队比赛前的新闻发布会上。",
         "audio": "./assets/audios/story_6_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Robert Sánchez destroza un Ferrari tras sufrir un grave accidente: \"Circulaba a 113 km/h por una curva\"",
-        "en": "Robert Sánchez destroys a Ferrari after suffering a serious accident: \"It was traveling at 113 km/h through a curve\"",
-        "cn": "罗伯特·桑切斯 (Robert Sánchez) 在遭遇严重事故后毁坏了一辆法拉利：“当时它以 113 公里/小时的速度通过弯道”",
+        "es": "Oihan Sancet: \"Ojalá el día de mañana podamos jugar el Mundial con la selección de nuestro país, Euskadi\"",
+        "en": "Oihan Sancet: \"Hopefully tomorrow we can play in the World Cup with the national team of our country, Euskadi\"",
+        "cn": "Oihan Sancet：“希望明天我们能够与我们国家尤斯卡迪队一起参加世界杯”",
         "audio": "./assets/audios/story_6_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "robert",
+        "word": "oihan",
         "pos": "voc.",
-        "cn": "罗伯特",
-        "en": "robert",
-        "example": "Los hechos se produjeron en el trazado de Nürburgring, en Alemania, este pasado lunes 9 de noviembre, según desveló 'The Sun'.",
+        "cn": "爱汉",
+        "en": "oihan",
+        "example": "El jugador del Athletic compareció en la rueda de prensa previa al choque entre Euskadi y Venezuela del próximo sábado 14.",
         "audio": "./assets/audios/vocab_story_6_1.mp3"
       },
       {
-        "word": "sánchez",
+        "word": "sancet",
         "pos": "voc.",
-        "cn": "桑切斯",
-        "en": "sanchez",
-        "example": "Robert Sánchez destroza un Ferrari tras sufrir un grave accidente: \"Circulaba a 113 km/h por una curva\"",
+        "cn": "桑塞特",
+        "en": "sancet",
+        "example": "Oihan Sancet: \"Ojalá el día de mañana podamos jugar el Mundial con la selección de nuestro país, Euskadi\"",
         "audio": "./assets/audios/vocab_story_6_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「robert」在文中的表达",
-      "detail": "「robert」在本文语境下表示“罗伯特”，是地道西语新闻常用表达。"
+      "point": "核心词汇「oihan」在文中的表达",
+      "detail": "「oihan」在本文语境下表示“爱汉”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「robert」在文中的中文含义是？",
+      "question": "西语单词「oihan」在文中的中文含义是？",
       "options": [
-        "A. 罗伯特",
+        "A. 爱汉",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「robert」在此处意为：罗伯特。"
+      "explanation": "「oihan」在此处意为：爱汉。"
     },
     "audio_full_normal": "./assets/audios/story_6_normal.mp3",
     "audio_full_slow": "./assets/audios/story_6_slow.mp3"
@@ -369,60 +369,60 @@ const DAILY_STORIES = [
   {
     "id": "story_7",
     "tag": "文化 / 艺术",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "title": {
-      "es": "Bad Gyal y Las Petunias, en el cartel de un Coachella 2027 encabezado por Dua Lipa y Madonna",
-      "en": "Bad Gyal and Las Petunias, on the poster for a Coachella 2027 headed by Dua Lipa and Madonna",
-      "cn": "07. Bad Gyal 和 Las Petunias，出现在由 Dua Lipa 和 Madonna 领衔的 2027 年 Coachella 音乐节海报上"
+      "es": "Hijos de la Ruina y Morad colaboran en 'Mi Vida', una canción sobre la lealtad, los orígenes y el paso del tiempo",
+      "en": "Hijos de la Ruina and Morad collaborate on 'Mi Vida', a song about loyalty, origins and the passage of time",
+      "cn": "07. Hijos de la Ruina 和 Morad 合作创作了《Mi Vida》，这是一首关于忠诚、起源和时间流逝的歌曲"
     },
-    "intro": "Daddy Yankee、Tame Impala、SZA、Weezer 和 Zara Larsson 也将在下一届演出。",
+    "intro": "这首歌代表了西班牙城市场景的参考文献，因为这是三人组第一次与",
     "sentences": [
       {
         "id": 1,
-        "es": "Daddy Yankee, Tame Impala, SZA, Weezer o Zara Larsson también actuarán en la próxima edición.",
-        "en": "Daddy Yankee, Tame Impala, SZA, Weezer and Zara Larsson will also perform in the next edition.",
-        "cn": "Daddy Yankee、Tame Impala、SZA、Weezer 和 Zara Larsson 也将在下一届演出。",
+        "es": "El tema supone un encuentro de referentes de la escena urbana española, ya que es la primera vez que el trío colabora con el rapero.",
+        "en": "The song represents a meeting of references from the Spanish urban scene, since it is the first time that the trio collaborates with the rapper.",
+        "cn": "这首歌代表了西班牙城市场景的参考文献，因为这是三人组第一次与说唱歌手合作。",
         "audio": "./assets/audios/story_7_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Bad Gyal y Las Petunias, en el cartel de un Coachella 2027 encabezado por Dua Lipa y Madonna",
-        "en": "Bad Gyal and Las Petunias, on the poster for a Coachella 2027 headed by Dua Lipa and Madonna",
-        "cn": "Bad Gyal 和 Las Petunias，出现在由 Dua Lipa 和 Madonna 领衔的 2027 年 Coachella 音乐节海报上",
+        "es": "Hijos de la Ruina y Morad colaboran en 'Mi Vida', una canción sobre la lealtad, los orígenes y el paso del tiempo",
+        "en": "Hijos de la Ruina and Morad collaborate on 'Mi Vida', a song about loyalty, origins and the passage of time",
+        "cn": "Hijos de la Ruina 和 Morad 合作创作了《Mi Vida》，这是一首关于忠诚、起源和时间流逝的歌曲",
         "audio": "./assets/audios/story_7_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "petunias",
+        "word": "hijos",
         "pos": "voc.",
-        "cn": "矮牵牛",
-        "en": "petunias",
-        "example": "Daddy Yankee, Tame Impala, SZA, Weezer o Zara Larsson también actuarán en la próxima edición.",
+        "cn": "孩子们",
+        "en": "children",
+        "example": "El tema supone un encuentro de referentes de la escena urbana española, ya que es la primera vez que el trío colabora con el rapero.",
         "audio": "./assets/audios/vocab_story_7_1.mp3"
       },
       {
-        "word": "cartel",
+        "word": "ruina",
         "pos": "voc.",
-        "cn": "符号",
-        "en": "sign",
-        "example": "Bad Gyal y Las Petunias, en el cartel de un Coachella 2027 encabezado por Dua Lipa y Madonna",
+        "cn": "废墟",
+        "en": "ruin",
+        "example": "Hijos de la Ruina y Morad colaboran en 'Mi Vida', una canción sobre la lealtad, los orígenes y el paso del tiempo",
         "audio": "./assets/audios/vocab_story_7_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「petunias」在文中的表达",
-      "detail": "「petunias」在本文语境下表示“矮牵牛”，是地道西语新闻常用表达。"
+      "point": "核心词汇「hijos」在文中的表达",
+      "detail": "「hijos」在本文语境下表示“孩子们”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「petunias」在文中的中文含义是？",
+      "question": "西语单词「hijos」在文中的中文含义是？",
       "options": [
-        "A. 矮牵牛",
+        "A. 孩子们",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「petunias」在此处意为：矮牵牛。"
+      "explanation": "「hijos」在此处意为：孩子们。"
     },
     "audio_full_normal": "./assets/audios/story_7_normal.mp3",
     "audio_full_slow": "./assets/audios/story_7_slow.mp3"
@@ -430,60 +430,60 @@ const DAILY_STORIES = [
   {
     "id": "story_8",
     "tag": "文化 / 艺术",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "title": {
-      "es": "¿Sabías que un rinoceronte se convirtió en símbolo del voto protesta en Brasil?",
-      "en": "Did you know that a rhino became a symbol of the protest vote in Brazil?",
-      "cn": "08. 您知道犀牛成为巴西抗议投票的象征吗？"
+      "es": "Alejandro Sanz gana el Latin Grammy a mejor álbum de pop contemporáneo por '¿Y ahora qué+?'",
+      "en": "Alejandro Sanz wins the Latin Grammy for best contemporary pop album for 'And now what+?'",
+      "cn": "08. 亚历杭德罗·桑斯 (Alejandro Sanz) 凭借《现在又怎样？》赢得了拉丁格莱美最佳当代流行专辑奖。"
     },
-    "intro": "该动物获得了大约十万张选票，几乎是得票最多的人类候选人的十倍。",
+    "intro": "这位歌手没有参加今年在洛杉矶举行的第 27 届活动。",
     "sentences": [
       {
         "id": 1,
-        "es": "El animal recibió alrededor de cien mil votos, casi diez veces más que el candidato humano más votado.",
-        "en": "The animal received around one hundred thousand votes, almost ten times more than the human candidate with the most votes.",
-        "cn": "该动物获得了大约十万张选票，几乎是得票最多的人类候选人的十倍。",
+        "es": "El cantante no acude al acto, que este año celebra su 27º edición y que tiene lugar en Los Ángeles.",
+        "en": "The singer does not attend the event, which this year celebrates its 27th edition and takes place in Los Angeles.",
+        "cn": "这位歌手没有参加今年在洛杉矶举行的第 27 届活动。",
         "audio": "./assets/audios/story_8_s1.mp3"
       },
       {
         "id": 2,
-        "es": "¿Sabías que un rinoceronte se convirtió en símbolo del voto protesta en Brasil?",
-        "en": "Did you know that a rhino became a symbol of the protest vote in Brazil?",
-        "cn": "您知道犀牛成为巴西抗议投票的象征吗？",
+        "es": "Alejandro Sanz gana el Latin Grammy a mejor álbum de pop contemporáneo por '¿Y ahora qué+?'",
+        "en": "Alejandro Sanz wins the Latin Grammy for best contemporary pop album for 'And now what+?'",
+        "cn": "亚历杭德罗·桑斯 (Alejandro Sanz) 凭借《现在又怎样？》赢得了拉丁格莱美最佳当代流行专辑奖。",
         "audio": "./assets/audios/story_8_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "sabías",
+        "word": "alejandro",
         "pos": "voc.",
-        "cn": "你可知道",
-        "en": "did you know",
-        "example": "El animal recibió alrededor de cien mil votos, casi diez veces más que el candidato humano más votado.",
+        "cn": "亚历山大",
+        "en": "Alexander",
+        "example": "El cantante no acude al acto, que este año celebra su 27º edición y que tiene lugar en Los Ángeles.",
         "audio": "./assets/audios/vocab_story_8_1.mp3"
       },
       {
-        "word": "rinoceronte",
+        "word": "latin",
         "pos": "voc.",
-        "cn": "犀牛",
-        "en": "rhinoceros",
-        "example": "¿Sabías que un rinoceronte se convirtió en símbolo del voto protesta en Brasil?",
+        "cn": "拉丁",
+        "en": "Latin",
+        "example": "Alejandro Sanz gana el Latin Grammy a mejor álbum de pop contemporáneo por '¿Y ahora qué+?'",
         "audio": "./assets/audios/vocab_story_8_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「sabías」在文中的表达",
-      "detail": "「sabías」在本文语境下表示“你可知道”，是地道西语新闻常用表达。"
+      "point": "核心词汇「alejandro」在文中的表达",
+      "detail": "「alejandro」在本文语境下表示“亚历山大”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「sabías」在文中的中文含义是？",
+      "question": "西语单词「alejandro」在文中的中文含义是？",
       "options": [
-        "A. 你可知道",
+        "A. 亚历山大",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「sabías」在此处意为：你可知道。"
+      "explanation": "「alejandro」在此处意为：亚历山大。"
     },
     "audio_full_normal": "./assets/audios/story_8_normal.mp3",
     "audio_full_slow": "./assets/audios/story_8_slow.mp3"
@@ -491,60 +491,60 @@ const DAILY_STORIES = [
   {
     "id": "story_9",
     "tag": "生活 / 资讯",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "title": {
-      "es": "Decenas de miles de personas salen a la calle para protestar contra el precio de la vivienda",
-      "en": "Tens of thousands of people take to the streets to protest against housing prices",
-      "cn": "09. 数万人走上街头抗议房价上涨"
+      "es": "Sánchez augura una \"remontada épica\" el 29N y Feijóo promete \"una auditoría del saqueo\" para ver dónde ha ido cada euro",
+      "en": "Sánchez predicts an \"epic comeback\" on 29N and Feijóo promises \"an audit of the looting\" to see where each euro has gone",
+      "cn": "09. 桑切斯预测 29 日将出现“史诗般的卷土重来”，费约则承诺“对抢劫进行审计”，看看每一欧元都去了哪里"
     },
-    "intro": "这是当天总罢工的高潮，主要工会号召抗议子工会。",
+    "intro": "PSOE、PP、Frente Amplio 和 Vox 在不同城市举行集会。",
     "sentences": [
       {
         "id": 1,
-        "es": "Ha sido el colofón a la jornada de huelga general, convocada por los principales sindicatos para protestar contra la subida de los precios de la vivienda y la mejora de los salarios para poder afrontarla.",
-        "en": "It was the culmination of the day of general strike, called by the main unions to protest against the rise in housing prices and the improvement in salaries to be able to face it.",
-        "cn": "这是当天总罢工的高潮，主要工会呼吁抗议房价上涨和工资提高，以应对这一情况。",
+        "es": "PSOE, PP, Frente Amplio y Vox han celebrado mítines en diferentes ciudades.",
+        "en": "PSOE, PP, Frente Amplio and Vox have held rallies in different cities.",
+        "cn": "PSOE、PP、Frente Amplio 和 Vox 在不同城市举行集会。",
         "audio": "./assets/audios/story_9_s1.mp3"
       },
       {
         "id": 2,
-        "es": "La meteorología adversa ha conllevado la suspensión de las marchas en Cádiz, Huelva, Córdoba y Sevilla.",
-        "en": "The adverse weather has led to the suspension of the marches in Cádiz, Huelva, Córdoba and Seville.",
-        "cn": "恶劣的天气导致加的斯、韦尔瓦、科尔多瓦和塞维利亚的游行暂停。",
+        "es": "Sánchez augura una \"remontada épica\" el 29N y Feijóo promete \"una auditoría del saqueo\" para ver dónde ha ido cada euro",
+        "en": "Sánchez predicts an \"epic comeback\" on 29N and Feijóo promises \"an audit of the looting\" to see where each euro has gone",
+        "cn": "桑切斯预测 29 日将出现“史诗般的卷土重来”，费约则承诺“对抢劫进行审计”，看看每一欧元都去了哪里",
         "audio": "./assets/audios/story_9_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "decenas",
+        "word": "sánchez",
         "pos": "voc.",
-        "cn": "数十",
-        "en": "tens",
-        "example": "Ha sido el colofón a la jornada de huelga general, convocada por los principales sindicatos para protestar contra la subida de los precios de la vivienda y la mejora de los salarios para poder afrontarla.",
+        "cn": "桑切斯",
+        "en": "sanchez",
+        "example": "PSOE, PP, Frente Amplio y Vox han celebrado mítines en diferentes ciudades.",
         "audio": "./assets/audios/vocab_story_9_1.mp3"
       },
       {
-        "word": "miles",
+        "word": "augura",
         "pos": "voc.",
-        "cn": "数千",
-        "en": "thousands",
-        "example": "La meteorología adversa ha conllevado la suspensión de las marchas en Cádiz, Huelva, Córdoba y Sevilla.",
+        "cn": "占卜者",
+        "en": "augurs",
+        "example": "Sánchez augura una \"remontada épica\" el 29N y Feijóo promete \"una auditoría del saqueo\" para ver dónde ha ido cada euro",
         "audio": "./assets/audios/vocab_story_9_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「decenas」在文中的表达",
-      "detail": "「decenas」在本文语境下表示“数十”，是地道西语新闻常用表达。"
+      "point": "核心词汇「sánchez」在文中的表达",
+      "detail": "「sánchez」在本文语境下表示“桑切斯”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「decenas」在文中的中文含义是？",
+      "question": "西语单词「sánchez」在文中的中文含义是？",
       "options": [
-        "A. 数十",
+        "A. 桑切斯",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「decenas」在此处意为：数十。"
+      "explanation": "「sánchez」在此处意为：桑切斯。"
     },
     "audio_full_normal": "./assets/audios/story_9_normal.mp3",
     "audio_full_slow": "./assets/audios/story_9_slow.mp3"
@@ -552,60 +552,60 @@ const DAILY_STORIES = [
   {
     "id": "story_10",
     "tag": "生活 / 资讯",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "title": {
-      "es": "La manifestación por la vivienda y la mejora de los salarios reúne a 55.000 personas",
-      "en": "The demonstration for housing and improved salaries brings together 55,000 people",
-      "cn": "10. 住房和提高工资示威聚集了 55,000 人"
+      "es": "Begoña Gómez interviene por primera vez en un mitin del PSOE: \"Me habéis dado la mano y el aliento necesario para poder continuar\"",
+      "en": "Begoña Gómez speaks for the first time at a PSOE rally: \"You have given me the hand and the necessary encouragement to be able to continue\"",
+      "cn": "10. 贝戈尼亚·戈麦斯首次在西班牙社会党集会上发表讲话：“你们向我伸出了援助之手，并给予了我必要的鼓励，让我能够继续前进”"
     },
-    "intro": "Llogateres Union 的橙色围巾为抗议活动增添了色彩，该组织估计有 40 万人参加",
+    "intro": "戈麦斯仍在等待因涉嫌兜售影响力和贪污罪而走上法律之路的审判",
     "sentences": [
       {
         "id": 1,
-        "es": "Los pañuelos naranjas del Sindicat de Llogateres tiñen una protesta que la organización cifra en 400.",
-        "en": "The orange scarves of the Sindicat de Llogateres color a protest that the organization estimates at 400.",
-        "cn": "Sindicat de Llogateres 的橙色围巾为抗议活动增色不少，该组织估计有 400 人参加。",
+        "es": "Gómez se mantiene a la espera de juicio por presuntos delitos de tráfico de influencias y malversación en un periplo legal que se prolonga ya más de dos años y medio.",
+        "en": "Gómez remains awaiting trial for alleged crimes of influence peddling and embezzlement in a legal journey that has now lasted more than two and a half years.",
+        "cn": "戈麦斯仍在等待因涉嫌以权谋私和贪污罪受审，其法律之旅现已持续两年半多。",
         "audio": "./assets/audios/story_10_s1.mp3"
       },
       {
         "id": 2,
-        "es": "000 personas.",
-        "en": "000 people.",
-        "cn": "000 人。",
+        "es": "Begoña Gómez interviene por primera vez en un mitin del PSOE: \"Me habéis dado la mano y el aliento necesario para poder continuar\"",
+        "en": "Begoña Gómez speaks for the first time at a PSOE rally: \"You have given me the hand and the necessary encouragement to be able to continue\"",
+        "cn": "贝戈尼亚·戈麦斯首次在西班牙社会党集会上发表讲话：“你们向我伸出了援助之手，并给予了我必要的鼓励，让我能够继续前进”",
         "audio": "./assets/audios/story_10_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "manifestación",
+        "word": "begoña",
         "pos": "voc.",
-        "cn": "表现",
-        "en": "manifestation",
-        "example": "Los pañuelos naranjas del Sindicat de Llogateres tiñen una protesta que la organización cifra en 400.",
+        "cn": "贝戈尼亚",
+        "en": "begoña",
+        "example": "Gómez se mantiene a la espera de juicio por presuntos delitos de tráfico de influencias y malversación en un periplo legal que se prolonga ya más de dos años y medio.",
         "audio": "./assets/audios/vocab_story_10_1.mp3"
       },
       {
-        "word": "vivienda",
+        "word": "gómez",
         "pos": "voc.",
-        "cn": "住宅",
-        "en": "dwelling",
-        "example": "000 personas.",
+        "cn": "戈麦斯",
+        "en": "Gomez",
+        "example": "Begoña Gómez interviene por primera vez en un mitin del PSOE: \"Me habéis dado la mano y el aliento necesario para poder continuar\"",
         "audio": "./assets/audios/vocab_story_10_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「manifestación」在文中的表达",
-      "detail": "「manifestación」在本文语境下表示“表现”，是地道西语新闻常用表达。"
+      "point": "核心词汇「begoña」在文中的表达",
+      "detail": "「begoña」在本文语境下表示“贝戈尼亚”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「manifestación」在文中的中文含义是？",
+      "question": "西语单词「begoña」在文中的中文含义是？",
       "options": [
-        "A. 表现",
+        "A. 贝戈尼亚",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「manifestación」在此处意为：表现。"
+      "explanation": "「begoña」在此处意为：贝戈尼亚。"
     },
     "audio_full_normal": "./assets/audios/story_10_normal.mp3",
     "audio_full_slow": "./assets/audios/story_10_slow.mp3"
