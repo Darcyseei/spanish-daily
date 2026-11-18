@@ -3,11 +3,11 @@ const DAILY_STORIES = [
   {
     "id": "story_1",
     "tag": "八卦 / 名人",
-    "date": "2026-11-17",
+    "date": "2026-11-18",
     "title": {
-      "es": "Tu horóscopo diario: martes 17 de noviembre de 2026",
-      "en": "Your daily horoscope: Tuesday, November 17, 2026",
-      "cn": "01. 您的每日星座运势：2026 年 11 月 17 日星期二"
+      "es": "Tu horóscopo diario: miércoles 18 de noviembre de 2026",
+      "en": "Your daily horoscope: Wednesday, November 18, 2026",
+      "cn": "01. 您的每日星座运势：2026 年 11 月 18 日星期三"
     },
     "intro": "在 20minutos.es 中查看昨天、今天和明天的星座运势",
     "sentences": [
@@ -20,9 +20,9 @@ const DAILY_STORIES = [
       },
       {
         "id": 2,
-        "es": "Tu horóscopo diario: martes 17 de noviembre de 2026",
-        "en": "Your daily horoscope: Tuesday, November 17, 2026",
-        "cn": "您的每日星座运势：2026 年 11 月 17 日星期二",
+        "es": "Tu horóscopo diario: miércoles 18 de noviembre de 2026",
+        "en": "Your daily horoscope: Wednesday, November 18, 2026",
+        "cn": "您的每日星座运势：2026 年 11 月 18 日星期三",
         "audio": "./assets/audios/story_1_s2.mp3"
       }
     ],
@@ -40,7 +40,7 @@ const DAILY_STORIES = [
         "pos": "voc.",
         "cn": "日记",
         "en": "diary",
-        "example": "Tu horóscopo diario: martes 17 de noviembre de 2026",
+        "example": "Tu horóscopo diario: miércoles 18 de noviembre de 2026",
         "audio": "./assets/audios/vocab_story_1_2.mp3"
       }
     ],
@@ -64,60 +64,60 @@ const DAILY_STORIES = [
   {
     "id": "story_2",
     "tag": "八卦 / 名人",
-    "date": "2026-11-17",
+    "date": "2026-11-18",
     "title": {
-      "es": "Tamara Gorro y Cayetano Rivera rompen su relación antes de cumplir un año juntos",
-      "en": "Tamara Gorro and Cayetano Rivera break up their relationship before celebrating a year together",
-      "cn": "02. 塔玛拉·戈罗 (Tamara Gorro) 和卡耶塔诺·里维拉 (Cayetano Rivera) 在庆祝一周年之前分手了"
+      "es": "Gonzalo Montoya recuerda entre lágrimas el motivo de su ruptura con Susana Molina: \"Dejé escapar al amor de mi vida\"",
+      "en": "Gonzalo Montoya tearfully remembers the reason for his breakup with Susana Molina: \"I let the love of my life escape\"",
+      "cn": "02. 贡萨洛·蒙托亚 (Gonzalo Montoya) 含泪回忆起与苏珊娜·莫利纳 (Susana Molina) 分手的原因：“我让我一生的挚爱逃走了”"
     },
-    "intro": "这一消息是由纳乔·盖伊在《现在的松索斯》中提供的，就在一周前，这位右撇子感到惊讶",
+    "intro": "塞维利亚人接受了 Nacho Pla 主持的播客“La Influencia”的采访，在那里他被",
     "sentences": [
       {
         "id": 1,
-        "es": "La noticia, ofrecida por Nacho Gay en 'Y ahora Sonsoles', llega apenas una semana después de que el diestro sorprendiera con una romántica declaración en sus redes dirigida a la televisiva.",
-        "en": "The news, offered by Nacho Gay in 'And now Sonsoles', comes just a week after the right-hander surprised with a romantic statement on his networks addressed to television.",
-        "cn": "纳乔·盖伊在《现在的松索斯》中透露了这一消息，就在一周前，这位右撇子在他的电视台上向电视发表了浪漫的声明，这让他感到惊讶。",
+        "es": "El sevillano ha concedido una entrevista al pódcast 'La Influencia', presentado por Nacho Pla, donde se ha emocionado al sincerarse sobre su noviazgo con la 'influencer'.",
+        "en": "The Sevillian has given an interview to the podcast 'La Influencia', presented by Nacho Pla, where he was moved when he opened up about his courtship with the 'influencer'.",
+        "cn": "塞维利亚人接受了纳乔·普拉主持的播客“La Influencia”的采访，当他公开自己与这位“影响者”的求爱时，他很感动。",
         "audio": "./assets/audios/story_2_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Tamara Gorro y Cayetano Rivera rompen su relación antes de cumplir un año juntos",
-        "en": "Tamara Gorro and Cayetano Rivera break up their relationship before celebrating a year together",
-        "cn": "塔玛拉·戈罗 (Tamara Gorro) 和卡耶塔诺·里维拉 (Cayetano Rivera) 在庆祝一周年之前分手了",
+        "es": "Gonzalo Montoya recuerda entre lágrimas el motivo de su ruptura con Susana Molina: \"Dejé escapar al amor de mi vida\"",
+        "en": "Gonzalo Montoya tearfully remembers the reason for his breakup with Susana Molina: \"I let the love of my life escape\"",
+        "cn": "贡萨洛·蒙托亚 (Gonzalo Montoya) 含泪回忆起与苏珊娜·莫利纳 (Susana Molina) 分手的原因：“我让我一生的挚爱逃走了”",
         "audio": "./assets/audios/story_2_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "tamara",
+        "word": "gonzalo",
         "pos": "voc.",
-        "cn": "塔玛拉",
-        "en": "Tamara",
-        "example": "La noticia, ofrecida por Nacho Gay en 'Y ahora Sonsoles', llega apenas una semana después de que el diestro sorprendiera con una romántica declaración en sus redes dirigida a la televisiva.",
+        "cn": "贡萨洛",
+        "en": "gonzalo",
+        "example": "El sevillano ha concedido una entrevista al pódcast 'La Influencia', presentado por Nacho Pla, donde se ha emocionado al sincerarse sobre su noviazgo con la 'influencer'.",
         "audio": "./assets/audios/vocab_story_2_1.mp3"
       },
       {
-        "word": "gorro",
+        "word": "montoya",
         "pos": "voc.",
-        "cn": "帽",
-        "en": "cap",
-        "example": "Tamara Gorro y Cayetano Rivera rompen su relación antes de cumplir un año juntos",
+        "cn": "蒙塔亚",
+        "en": "montaya",
+        "example": "Gonzalo Montoya recuerda entre lágrimas el motivo de su ruptura con Susana Molina: \"Dejé escapar al amor de mi vida\"",
         "audio": "./assets/audios/vocab_story_2_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「tamara」在文中的表达",
-      "detail": "「tamara」在本文语境下表示“塔玛拉”，是地道西语新闻常用表达。"
+      "point": "核心词汇「gonzalo」在文中的表达",
+      "detail": "「gonzalo」在本文语境下表示“贡萨洛”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「tamara」在文中的中文含义是？",
+      "question": "西语单词「gonzalo」在文中的中文含义是？",
       "options": [
-        "A. 塔玛拉",
+        "A. 贡萨洛",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「tamara」在此处意为：塔玛拉。"
+      "explanation": "「gonzalo」在此处意为：贡萨洛。"
     },
     "audio_full_normal": "./assets/audios/story_2_normal.mp3",
     "audio_full_slow": "./assets/audios/story_2_slow.mp3"
@@ -125,60 +125,60 @@ const DAILY_STORIES = [
   {
     "id": "story_3",
     "tag": "八卦 / 名人",
-    "date": "2026-11-17",
+    "date": "2026-11-18",
     "title": {
-      "es": "Belén Esteban, implacable al hablar de Rosa Benito: \"Ella pasa de mí y yo de ella\"",
-      "en": "Belén Esteban, implacable when talking about Rosa Benito: \"She ignores me and I ignore her\"",
-      "cn": "03. 贝伦·埃斯特万在谈到罗萨·贝尼托时毫不留情：“她不理我，我也不理她。”"
+      "es": "Timothée Chalamet reflexiona sobre su exposición mediática: \"Ojalá no tuviera que hablar tanto\"",
+      "en": "Timothée Chalamet reflects on his media exposure: \"I wish I didn't have to talk so much\"",
+      "cn": "03. 蒂莫西·柴勒梅德 (Timothée Chalamet) 反思他的媒体曝光：“我希望我不必说那么多”"
     },
-    "intro": "“下午行动”已经发表了合作者向欧洲出版社发表的声明。",
+    "intro": "这位演员接受了《名利场》杂志的采访，他是该杂志圣诞节特别版的主角。",
     "sentences": [
       {
         "id": 1,
-        "es": "'La tarde se mueve' ha emitido las declaraciones que la colaboradora ha emitido a Europa Press.",
-        "en": "'The afternoon moves' has issued the statements that the collaborator has issued to Europa Press.",
-        "cn": "“下午行动”已经发表了合作者向欧洲出版社发表的声明。",
+        "es": "El actor ha concedido una entrevista a la revista 'Vanity Fair', de cuya edición especial de Navidad es protagonista.",
+        "en": "The actor has given an interview to 'Vanity Fair' magazine, whose special Christmas edition he is the protagonist of.",
+        "cn": "这位演员接受了《名利场》杂志的采访，他是该杂志圣诞节特别版的主角。",
         "audio": "./assets/audios/story_3_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Belén Esteban, implacable al hablar de Rosa Benito: \"Ella pasa de mí y yo de ella\"",
-        "en": "Belén Esteban, implacable when talking about Rosa Benito: \"She ignores me and I ignore her\"",
-        "cn": "贝伦·埃斯特万 (Belén Esteban) 在谈到罗莎·贝尼托 (Rosa Benito) 时毫不留情：“她无视我，我也无视她”",
+        "es": "Timothée Chalamet reflexiona sobre su exposición mediática: \"Ojalá no tuviera que hablar tanto\"",
+        "en": "Timothée Chalamet reflects on his media exposure: \"I wish I didn't have to talk so much\"",
+        "cn": "蒂莫西·柴勒梅德 (Timothée Chalamet) 反思他的媒体曝光：“我希望我不必说那么多”",
         "audio": "./assets/audios/story_3_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "belén",
+        "word": "timothée",
         "pos": "voc.",
-        "cn": "耶稣诞生的场景",
-        "en": "nativity scene",
-        "example": "'La tarde se mueve' ha emitido las declaraciones que la colaboradora ha emitido a Europa Press.",
+        "cn": "蒂莫西",
+        "en": "timothee",
+        "example": "El actor ha concedido una entrevista a la revista 'Vanity Fair', de cuya edición especial de Navidad es protagonista.",
         "audio": "./assets/audios/vocab_story_3_1.mp3"
       },
       {
-        "word": "esteban",
+        "word": "chalamet",
         "pos": "voc.",
-        "cn": "斯蒂芬",
-        "en": "Stephen",
-        "example": "Belén Esteban, implacable al hablar de Rosa Benito: \"Ella pasa de mí y yo de ella\"",
+        "cn": "查拉梅特",
+        "en": "chalamet",
+        "example": "Timothée Chalamet reflexiona sobre su exposición mediática: \"Ojalá no tuviera que hablar tanto\"",
         "audio": "./assets/audios/vocab_story_3_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「belén」在文中的表达",
-      "detail": "「belén」在本文语境下表示“耶稣诞生的场景”，是地道西语新闻常用表达。"
+      "point": "核心词汇「timothée」在文中的表达",
+      "detail": "「timothée」在本文语境下表示“蒂莫西”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「belén」在文中的中文含义是？",
+      "question": "西语单词「timothée」在文中的中文含义是？",
       "options": [
-        "A. 耶稣诞生的场景",
+        "A. 蒂莫西",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「belén」在此处意为：耶稣诞生的场景。"
+      "explanation": "「timothée」在此处意为：蒂莫西。"
     },
     "audio_full_normal": "./assets/audios/story_3_normal.mp3",
     "audio_full_slow": "./assets/audios/story_3_slow.mp3"
@@ -186,60 +186,60 @@ const DAILY_STORIES = [
   {
     "id": "story_4",
     "tag": "体育 / 赛事",
-    "date": "2026-11-17",
+    "date": "2026-11-18",
     "title": {
-      "es": "La UEFA ya tiene candidato para medirse a Infantino en las elecciones de la FIFA: Philippe Diallo, mandamás del fútbol francés",
-      "en": "UEFA already has a candidate to face Infantino in the FIFA elections: Philippe Diallo, boss of French football",
-      "cn": "04. 欧足联已经有了一位在国际足联选举中与因凡蒂诺对决的候选人：法国足球老板菲利普·迪亚洛"
+      "es": "Once meses de prisión para un aficionado que iba en estado de embriaguez por insultos racistas a Mbappé",
+      "en": "Eleven months in prison for a fan who was drunk for racist insults to Mbappé",
+      "cn": "04. 因种族主义侮辱姆巴佩而醉酒的球迷被判入狱十一个月"
     },
-    "intro": "法国足协主席将得到欧洲各组织的一致支持",
+    "intro": "被告是奥维多球迷，他对 2025 年 8 月 24 日争议比赛中发生的事情承担了责任。",
     "sentences": [
       {
         "id": 1,
-        "es": "El presidente de la Federación Francesa de Fútbol recibirá el apoyo unánime de los organismos europeos de cara a las elecciones de marzo de 2027.",
-        "en": "The president of the French Football Federation will receive the unanimous support of European organizations ahead of the March 2027 elections.",
-        "cn": "法国足协主席将在 2027 年 3 月选举之前获得欧洲组织的一致支持。",
+        "es": "El acusado, que es hincha del Oviedo, asumió su culpa de lo sucedido el pasado 24 de agosto de 2025 en el partido disputado en el Carlos Tartiere.",
+        "en": "The accused, who is an Oviedo fan, took responsibility for what happened on August 24, 2025 in the match played at the Carlos Tartiere.",
+        "cn": "被告是奥维耶多球迷，他对 2025 年 8 月 24 日在卡洛斯塔蒂埃球场举行的比赛中发生的事情负责。",
         "audio": "./assets/audios/story_4_s1.mp3"
       },
       {
         "id": 2,
-        "es": "La UEFA ya tiene candidato para medirse a Infantino en las elecciones de la FIFA: Philippe Diallo, mandamás del fútbol francés",
-        "en": "UEFA already has a candidate to face Infantino in the FIFA elections: Philippe Diallo, boss of French football",
-        "cn": "欧足联已经有了一位在国际足联选举中与因凡蒂诺对决的候选人：法国足球老板菲利普·迪亚洛",
+        "es": "Once meses de prisión para un aficionado que iba en estado de embriaguez por insultos racistas a Mbappé",
+        "en": "Eleven months in prison for a fan who was drunk for racist insults to Mbappé",
+        "cn": "因种族主义侮辱姆巴佩而醉酒的球迷被判入狱十一个月",
         "audio": "./assets/audios/story_4_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "tiene",
+        "word": "meses",
         "pos": "voc.",
-        "cn": "有",
-        "en": "has",
-        "example": "El presidente de la Federación Francesa de Fútbol recibirá el apoyo unánime de los organismos europeos de cara a las elecciones de marzo de 2027.",
+        "cn": "月",
+        "en": "months",
+        "example": "El acusado, que es hincha del Oviedo, asumió su culpa de lo sucedido el pasado 24 de agosto de 2025 en el partido disputado en el Carlos Tartiere.",
         "audio": "./assets/audios/vocab_story_4_1.mp3"
       },
       {
-        "word": "candidato",
+        "word": "prisión",
         "pos": "voc.",
-        "cn": "候选人",
-        "en": "candidate",
-        "example": "La UEFA ya tiene candidato para medirse a Infantino en las elecciones de la FIFA: Philippe Diallo, mandamás del fútbol francés",
+        "cn": "监狱",
+        "en": "prison",
+        "example": "Once meses de prisión para un aficionado que iba en estado de embriaguez por insultos racistas a Mbappé",
         "audio": "./assets/audios/vocab_story_4_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「tiene」在文中的表达",
-      "detail": "「tiene」在本文语境下表示“有”，是地道西语新闻常用表达。"
+      "point": "核心词汇「meses」在文中的表达",
+      "detail": "「meses」在本文语境下表示“月”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「tiene」在文中的中文含义是？",
+      "question": "西语单词「meses」在文中的中文含义是？",
       "options": [
-        "A. 有",
+        "A. 月",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「tiene」在此处意为：有。"
+      "explanation": "「meses」在此处意为：月。"
     },
     "audio_full_normal": "./assets/audios/story_4_normal.mp3",
     "audio_full_slow": "./assets/audios/story_4_slow.mp3"
@@ -247,60 +247,60 @@ const DAILY_STORIES = [
   {
     "id": "story_5",
     "tag": "体育 / 赛事",
-    "date": "2026-11-17",
+    "date": "2026-11-18",
     "title": {
-      "es": "Carlos Alcaraz arrasa a Frances Tiafoe y debuta a lo grande en las ATP Finals",
-      "en": "Carlos Alcaraz demolishes Frances Tiafoe and makes his big debut at the ATP Finals",
-      "cn": "05. 卡洛斯·阿尔卡拉斯击败弗朗西斯·蒂亚福，在 ATP 总决赛上首次亮相"
+      "es": "Rafa Jódar, con problemas físicos, cae ante Arthur Fils y se coloca con pie y medio fuera de las ATP Finals",
+      "en": "Rafa Jódar, with physical problems, falls to Arthur Fils and is one and a half feet out of the ATP Finals",
+      "cn": "05. 拉法·乔达尔（Rafa Jódar）身体出现问题，输给了阿瑟·菲尔斯（Arthur Fils），距 ATP 决赛一英尺半。"
     },
-    "intro": "这位来自穆尔西亚的网球运动员在与美国选手的对决中展现出统治力，并在都灵取得了首场胜利。",
+    "intro": "这位西班牙球员在与法国人的比赛中受到身体问题的困扰，尽管兹维列夫的胜利",
     "sentences": [
       {
         "id": 1,
-        "es": "El tenista murciano impuso su dominio ante el estadounidense y firmó el primer triunfo en Turín.",
-        "en": "The Murcian tennis player imposed his dominance against the American and signed the first victory in Turin.",
-        "cn": "这位穆尔西亚网球运动员在对阵美国选手的比赛中发挥了统治力，并在都灵取得了首场胜利。",
+        "es": "El jugador español estuvo lastrado por problemas físicos durante el choque ante el francés, aunque la victoria de Zverev le mantiene aún con opciones.",
+        "en": "The Spanish player was hampered by physical problems during the clash against the Frenchman, although Zverev's victory still keeps him with options.",
+        "cn": "这位西班牙球员在与法国人的比赛中受到身体问题的困扰，尽管兹维列夫的胜利仍然让他有选择。",
         "audio": "./assets/audios/story_5_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Carlos Alcaraz arrasa a Frances Tiafoe y debuta a lo grande en las ATP Finals",
-        "en": "Carlos Alcaraz demolishes Frances Tiafoe and makes his big debut at the ATP Finals",
-        "cn": "卡洛斯·阿尔卡拉斯击败弗朗西斯·蒂亚福，在 ATP 总决赛上首次亮相",
+        "es": "Rafa Jódar, con problemas físicos, cae ante Arthur Fils y se coloca con pie y medio fuera de las ATP Finals",
+        "en": "Rafa Jódar, with physical problems, falls to Arthur Fils and is one and a half feet out of the ATP Finals",
+        "cn": "拉法·乔达尔（Rafa Jódar）身体出现问题，输给了阿瑟·菲尔斯（Arthur Fils），距 ATP 决赛一英尺半。",
         "audio": "./assets/audios/story_5_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "carlos",
+        "word": "jódar",
         "pos": "voc.",
-        "cn": "卡洛斯",
-        "en": "Carlos",
-        "example": "El tenista murciano impuso su dominio ante el estadounidense y firmó el primer triunfo en Turín.",
+        "cn": "他妈的",
+        "en": "fuck",
+        "example": "El jugador español estuvo lastrado por problemas físicos durante el choque ante el francés, aunque la victoria de Zverev le mantiene aún con opciones.",
         "audio": "./assets/audios/vocab_story_5_1.mp3"
       },
       {
-        "word": "alcaraz",
+        "word": "problemas",
         "pos": "voc.",
-        "cn": "阿尔卡拉斯",
-        "en": "alcaraz",
-        "example": "Carlos Alcaraz arrasa a Frances Tiafoe y debuta a lo grande en las ATP Finals",
+        "cn": "问题",
+        "en": "issues",
+        "example": "Rafa Jódar, con problemas físicos, cae ante Arthur Fils y se coloca con pie y medio fuera de las ATP Finals",
         "audio": "./assets/audios/vocab_story_5_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「carlos」在文中的表达",
-      "detail": "「carlos」在本文语境下表示“卡洛斯”，是地道西语新闻常用表达。"
+      "point": "核心词汇「jódar」在文中的表达",
+      "detail": "「jódar」在本文语境下表示“他妈的”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「carlos」在文中的中文含义是？",
+      "question": "西语单词「jódar」在文中的中文含义是？",
       "options": [
-        "A. 卡洛斯",
+        "A. 他妈的",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「carlos」在此处意为：卡洛斯。"
+      "explanation": "「jódar」在此处意为：他妈的。"
     },
     "audio_full_normal": "./assets/audios/story_5_normal.mp3",
     "audio_full_slow": "./assets/audios/story_5_slow.mp3"
@@ -308,60 +308,60 @@ const DAILY_STORIES = [
   {
     "id": "story_6",
     "tag": "体育 / 赛事",
-    "date": "2026-11-17",
+    "date": "2026-11-18",
     "title": {
-      "es": "Consternación en el fútbol argentino: muere el joven jugador Abel Núñez, de 16 años, tras sufrir un fuerte pelotazo en la cabeza",
-      "en": "Dismay in Argentine football: young player Abel Núñez, 16, dies after suffering a strong blow to the head from a ball",
-      "cn": "06. 阿根廷足球界的悲痛：16 岁的年轻球员阿贝尔·努涅斯因头部受到球的强烈撞击而死亡"
+      "es": "Llorente explota contra la propuesta de Frente Amplio sobre las herencias: \"Y que el resto se lo queden ellos\"",
+      "en": "Llorente explodes against the Frente Amplio proposal on inheritances: \"And let them keep the rest\"",
+      "cn": "06. 略伦特强烈反对扩大阵线关于遗产的提案：“让他们保留其余的”"
     },
-    "intro": "这位足球运动员所属的俱乐部埃塞萨足球俱乐部通过社交网络宣布了他的去世消息。",
+    "intro": "马德里竞技队球员响应该党将遗产继承上限限制在10 m的倡议",
     "sentences": [
       {
         "id": 1,
-        "es": "El FC Ezeiza, club al que pertenecía el futbolista, comunicó su fallecimiento a través de redes sociales.",
-        "en": "FC Ezeiza, the club to which the footballer belonged, announced his death through social networks.",
-        "cn": "这位足球运动员所属的俱乐部埃塞萨足球俱乐部通过社交网络宣布了他的去世消息。",
+        "es": "El jugador del Atlético de Madrid ha contestado a la iniciativa del partido de limitar las herencias a un máximo de 10 millones de euros.",
+        "en": "The Atlético de Madrid player has responded to the party's initiative to limit inheritances to a maximum of 10 million euros.",
+        "cn": "这位马德里竞技队球员响应了该党将遗产上限限制在1000万欧元的倡议。",
         "audio": "./assets/audios/story_6_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Consternación en el fútbol argentino: muere el joven jugador Abel Núñez, de 16 años, tras sufrir un fuerte pelotazo en la cabeza",
-        "en": "Dismay in Argentine football: young player Abel Núñez, 16, dies after suffering a strong blow to the head from a ball",
-        "cn": "阿根廷足球界的悲痛：16 岁的年轻球员阿贝尔·努涅斯因头部受到球的强烈撞击而死亡",
+        "es": "Llorente explota contra la propuesta de Frente Amplio sobre las herencias: \"Y que el resto se lo queden ellos\"",
+        "en": "Llorente explodes against the Frente Amplio proposal on inheritances: \"And let them keep the rest\"",
+        "cn": "略伦特强烈反对扩大阵线关于遗产的提案：“让他们保留其余的”",
         "audio": "./assets/audios/story_6_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "consternación",
+        "word": "llorente",
         "pos": "voc.",
-        "cn": "惊愕",
-        "en": "consternation",
-        "example": "El FC Ezeiza, club al que pertenecía el futbolista, comunicó su fallecimiento a través de redes sociales.",
+        "cn": "哭",
+        "en": "crying",
+        "example": "El jugador del Atlético de Madrid ha contestado a la iniciativa del partido de limitar las herencias a un máximo de 10 millones de euros.",
         "audio": "./assets/audios/vocab_story_6_1.mp3"
       },
       {
-        "word": "fútbol",
+        "word": "explota",
         "pos": "voc.",
-        "cn": "足球",
-        "en": "soccer",
-        "example": "Consternación en el fútbol argentino: muere el joven jugador Abel Núñez, de 16 años, tras sufrir un fuerte pelotazo en la cabeza",
+        "cn": "爆炸",
+        "en": "explode",
+        "example": "Llorente explota contra la propuesta de Frente Amplio sobre las herencias: \"Y que el resto se lo queden ellos\"",
         "audio": "./assets/audios/vocab_story_6_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「consternación」在文中的表达",
-      "detail": "「consternación」在本文语境下表示“惊愕”，是地道西语新闻常用表达。"
+      "point": "核心词汇「llorente」在文中的表达",
+      "detail": "「llorente」在本文语境下表示“哭”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「consternación」在文中的中文含义是？",
+      "question": "西语单词「llorente」在文中的中文含义是？",
       "options": [
-        "A. 惊愕",
+        "A. 哭",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「consternación」在此处意为：惊愕。"
+      "explanation": "「llorente」在此处意为：哭。"
     },
     "audio_full_normal": "./assets/audios/story_6_normal.mp3",
     "audio_full_slow": "./assets/audios/story_6_slow.mp3"
@@ -369,60 +369,60 @@ const DAILY_STORIES = [
   {
     "id": "story_7",
     "tag": "文化 / 艺术",
-    "date": "2026-11-17",
+    "date": "2026-11-18",
     "title": {
-      "es": "Élmer Mendoza novela sobre una candidata mexicana que sufre un atentado: \"El gobierno ha perdido la guerra contra los narcos\"",
-      "en": "Élmer Mendoza novel about a Mexican candidate who suffers an attack: \"The government has lost the war against drug traffickers\"",
-      "cn": "07. 埃尔默·门多萨（Élmer Mendoza）的小说讲述了一位墨西哥女候选人遭遇袭击的故事：“政府在与毒枭的斗争中败下阵来”"
+      "es": "Los Pecos sacan disco y ponen fecha a su adiós definitivo en una gira en 2027: \"Se apagan los focos pero quedan las canciones\"",
+      "en": "Los Pecos release an album and set a date for their final goodbye on a tour in 2027: \"The lights go off but the songs remain\"",
+      "cn": "07. Los Pecos 发行了一张专辑，并确定了 2027 年巡演中最后告别的日期：“灯灭了，但歌曲依然存在”"
     },
-    "intro": "这位阿兹特克作家在马德里与他的好朋友阿图罗·佩雷斯-R (Arturo Pérez-R) 一起展示了他的新书《美人鱼和退休人员》",
+    "intro": "兄弟俩将在马拉加镇以“告别音乐会”结束五年的职业生涯。",
     "sentences": [
       {
         "id": 1,
-        "es": "El autor azteca ha presentado su nuevo libro, 'La sirena y el jubilado', en Madrid, junto a su gran amigo Arturo Pérez-Reverte.",
-        "en": "The Aztec author has presented his new book, 'The Mermaid and the Retiree', in Madrid, together with his great friend Arturo Pérez-Reverte.",
-        "cn": "这位阿兹特克作家与他的好朋友阿图罗·佩雷斯-雷韦尔特在马德里推出了他的新书《美人鱼和退休人员》。",
+        "es": "Los hermanos culminará en la localidad malagueña una carrera de cinco décadas con 'Concierto para una despedida'.",
+        "en": "The brothers will culminate a five-decade career in the Malaga town with 'Concert for a Farewell'.",
+        "cn": "兄弟俩将在马拉加镇以“告别音乐会”结束五年的职业生涯。",
         "audio": "./assets/audios/story_7_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Élmer Mendoza novela sobre una candidata mexicana que sufre un atentado: \"El gobierno ha perdido la guerra contra los narcos\"",
-        "en": "Élmer Mendoza novel about a Mexican candidate who suffers an attack: \"The government has lost the war against drug traffickers\"",
-        "cn": "埃尔默·门多萨 (Elmer Mendoza) 的小说讲述了一名遭受袭击的墨西哥候选人的故事：“政府在打击毒贩的战争中失败了”",
+        "es": "Los Pecos sacan disco y ponen fecha a su adiós definitivo en una gira en 2027: \"Se apagan los focos pero quedan las canciones\"",
+        "en": "Los Pecos release an album and set a date for their final goodbye on a tour in 2027: \"The lights go off but the songs remain\"",
+        "cn": "Los Pecos 发行了一张专辑，并确定了 2027 年巡演中最后告别的日期：“灯灭了，但歌曲依然存在”",
         "audio": "./assets/audios/story_7_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "élmer",
+        "word": "pecos",
         "pos": "voc.",
-        "cn": "埃尔默",
-        "en": "elmer",
-        "example": "El autor azteca ha presentado su nuevo libro, 'La sirena y el jubilado', en Madrid, junto a su gran amigo Arturo Pérez-Reverte.",
+        "cn": "雀斑",
+        "en": "freckles",
+        "example": "Los hermanos culminará en la localidad malagueña una carrera de cinco décadas con 'Concierto para una despedida'.",
         "audio": "./assets/audios/vocab_story_7_1.mp3"
       },
       {
-        "word": "mendoza",
+        "word": "sacan",
         "pos": "voc.",
-        "cn": "门多萨",
-        "en": "mendoza",
-        "example": "Élmer Mendoza novela sobre una candidata mexicana que sufre un atentado: \"El gobierno ha perdido la guerra contra los narcos\"",
+        "cn": "他们拿出",
+        "en": "they take out",
+        "example": "Los Pecos sacan disco y ponen fecha a su adiós definitivo en una gira en 2027: \"Se apagan los focos pero quedan las canciones\"",
         "audio": "./assets/audios/vocab_story_7_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「élmer」在文中的表达",
-      "detail": "「élmer」在本文语境下表示“埃尔默”，是地道西语新闻常用表达。"
+      "point": "核心词汇「pecos」在文中的表达",
+      "detail": "「pecos」在本文语境下表示“雀斑”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「élmer」在文中的中文含义是？",
+      "question": "西语单词「pecos」在文中的中文含义是？",
       "options": [
-        "A. 埃尔默",
+        "A. 雀斑",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「élmer」在此处意为：埃尔默。"
+      "explanation": "「pecos」在此处意为：雀斑。"
     },
     "audio_full_normal": "./assets/audios/story_7_normal.mp3",
     "audio_full_slow": "./assets/audios/story_7_slow.mp3"
@@ -430,60 +430,60 @@ const DAILY_STORIES = [
   {
     "id": "story_8",
     "tag": "文化 / 艺术",
-    "date": "2026-11-17",
+    "date": "2026-11-18",
     "title": {
-      "es": "Rosalía asistirá a Los40 Music Awards, que contarán con actuaciones de Estopa y Quevedo",
-      "en": "Rosalía will attend the Los40 Music Awards, which will feature performances by Estopa and Quevedo",
-      "cn": "08. 罗莎莉亚将出席 Los40 音乐奖，埃斯托帕和克维多将在该颁奖典礼上表演"
+      "es": "Lola Herrera deja en la Caja de las Letras del Cervantes un ejemplar 'deshojado' de 'Cinco horas con Mario': \"Me cambió la vida\"",
+      "en": "Lola Herrera leaves a 'leafless' copy of 'Five Hours with Mario' in the Cervantes Letter Box: \"It changed my life\"",
+      "cn": "08. 洛拉·埃雷拉 (Lola Herrera) 在塞万提斯信箱中留下了《与马里奥的五小时》的“无页”副本：“它改变了我的生活”"
     },
-    "intro": "第 21 届颁奖典礼将于 11 月 20 日在巴塞罗那 Palau Sant Jordi 举行。",
+    "intro": "这位女演员还遗赠了一张《夜场》DVD、一些眼镜以及她父母和孩子的照片。",
     "sentences": [
       {
         "id": 1,
-        "es": "ª edición de esta ceremonia tendrá lugar el 20 de noviembre en el Palau Sant Jordi de Barcelona.",
-        "en": "The 20th edition of this ceremony will take place on November 20 at the Palau Sant Jordi in Barcelona.",
-        "cn": "第 20 届颁奖典礼将于 11 月 20 日在巴塞罗那 Palau Sant Jordi 举行。",
+        "es": "La actriz ha legado además un dvd de 'Función de noche', unas gafas y fotos de sus padres y de sus hijos.",
+        "en": "The actress has also bequeathed a DVD of 'Night Show', some glasses and photos of her parents and children.",
+        "cn": "这位女演员还遗赠了一张《夜场》DVD、一些眼镜以及她父母和孩子的照片。",
         "audio": "./assets/audios/story_8_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Rosalía asistirá a Los40 Music Awards, que contarán con actuaciones de Estopa y Quevedo",
-        "en": "Rosalía will attend the Los40 Music Awards, which will feature performances by Estopa and Quevedo",
-        "cn": "罗莎莉亚将出席 Los40 音乐奖，埃斯托帕和克维多将在该颁奖典礼上表演",
+        "es": "Lola Herrera deja en la Caja de las Letras del Cervantes un ejemplar 'deshojado' de 'Cinco horas con Mario': \"Me cambió la vida\"",
+        "en": "Lola Herrera leaves a 'leafless' copy of 'Five Hours with Mario' in the Cervantes Letter Box: \"It changed my life\"",
+        "cn": "洛拉·埃雷拉 (Lola Herrera) 在塞万提斯信箱中留下了《与马里奥的五小时》的“无页”副本：“它改变了我的生活”",
         "audio": "./assets/audios/story_8_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "rosalía",
+        "word": "herrera",
         "pos": "voc.",
-        "cn": "罗莎莉亚",
-        "en": "rosalia",
-        "example": "ª edición de esta ceremonia tendrá lugar el 20 de noviembre en el Palau Sant Jordi de Barcelona.",
+        "cn": "埃雷拉",
+        "en": "herrera",
+        "example": "La actriz ha legado además un dvd de 'Función de noche', unas gafas y fotos de sus padres y de sus hijos.",
         "audio": "./assets/audios/vocab_story_8_1.mp3"
       },
       {
-        "word": "asistirá",
+        "word": "letras",
         "pos": "voc.",
-        "cn": "将参加",
-        "en": "will attend",
-        "example": "Rosalía asistirá a Los40 Music Awards, que contarán con actuaciones de Estopa y Quevedo",
+        "cn": "字母",
+        "en": "letters",
+        "example": "Lola Herrera deja en la Caja de las Letras del Cervantes un ejemplar 'deshojado' de 'Cinco horas con Mario': \"Me cambió la vida\"",
         "audio": "./assets/audios/vocab_story_8_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「rosalía」在文中的表达",
-      "detail": "「rosalía」在本文语境下表示“罗莎莉亚”，是地道西语新闻常用表达。"
+      "point": "核心词汇「herrera」在文中的表达",
+      "detail": "「herrera」在本文语境下表示“埃雷拉”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「rosalía」在文中的中文含义是？",
+      "question": "西语单词「herrera」在文中的中文含义是？",
       "options": [
-        "A. 罗莎莉亚",
+        "A. 埃雷拉",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「rosalía」在此处意为：罗莎莉亚。"
+      "explanation": "「herrera」在此处意为：埃雷拉。"
     },
     "audio_full_normal": "./assets/audios/story_8_normal.mp3",
     "audio_full_slow": "./assets/audios/story_8_slow.mp3"
@@ -491,60 +491,60 @@ const DAILY_STORIES = [
   {
     "id": "story_9",
     "tag": "生活 / 资讯",
-    "date": "2026-11-17",
+    "date": "2026-11-18",
     "title": {
-      "es": "Renfe y Adif prevén que la huelga de este martes paralice los trenes y recomiendan a sus pasajeros que busquen vías alternativas",
-      "en": "Renfe and Adif predict that this Tuesday's strike will paralyze the trains and recommend their passengers to look for alternative routes",
-      "cn": "09. Renfe 和 Adif 预测，本周二的罢工将使火车瘫痪，并建议乘客寻找替代路线"
+      "es": "El Gobierno aprueba la mayor subida del SMI de toda la legislatura y el mayor alza a los funcionarios en 35 años a solo doce días del 29N",
+      "en": "The Government approves the largest increase in the SMI of the entire legislature and the largest increase for civil servants in 35 years just twelve days before 29N",
+      "cn": "09. 距离29日仅12天，政府批准整个立法机关SMI最大增幅，以及公务员35年来最大增幅"
     },
-    "intro": "铁路工会重视政府和铁路安全部门正在采取的措施，但要求他们采取措施",
+    "intro": "SMI 增加 5.3%（每年增加 910 欧元），您从第一笔工资开始无需缴纳个人所得税，而无需等待第二次工资发放",
     "sentences": [
       {
         "id": 1,
-        "es": "Los sindicatos ferroviarios valoran las medidas que va tomando el Gobierno y Seguridad Ferroviaria, pero exigen que se concreten y se completen con más personal y mejor formación.",
-        "en": "The railway unions value the measures that the Government and Railway Safety are taking, but they demand that they be finalized and completed with more personnel and better training.",
-        "cn": "铁路工会重视政府和铁路安全部门正在采取的措施，但他们要求在最终确定和完成这些措施时需要更多的人员和更好的培训。",
+        "es": "El SMI se incrementa un 5,3% (910 euros más al año) y no pagará IRPF desde la primera nómina, en lugar de esperar a la declaración de la renta.",
+        "en": "The SMI increases by 5.3% (910 euros more per year) and you will not pay personal income tax from the first payroll, instead of waiting for the income tax return.",
+        "cn": "SMI增加5.3%（每年增加910欧元），并且您从第一笔工资开始无需缴纳个人所得税，而是等待所得税申报表。",
         "audio": "./assets/audios/story_9_s1.mp3"
       },
       {
         "id": 2,
-        "es": "El paro general de este martes dará lugar a un compás de espera hasta ver con qué Gobierno deberán seguir negociando tras las elecciones del 29-N.",
-        "en": "The general strike this Tuesday will give rise to a waiting period until we see which Government they will have to continue negotiating with after the 29-N elections.",
-        "cn": "本周二的总罢工将导致一段等待期，直到我们看到他们在 29-N 选举后必须继续与哪个政府进行谈判。",
+        "es": "El incremento retributivo a los empleados públicos es el más grande en 34 años.",
+        "en": "The pay increase for public employees is the largest in 34 years.",
+        "cn": "公职人员加薪幅度创34年来最大。",
         "audio": "./assets/audios/story_9_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "renfe",
+        "word": "gobierno",
         "pos": "voc.",
-        "cn": "伦菲",
-        "en": "renfe",
-        "example": "Los sindicatos ferroviarios valoran las medidas que va tomando el Gobierno y Seguridad Ferroviaria, pero exigen que se concreten y se completen con más personal y mejor formación.",
+        "cn": "政府",
+        "en": "government",
+        "example": "El SMI se incrementa un 5,3% (910 euros más al año) y no pagará IRPF desde la primera nómina, en lugar de esperar a la declaración de la renta.",
         "audio": "./assets/audios/vocab_story_9_1.mp3"
       },
       {
-        "word": "prevén",
+        "word": "aprueba",
         "pos": "voc.",
-        "cn": "预见",
-        "en": "foresee",
-        "example": "El paro general de este martes dará lugar a un compás de espera hasta ver con qué Gobierno deberán seguir negociando tras las elecciones del 29-N.",
+        "cn": "批准",
+        "en": "approve",
+        "example": "El incremento retributivo a los empleados públicos es el más grande en 34 años.",
         "audio": "./assets/audios/vocab_story_9_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「renfe」在文中的表达",
-      "detail": "「renfe」在本文语境下表示“伦菲”，是地道西语新闻常用表达。"
+      "point": "核心词汇「gobierno」在文中的表达",
+      "detail": "「gobierno」在本文语境下表示“政府”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「renfe」在文中的中文含义是？",
+      "question": "西语单词「gobierno」在文中的中文含义是？",
       "options": [
-        "A. 伦菲",
+        "A. 政府",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「renfe」在此处意为：伦菲。"
+      "explanation": "「gobierno」在此处意为：政府。"
     },
     "audio_full_normal": "./assets/audios/story_9_normal.mp3",
     "audio_full_slow": "./assets/audios/story_9_slow.mp3"
@@ -552,60 +552,60 @@ const DAILY_STORIES = [
   {
     "id": "story_10",
     "tag": "生活 / 资讯",
-    "date": "2026-11-17",
+    "date": "2026-11-18",
     "title": {
-      "es": "Convocada una huelga en todo el transporte por carretera en plenas Navidades",
-      "en": "A strike is called in all road transport in the middle of Christmas",
-      "cn": "10. 圣诞节期间所有公路运输部门将举行罢工"
+      "es": "Feijóo arropa a Echeverría y pide el voto a los socialistas vascos \"de verdad\" en su visita a Euskadi",
+      "en": "Feijóo supports Echeverría and asks the \"real\" Basque socialists to vote during his visit to Euskadi",
+      "cn": "10. 费乔支持埃切维里亚，并要求“真正的”巴斯克社会主义者在访问巴斯克期间投票"
     },
-    "intro": "CCOO工会宣布道路运输专业司机罢工，两名旅客",
+    "intro": "人民党领导人和政府总统候选人周二参加了在巴斯克地区举行的两场活动",
     "sentences": [
       {
         "id": 1,
-        "es": "El sindicato CCOO ha anunciado una huelga de conductores profesionales en el transporte por carretera, tanto de viajeros como de mercancías, incluido el transporte urbano, para los días 23 y el 24 de diciembre de 2026.",
-        "en": "The CCOO union has announced a strike of professional drivers in road transport, both passengers and goods, including urban transport, for December 23 and 24, 2026.",
-        "cn": "CCOO 工会宣布将于 2026 年 12 月 23 日至 24 日举行道路运输（客运和货物运输，包括城市交通）专业司机罢工。",
+        "es": "El líder del PP y candidato a la Presidencia del Gobierno ha protagonizado este martes dos actos en el País Vasco en plena campaña electoral.",
+        "en": "The leader of the PP and candidate for the Presidency of the Government took part in two events this Tuesday in the Basque Country in the midst of the electoral campaign.",
+        "cn": "人民党领导人兼政府总统候选人周二在巴斯克地区竞选期间参加了两场活动。",
         "audio": "./assets/audios/story_10_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Convocada una huelga en todo el transporte por carretera en plenas Navidades",
-        "en": "A strike is called in all road transport in the middle of Christmas",
-        "cn": "圣诞节期间所有公路运输部门将举行罢工",
+        "es": "Feijóo arropa a Echeverría y pide el voto a los socialistas vascos \"de verdad\" en su visita a Euskadi",
+        "en": "Feijóo supports Echeverría and asks the \"real\" Basque socialists to vote during his visit to Euskadi",
+        "cn": "费乔支持埃切维里亚，并要求“真正的”巴斯克社会主义者在访问巴斯克期间投票",
         "audio": "./assets/audios/story_10_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "convocada",
+        "word": "feijóo",
         "pos": "voc.",
-        "cn": "被召唤",
-        "en": "summoned",
-        "example": "El sindicato CCOO ha anunciado una huelga de conductores profesionales en el transporte por carretera, tanto de viajeros como de mercancías, incluido el transporte urbano, para los días 23 y el 24 de diciembre de 2026.",
+        "cn": "费乔",
+        "en": "feijoo",
+        "example": "El líder del PP y candidato a la Presidencia del Gobierno ha protagonizado este martes dos actos en el País Vasco en plena campaña electoral.",
         "audio": "./assets/audios/vocab_story_10_1.mp3"
       },
       {
-        "word": "huelga",
+        "word": "arropa",
         "pos": "voc.",
-        "cn": "罢工",
-        "en": "strike",
-        "example": "Convocada una huelga en todo el transporte por carretera en plenas Navidades",
+        "cn": "衣服",
+        "en": "clothe",
+        "example": "Feijóo arropa a Echeverría y pide el voto a los socialistas vascos \"de verdad\" en su visita a Euskadi",
         "audio": "./assets/audios/vocab_story_10_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「convocada」在文中的表达",
-      "detail": "「convocada」在本文语境下表示“被召唤”，是地道西语新闻常用表达。"
+      "point": "核心词汇「feijóo」在文中的表达",
+      "detail": "「feijóo」在本文语境下表示“费乔”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「convocada」在文中的中文含义是？",
+      "question": "西语单词「feijóo」在文中的中文含义是？",
       "options": [
-        "A. 被召唤",
+        "A. 费乔",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「convocada」在此处意为：被召唤。"
+      "explanation": "「feijóo」在此处意为：费乔。"
     },
     "audio_full_normal": "./assets/audios/story_10_normal.mp3",
     "audio_full_slow": "./assets/audios/story_10_slow.mp3"
