@@ -3,60 +3,60 @@ const DAILY_STORIES = [
   {
     "id": "story_1",
     "tag": "八卦 / 名人",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "title": {
-      "es": "El traje elegido por Pedro Sánchez para el debate con Feijóo se hace viral en las redes: \"Qué color es ese, por el amor de Dios...\"",
-      "en": "The suit chosen by Pedro Sánchez for the debate with Feijóo goes viral on the networks: \"What color is that, for the love of God...\"",
-      "cn": "01. 佩德罗·桑切斯 (Pedro Sánchez) 在与 Feijóo 辩论时选择的套装在网络上疯传：“看在上帝的份上，那是什么颜色……”"
+      "es": "Rosalía y Aitana revolucionan Los40 Music Awards y se pronuncian sobre las elecciones del 29N: \"Ojalá vaya todo mejor\"",
+      "en": "Rosalía and Aitana revolutionize the Los40 Music Awards and speak out about the 29N elections: \"I hope everything goes better\"",
+      "cn": "01. Rosalía 和 Aitana 彻底改变了 Los40 音乐奖，并公开谈论 29N 选举：“我希望一切都变得更好”"
     },
-    "intro": "用户评价政府总统选择的服装让人想起社会主义美学",
+    "intro": "艾塔娜坚持认为“去投票非常重要”，并表示西班牙女性投票“并没有多久”。",
     "sentences": [
       {
         "id": 1,
-        "es": "Los usuarios han comentado el vestuario elegido por presidente del Gobierno, que recuerda a la estética socialista de los años 80.",
-        "en": "Users have commented on the clothing chosen by the President of the Government, which is reminiscent of the socialist aesthetics of the 80s.",
-        "cn": "网友评价政府总统选择的服装让人想起80年代的社会主义审美。",
+        "es": "Aitana sostiene que \"es superimportante ir a votar\" y dice que \"no hace tanto\" que las mujeres votan en España.",
+        "en": "Aitana maintains that \"it is super important to go to vote\" and says that \"it hasn't been that long\" since women voted in Spain.",
+        "cn": "艾塔娜坚持认为“去投票非常重要”，并表示西班牙女性投票“并没有多久”。",
         "audio": "./assets/audios/story_1_s1.mp3"
       },
       {
         "id": 2,
-        "es": "El traje elegido por Pedro Sánchez para el debate con Feijóo se hace viral en las redes: \"Qué color es ese, por el amor de Dios...\"",
-        "en": "The suit chosen by Pedro Sánchez for the debate with Feijóo goes viral on the networks: \"What color is that, for the love of God...\"",
-        "cn": "佩德罗·桑切斯 (Pedro Sánchez) 在与 Feijóo 辩论时选择的套装在网络上疯传：“看在上帝的份上，那是什么颜色……”",
+        "es": "Rosalía y Aitana revolucionan Los40 Music Awards y se pronuncian sobre las elecciones del 29N: \"Ojalá vaya todo mejor\"",
+        "en": "Rosalía and Aitana revolutionize the Los40 Music Awards and speak out about the 29N elections: \"I hope everything goes better\"",
+        "cn": "Rosalía 和 Aitana 彻底改变了 Los40 音乐奖，并公开谈论 29N 选举：“我希望一切都变得更好”",
         "audio": "./assets/audios/story_1_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "traje",
+        "word": "rosalía",
         "pos": "voc.",
-        "cn": "套装",
-        "en": "suit",
-        "example": "Los usuarios han comentado el vestuario elegido por presidente del Gobierno, que recuerda a la estética socialista de los años 80.",
+        "cn": "罗莎莉亚",
+        "en": "rosalia",
+        "example": "Aitana sostiene que \"es superimportante ir a votar\" y dice que \"no hace tanto\" que las mujeres votan en España.",
         "audio": "./assets/audios/vocab_story_1_1.mp3"
       },
       {
-        "word": "elegido",
+        "word": "aitana",
         "pos": "voc.",
-        "cn": "当选",
-        "en": "elected",
-        "example": "El traje elegido por Pedro Sánchez para el debate con Feijóo se hace viral en las redes: \"Qué color es ese, por el amor de Dios...\"",
+        "cn": "艾塔纳",
+        "en": "aitana",
+        "example": "Rosalía y Aitana revolucionan Los40 Music Awards y se pronuncian sobre las elecciones del 29N: \"Ojalá vaya todo mejor\"",
         "audio": "./assets/audios/vocab_story_1_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「traje」在文中的表达",
-      "detail": "「traje」在本文语境下表示“套装”，是地道西语新闻常用表达。"
+      "point": "核心词汇「rosalía」在文中的表达",
+      "detail": "「rosalía」在本文语境下表示“罗莎莉亚”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「traje」在文中的中文含义是？",
+      "question": "西语单词「rosalía」在文中的中文含义是？",
       "options": [
-        "A. 套装",
+        "A. 罗莎莉亚",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「traje」在此处意为：套装。"
+      "explanation": "「rosalía」在此处意为：罗莎莉亚。"
     },
     "audio_full_normal": "./assets/audios/story_1_normal.mp3",
     "audio_full_slow": "./assets/audios/story_1_slow.mp3"
@@ -64,11 +64,72 @@ const DAILY_STORIES = [
   {
     "id": "story_2",
     "tag": "八卦 / 名人",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "title": {
-      "es": "Tu horóscopo diario: viernes 20 de noviembre de 2026",
-      "en": "Your daily horoscope: Friday, November 20, 2026",
-      "cn": "02. 您的每日星座运势：2026 年 11 月 20 日星期五"
+      "es": "Confirmada la causa de la muerte de Patrick Stewart, leyenda de X-Men y Star Trek",
+      "en": "The cause of death of Patrick Stewart, X-Men and Star Trek legend, confirmed",
+      "cn": "02. 《X战警》和《星际迷航》传奇人物帕特里克·斯图尔特的死因得到证实"
+    },
+    "intro": "死亡证明将他的死亡归因于心肺骤停和身体神经认知障碍",
+    "sentences": [
+      {
+        "id": 1,
+        "es": "El certificado de defunción atribuye su fallecimiento a un paro cardiopulmonar y a un trastorno neurocognitivo con cuerpos de Lewy.",
+        "en": "The death certificate attributes his death to cardiopulmonary arrest and a neurocognitive disorder with Lewy bodies.",
+        "cn": "死亡证明将他的死亡归因于心肺骤停和路易体神经认知障碍。",
+        "audio": "./assets/audios/story_2_s1.mp3"
+      },
+      {
+        "id": 2,
+        "es": "Su última película será Vengadores: Doomsday.",
+        "en": "His last film will be Avengers: Doomsday.",
+        "cn": "他的最后一部电影将是《复仇者联盟：世界末日》。",
+        "audio": "./assets/audios/story_2_s2.mp3"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "confirmada",
+        "pos": "voc.",
+        "cn": "确认的",
+        "en": "confirmed",
+        "example": "El certificado de defunción atribuye su fallecimiento a un paro cardiopulmonar y a un trastorno neurocognitivo con cuerpos de Lewy.",
+        "audio": "./assets/audios/vocab_story_2_1.mp3"
+      },
+      {
+        "word": "causa",
+        "pos": "voc.",
+        "cn": "原因",
+        "en": "cause",
+        "example": "Su última película será Vengadores: Doomsday.",
+        "audio": "./assets/audios/vocab_story_2_2.mp3"
+      }
+    ],
+    "grammar": {
+      "point": "核心词汇「confirmada」在文中的表达",
+      "detail": "「confirmada」在本文语境下表示“确认的”，是地道西语新闻常用表达。"
+    },
+    "quiz": {
+      "question": "西语单词「confirmada」在文中的中文含义是？",
+      "options": [
+        "A. 确认的",
+        "B. 另一个意思",
+        "C. 错误含义"
+      ],
+      "correct_index": 0,
+      "explanation": "「confirmada」在此处意为：确认的。"
+    },
+    "audio_full_normal": "./assets/audios/story_2_normal.mp3",
+    "audio_full_slow": "./assets/audios/story_2_slow.mp3"
+  },
+  {
+    "id": "story_3",
+    "tag": "八卦 / 名人",
+    "date": "2026-11-21",
+    "title": {
+      "es": "Tu horóscopo diario: sábado 21 de noviembre de 2026",
+      "en": "Your daily horoscope: Saturday, November 21, 2026",
+      "cn": "03. 您的每日星座运势：2026 年 11 月 21 日星期六"
     },
     "intro": "在 20minutos.es 中查看昨天、今天和明天的星座运势",
     "sentences": [
@@ -77,14 +138,14 @@ const DAILY_STORIES = [
         "es": "Consultar el horóscopo de ayer, hoy y mañana en 20minutos.",
         "en": "Consult the horoscope for yesterday, today and tomorrow in 20 minutes.",
         "cn": "20 分钟内查看昨天、今天和明天的星座运势。",
-        "audio": "./assets/audios/story_2_s1.mp3"
+        "audio": "./assets/audios/story_3_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Tu horóscopo diario: viernes 20 de noviembre de 2026",
-        "en": "Your daily horoscope: Friday, November 20, 2026",
-        "cn": "您的每日星座运势：2026 年 11 月 20 日星期五",
-        "audio": "./assets/audios/story_2_s2.mp3"
+        "es": "Tu horóscopo diario: sábado 21 de noviembre de 2026",
+        "en": "Your daily horoscope: Saturday, November 21, 2026",
+        "cn": "您的每日星座运势：2026 年 11 月 21 日星期六",
+        "audio": "./assets/audios/story_3_s2.mp3"
       }
     ],
     "vocabulary": [
@@ -94,15 +155,15 @@ const DAILY_STORIES = [
         "cn": "星座运势",
         "en": "horoscope",
         "example": "Consultar el horóscopo de ayer, hoy y mañana en 20minutos.",
-        "audio": "./assets/audios/vocab_story_2_1.mp3"
+        "audio": "./assets/audios/vocab_story_3_1.mp3"
       },
       {
         "word": "diario",
         "pos": "voc.",
         "cn": "日记",
         "en": "diary",
-        "example": "Tu horóscopo diario: viernes 20 de noviembre de 2026",
-        "audio": "./assets/audios/vocab_story_2_2.mp3"
+        "example": "Tu horóscopo diario: sábado 21 de noviembre de 2026",
+        "audio": "./assets/audios/vocab_story_3_2.mp3"
       }
     ],
     "grammar": {
@@ -119,127 +180,66 @@ const DAILY_STORIES = [
       "correct_index": 0,
       "explanation": "「horóscopo」在此处意为：星座运势。"
     },
-    "audio_full_normal": "./assets/audios/story_2_normal.mp3",
-    "audio_full_slow": "./assets/audios/story_2_slow.mp3"
-  },
-  {
-    "id": "story_3",
-    "tag": "八卦 / 名人",
-    "date": "2026-11-20",
-    "title": {
-      "es": "Carlos Latre habla de la relación con su mujer tras su separación: \"Probablemente pasaremos las Navidades juntos\"",
-      "en": "Carlos Latre talks about his relationship with his wife after their separation: \"We will probably spend Christmas together\"",
-      "cn": "03. 卡洛斯·拉特谈到分居后与妻子的关系：“我们可能会一起过圣诞节”"
-    },
-    "intro": "这位喜剧演员和他的妻子在一起 22 年后，今年夏天分道扬镳，并育有一个女儿。",
-    "sentences": [
-      {
-        "id": 1,
-        "es": "El cómico y su mujer emprendieron caminos separados este verano tras 22 años juntos y una hija en común.",
-        "en": "The comedian and his wife went their separate ways this summer after 22 years together and a daughter together.",
-        "cn": "这位喜剧演员和他的妻子在一起 22 年后，今年夏天分道扬镳，并育有一个女儿。",
-        "audio": "./assets/audios/story_3_s1.mp3"
-      },
-      {
-        "id": 2,
-        "es": "Carlos Latre habla de la relación con su mujer tras su separación: \"Probablemente pasaremos las Navidades juntos\"",
-        "en": "Carlos Latre talks about his relationship with his wife after their separation: \"We will probably spend Christmas together\"",
-        "cn": "卡洛斯·拉特谈到分居后与妻子的关系：“我们可能会一起过圣诞节”",
-        "audio": "./assets/audios/story_3_s2.mp3"
-      }
-    ],
-    "vocabulary": [
-      {
-        "word": "carlos",
-        "pos": "voc.",
-        "cn": "卡洛斯",
-        "en": "Carlos",
-        "example": "El cómico y su mujer emprendieron caminos separados este verano tras 22 años juntos y una hija en común.",
-        "audio": "./assets/audios/vocab_story_3_1.mp3"
-      },
-      {
-        "word": "latre",
-        "pos": "voc.",
-        "cn": "拉特雷",
-        "en": "latre",
-        "example": "Carlos Latre habla de la relación con su mujer tras su separación: \"Probablemente pasaremos las Navidades juntos\"",
-        "audio": "./assets/audios/vocab_story_3_2.mp3"
-      }
-    ],
-    "grammar": {
-      "point": "核心词汇「carlos」在文中的表达",
-      "detail": "「carlos」在本文语境下表示“卡洛斯”，是地道西语新闻常用表达。"
-    },
-    "quiz": {
-      "question": "西语单词「carlos」在文中的中文含义是？",
-      "options": [
-        "A. 卡洛斯",
-        "B. 另一个意思",
-        "C. 错误含义"
-      ],
-      "correct_index": 0,
-      "explanation": "「carlos」在此处意为：卡洛斯。"
-    },
     "audio_full_normal": "./assets/audios/story_3_normal.mp3",
     "audio_full_slow": "./assets/audios/story_3_slow.mp3"
   },
   {
     "id": "story_4",
     "tag": "体育 / 赛事",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "title": {
-      "es": "Carlos Alcaraz se da una oportunidad y continúa en las ATP Finals pese a sus molestias físicas",
-      "en": "Carlos Alcaraz gives himself a chance and continues in the ATP Finals despite his physical discomfort",
-      "cn": "04. 卡洛斯·阿尔卡拉斯给自己一个机会，尽管身体不适，但仍继续参加 ATP 决赛"
+      "es": "España jugará contra la Francia de Zidane en los cuartos de final de la Nations League",
+      "en": "Spain will play against Zidane's France in the quarterfinals of the Nations League",
+      "cn": "04. 西班牙队将在欧国联四分之一决赛中迎战齐达内率领的法国队"
     },
-    "intro": "穆尔西亚人于本周四接受了医学检查，以了解他身体不适的程度。",
+    "intro": "如果他们赢得这场比赛，国家队将在半决赛中对阵荷兰或葡萄牙。",
     "sentences": [
       {
         "id": 1,
-        "es": "El murciano se sometió a una prueba médica este jueves para conocer el alcance de las molestias físicas que sufrió en su partido ante Daniil Medvedev.",
-        "en": "The Murcian underwent a medical test this Thursday to find out the extent of the physical discomfort he suffered in his match against Daniil Medvedev.",
-        "cn": "穆尔西亚人本周四接受了医学检查，以了解他在对阵丹尼尔·梅德韦杰夫的比赛中身体不适的程度。",
+        "es": "Si gana la eliminatoria, el combinado nacional se verá las caras con Países Bajos o Portugal en las semifinales.",
+        "en": "If they win the tie, the national team will face the Netherlands or Portugal in the semifinals.",
+        "cn": "如果他们赢得这场比赛，国家队将在半决赛中对阵荷兰或葡萄牙。",
         "audio": "./assets/audios/story_4_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Carlos Alcaraz se da una oportunidad y continúa en las ATP Finals pese a sus molestias físicas",
-        "en": "Carlos Alcaraz gives himself a chance and continues in the ATP Finals despite his physical discomfort",
-        "cn": "卡洛斯·阿尔卡拉斯给自己一个机会，尽管身体不适，但仍继续参加 ATP 决赛",
+        "es": "España jugará contra la Francia de Zidane en los cuartos de final de la Nations League",
+        "en": "Spain will play against Zidane's France in the quarterfinals of the Nations League",
+        "cn": "西班牙队将在欧国联四分之一决赛中迎战齐达内率领的法国队",
         "audio": "./assets/audios/story_4_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "carlos",
+        "word": "españa",
         "pos": "voc.",
-        "cn": "卡洛斯",
-        "en": "Carlos",
-        "example": "El murciano se sometió a una prueba médica este jueves para conocer el alcance de las molestias físicas que sufrió en su partido ante Daniil Medvedev.",
+        "cn": "西班牙",
+        "en": "Spain",
+        "example": "Si gana la eliminatoria, el combinado nacional se verá las caras con Países Bajos o Portugal en las semifinales.",
         "audio": "./assets/audios/vocab_story_4_1.mp3"
       },
       {
-        "word": "alcaraz",
+        "word": "jugará",
         "pos": "voc.",
-        "cn": "阿尔卡拉斯",
-        "en": "alcaraz",
-        "example": "Carlos Alcaraz se da una oportunidad y continúa en las ATP Finals pese a sus molestias físicas",
+        "cn": "会玩",
+        "en": "will play",
+        "example": "España jugará contra la Francia de Zidane en los cuartos de final de la Nations League",
         "audio": "./assets/audios/vocab_story_4_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「carlos」在文中的表达",
-      "detail": "「carlos」在本文语境下表示“卡洛斯”，是地道西语新闻常用表达。"
+      "point": "核心词汇「españa」在文中的表达",
+      "detail": "「españa」在本文语境下表示“西班牙”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「carlos」在文中的中文含义是？",
+      "question": "西语单词「españa」在文中的中文含义是？",
       "options": [
-        "A. 卡洛斯",
+        "A. 西班牙",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「carlos」在此处意为：卡洛斯。"
+      "explanation": "「españa」在此处意为：西班牙。"
     },
     "audio_full_normal": "./assets/audios/story_4_normal.mp3",
     "audio_full_slow": "./assets/audios/story_4_slow.mp3"
@@ -247,60 +247,60 @@ const DAILY_STORIES = [
   {
     "id": "story_5",
     "tag": "体育 / 赛事",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "title": {
-      "es": "Rafa Jódar, eliminado de las ATP Finals: pierde su tercer partido ante Ben Shelton",
-      "en": "Rafa Jódar, eliminated from the ATP Finals: loses his third match against Ben Shelton",
-      "cn": "05. 拉法·乔达尔 (Rafa Jódar) 在 ATP 总决赛中被淘汰：第三次输给本·谢尔顿 (Ben Shelton)"
+      "es": "Ni los problemas físicos detienen a Alcaraz: firma otro recital ante Cobolli y avanza a semis de las ATP Finals con pleno de victorias",
+      "en": "Not even physical problems stop Alcaraz: he signs another recital against Cobolli and advances to the semi-finals of the ATP Finals with full victories",
+      "cn": "05. 即使身体问题也无法阻止阿尔卡拉斯：他再次与科博利签约，并以全胜晋级 ATP 总决赛半决赛"
     },
-    "intro": "西班牙人周四以 7-6 (8) 和 7-5 的比分输给了美国队。",
+    "intro": "西班牙人在直落两盘击败意大利人后取得大师杯三连胜，",
     "sentences": [
       {
         "id": 1,
-        "es": "El español ha perdido este jueves ante el estadounidense por 7-6 (8) y 7-5.",
-        "en": "The Spaniard lost this Thursday against the American 7-6 (8) and 7-5.",
-        "cn": "西班牙人周四以 7-6 (8) 和 7-5 的比分输给了美国队。",
+        "es": "El español logró su tercer triunfo consecutivo en la Copa de Maestros tras vencer en dos sets corridos al italiano, por 6-4 y 6-1.",
+        "en": "The Spaniard achieved his third consecutive victory in the Masters Cup after beating the Italian in two straight sets, 6-4 and 6-1.",
+        "cn": "西班牙人以6-4和6-1直落两盘击败意大利人，取得大师杯三连胜。",
         "audio": "./assets/audios/story_5_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Rafa Jódar, eliminado de las ATP Finals: pierde su tercer partido ante Ben Shelton",
-        "en": "Rafa Jódar, eliminated from the ATP Finals: loses his third match against Ben Shelton",
-        "cn": "拉法·乔达尔 (Rafa Jódar) 在 ATP 总决赛中被淘汰：第三次输给本·谢尔顿 (Ben Shelton)",
+        "es": "Ni los problemas físicos detienen a Alcaraz: firma otro recital ante Cobolli y avanza a semis de las ATP Finals con pleno de victorias",
+        "en": "Not even physical problems stop Alcaraz: he signs another recital against Cobolli and advances to the semi-finals of the ATP Finals with full victories",
+        "cn": "即使身体问题也无法阻止阿尔卡拉斯：他再次与科博利签约，并以全胜晋级 ATP 总决赛半决赛",
         "audio": "./assets/audios/story_5_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "jódar",
+        "word": "problemas",
         "pos": "voc.",
-        "cn": "他妈的",
-        "en": "fuck",
-        "example": "El español ha perdido este jueves ante el estadounidense por 7-6 (8) y 7-5.",
+        "cn": "问题",
+        "en": "issues",
+        "example": "El español logró su tercer triunfo consecutivo en la Copa de Maestros tras vencer en dos sets corridos al italiano, por 6-4 y 6-1.",
         "audio": "./assets/audios/vocab_story_5_1.mp3"
       },
       {
-        "word": "eliminado",
+        "word": "físicos",
         "pos": "voc.",
-        "cn": "已删除",
-        "en": "removed",
-        "example": "Rafa Jódar, eliminado de las ATP Finals: pierde su tercer partido ante Ben Shelton",
+        "cn": "身体的",
+        "en": "physical",
+        "example": "Ni los problemas físicos detienen a Alcaraz: firma otro recital ante Cobolli y avanza a semis de las ATP Finals con pleno de victorias",
         "audio": "./assets/audios/vocab_story_5_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「jódar」在文中的表达",
-      "detail": "「jódar」在本文语境下表示“他妈的”，是地道西语新闻常用表达。"
+      "point": "核心词汇「problemas」在文中的表达",
+      "detail": "「problemas」在本文语境下表示“问题”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「jódar」在文中的中文含义是？",
+      "question": "西语单词「problemas」在文中的中文含义是？",
       "options": [
-        "A. 他妈的",
+        "A. 问题",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「jódar」在此处意为：他妈的。"
+      "explanation": "「problemas」在此处意为：问题。"
     },
     "audio_full_normal": "./assets/audios/story_5_normal.mp3",
     "audio_full_slow": "./assets/audios/story_5_slow.mp3"
@@ -308,60 +308,60 @@ const DAILY_STORIES = [
   {
     "id": "story_6",
     "tag": "体育 / 赛事",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "title": {
-      "es": "Máxima tensión en la NBA: un árbitro se encara a Luka Doncic en la derrota de los Lakers contra Utah Jazz",
-      "en": "Maximum tension in the NBA: a referee confronts Luka Doncic in the Lakers' loss against the Utah Jazz",
-      "cn": "06. NBA最紧张的局势：在湖人队输给犹他爵士队的比赛中，裁判与卢卡·东契奇对质"
+      "es": "Zinédine Zidane, sobre el cruce de la Nations League: \"Conocemos a la perfección a España, no es una revancha del Mundial\"",
+      "en": "Zinédine Zidane, on the Nations League crossing: \"We know Spain perfectly, it is not a revenge for the World Cup\"",
+      "cn": "06. 齐内丁·齐达内在国联过境点表示：“我们非常了解西班牙，这不是为世界杯复仇”"
     },
-    "intro": "斯洛文尼亚人在第二节末与特雷·马多克斯发生了扭打。",
+    "intro": "这位法国教练坚持认为“要想在比赛中走得更远，你必须与最好的球队比赛，",
     "sentences": [
       {
         "id": 1,
-        "es": "El esloveno mantuvo un rifirrafe con Tre Maddox al final del segundo cuarto.",
-        "en": "The Slovenian had a scuffle with Tre Maddox at the end of the second quarter.",
-        "cn": "斯洛文尼亚人在第二节末与特雷·马多克斯发生了扭打。",
+        "es": "El seleccionador francés sostiene que \"para llegar lejos en una competición, hay que jugar contra los mejores equipos y eliminarlos, sea como sea\".",
+        "en": "The French coach maintains that \"to go far in a competition, you have to play against the best teams and eliminate them, no matter what.\"",
+        "cn": "这位法国教练坚持认为，“要想在比赛中走得更远，你必须与最好的球队比赛，并淘汰他们，无论如何。”",
         "audio": "./assets/audios/story_6_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Máxima tensión en la NBA: un árbitro se encara a Luka Doncic en la derrota de los Lakers contra Utah Jazz",
-        "en": "Maximum tension in the NBA: a referee confronts Luka Doncic in the Lakers' loss against the Utah Jazz",
-        "cn": "NBA最紧张的局势：在湖人队输给犹他爵士队的比赛中，裁判与卢卡·东契奇对质",
+        "es": "Zinédine Zidane, sobre el cruce de la Nations League: \"Conocemos a la perfección a España, no es una revancha del Mundial\"",
+        "en": "Zinédine Zidane, on the Nations League crossing: \"We know Spain perfectly, it is not a revenge for the World Cup\"",
+        "cn": "齐内丁·齐达内在国联过境点表示：“我们非常了解西班牙，这不是为世界杯复仇”",
         "audio": "./assets/audios/story_6_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "máxima",
+        "word": "zinédine",
         "pos": "voc.",
-        "cn": "最大限度",
-        "en": "maximum",
-        "example": "El esloveno mantuvo un rifirrafe con Tre Maddox al final del segundo cuarto.",
+        "cn": "齐达丁",
+        "en": "zinedine",
+        "example": "El seleccionador francés sostiene que \"para llegar lejos en una competición, hay que jugar contra los mejores equipos y eliminarlos, sea como sea\".",
         "audio": "./assets/audios/vocab_story_6_1.mp3"
       },
       {
-        "word": "tensión",
+        "word": "zidane",
         "pos": "voc.",
-        "cn": "拉紧",
-        "en": "strain",
-        "example": "Máxima tensión en la NBA: un árbitro se encara a Luka Doncic en la derrota de los Lakers contra Utah Jazz",
+        "cn": "齐达内",
+        "en": "zidane",
+        "example": "Zinédine Zidane, sobre el cruce de la Nations League: \"Conocemos a la perfección a España, no es una revancha del Mundial\"",
         "audio": "./assets/audios/vocab_story_6_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「máxima」在文中的表达",
-      "detail": "「máxima」在本文语境下表示“最大限度”，是地道西语新闻常用表达。"
+      "point": "核心词汇「zinédine」在文中的表达",
+      "detail": "「zinédine」在本文语境下表示“齐达丁”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「máxima」在文中的中文含义是？",
+      "question": "西语单词「zinédine」在文中的中文含义是？",
       "options": [
-        "A. 最大限度",
+        "A. 齐达丁",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「máxima」在此处意为：最大限度。"
+      "explanation": "「zinédine」在此处意为：齐达丁。"
     },
     "audio_full_normal": "./assets/audios/story_6_normal.mp3",
     "audio_full_slow": "./assets/audios/story_6_slow.mp3"
@@ -369,60 +369,60 @@ const DAILY_STORIES = [
   {
     "id": "story_7",
     "tag": "文化 / 艺术",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "title": {
-      "es": "La RAE celebra un pleno en Córdoba en honor al cuarto centenario de Luis de Góngora y a los 100 años de la Generación del 27",
-      "en": "The RAE celebrates a plenary session in Córdoba in honor of the fourth centenary of Luis de Góngora and the 100 years of the Generation of '27",
-      "cn": "07. RAE 在科尔多瓦举行全体会议，纪念 Luis de Góngora 诞辰 400 周年和“27 一代”100 周年"
+      "es": "Rosalía, reina absoluta de Los40 Music Awards 2026",
+      "en": "Rosalía, absolute queen of Los40 Music Awards 2026",
+      "cn": "07. Rosalía，2026 年 Los40 音乐奖绝对女王"
     },
-    "intro": "破例的是，最高语言机构搬迁了总部以纪念科尔多瓦作家",
+    "intro": "这位加泰罗尼亚人获得了 4 个奖项，成为此次盛典的最高获奖者，艾塔娜 (Aitana)、奥利维亚·迪恩 (Olivia Dean) 和 G 也脱颖而出。",
     "sentences": [
       {
         "id": 1,
-        "es": "De manera excepcional, la institución máxima de la lengua ha trasladado su sede para homenajear a los escritores cordobeses y a otros vinculados con la figura gongorina.",
-        "en": "Exceptionally, the highest institution of the language has moved its headquarters to honor Cordoban writers and others linked to the Gongora figure.",
-        "cn": "不同寻常的是，该语言的最高机构已将其总部迁至其他地方，以纪念科尔多瓦作家和其他与贡戈拉人物有关的人。",
+        "es": "La catalana, con 4 galardones, es la máxima coronada de una gala en la que también sobresalieron Aitana, Olivia Dean y Guitarricadelafuente.",
+        "en": "The Catalan, with 4 awards, is the top winner of a gala in which Aitana, Olivia Dean and Guitarricadelafuente also stood out.",
+        "cn": "这位加泰罗尼亚人获得了 4 个奖项，成为此次盛会的最高获奖者，艾塔娜 (Aitana)、奥利维亚·迪恩 (Olivia Dean) 和吉塔里卡德拉丰特 (Guitarricadelafuente) 也脱颖而出。",
         "audio": "./assets/audios/story_7_s1.mp3"
       },
       {
         "id": 2,
-        "es": "La RAE celebra un pleno en Córdoba en honor al cuarto centenario de Luis de Góngora y a los 100 años de la Generación del 27",
-        "en": "The RAE celebrates a plenary session in Córdoba in honor of the fourth centenary of Luis de Góngora and the 100 years of the Generation of '27",
-        "cn": "RAE 在科尔多瓦举行全体会议，纪念 Luis de Góngora 诞辰 400 周年和“27 一代”100 周年",
+        "es": "Rosalía, reina absoluta de Los40 Music Awards 2026",
+        "en": "Rosalía, absolute queen of Los40 Music Awards 2026",
+        "cn": "Rosalía，2026 年 Los40 音乐奖绝对女王",
         "audio": "./assets/audios/story_7_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "celebra",
+        "word": "rosalía",
         "pos": "voc.",
-        "cn": "庆祝",
-        "en": "celebrate",
-        "example": "De manera excepcional, la institución máxima de la lengua ha trasladado su sede para homenajear a los escritores cordobeses y a otros vinculados con la figura gongorina.",
+        "cn": "罗莎莉亚",
+        "en": "rosalia",
+        "example": "La catalana, con 4 galardones, es la máxima coronada de una gala en la que también sobresalieron Aitana, Olivia Dean y Guitarricadelafuente.",
         "audio": "./assets/audios/vocab_story_7_1.mp3"
       },
       {
-        "word": "pleno",
+        "word": "reina",
         "pos": "voc.",
-        "cn": "满的",
-        "en": "full",
-        "example": "La RAE celebra un pleno en Córdoba en honor al cuarto centenario de Luis de Góngora y a los 100 años de la Generación del 27",
+        "cn": "女王",
+        "en": "queen",
+        "example": "Rosalía, reina absoluta de Los40 Music Awards 2026",
         "audio": "./assets/audios/vocab_story_7_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「celebra」在文中的表达",
-      "detail": "「celebra」在本文语境下表示“庆祝”，是地道西语新闻常用表达。"
+      "point": "核心词汇「rosalía」在文中的表达",
+      "detail": "「rosalía」在本文语境下表示“罗莎莉亚”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「celebra」在文中的中文含义是？",
+      "question": "西语单词「rosalía」在文中的中文含义是？",
       "options": [
-        "A. 庆祝",
+        "A. 罗莎莉亚",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「celebra」在此处意为：庆祝。"
+      "explanation": "「rosalía」在此处意为：罗莎莉亚。"
     },
     "audio_full_normal": "./assets/audios/story_7_normal.mp3",
     "audio_full_slow": "./assets/audios/story_7_slow.mp3"
@@ -430,60 +430,60 @@ const DAILY_STORIES = [
   {
     "id": "story_8",
     "tag": "文化 / 艺术",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "title": {
-      "es": "La Fundación Mutua Madrileña inaugura un nuevo espacio cultural en un histórico edificio y con el humanismo de Cervantes",
-      "en": "The Mutua Madrileña Foundation inaugurates a new cultural space in a historic building and with the humanism of Cervantes",
-      "cn": "08. Mutua Madrileña 基金会在一座历史建筑中开设了一个新的文化空间，并体现了塞万提斯的人文主义"
+      "es": "Los excompañeros de Robe Iniesta publican la canción 'Vértigo', una declaración musical de recuerdo al cantante",
+      "en": "Robe Iniesta's former teammates publish the song 'Vértigo', a musical declaration of remembrance of the singer",
+      "cn": "08. 罗贝·伊涅斯塔的前队友发布了歌曲“Vértigo”，这是纪念这位歌手的音乐宣言"
     },
-    "intro": "一个关于《堂吉诃德》作者的大型沉浸式展览装扮了一座已经居住了 2 年的建筑",
+    "intro": "罗贝·伊涅斯塔的前队友发布了歌曲“Vértigo”，这是纪念这位歌手的音乐宣言",
     "sentences": [
       {
         "id": 1,
-        "es": "Una gran exposición inmersiva sobre el autor del 'Quijote' viste de largo la presentación de un edificio que ha vivido 28 meses de obras y una inversión de 30 millones de euros.",
-        "en": "A large immersive exhibition about the author of 'Don Quixote' covers the presentation of a building that has undergone 28 months of work and an investment of 30 million euros.",
-        "cn": "一场关于《堂吉诃德》作者的大型沉浸式展览涵盖了一座历时 28 个月、投资 3000 万欧元的建筑的展示。",
+        "es": "Los excompañeros de Robe Iniesta publican la canción 'Vértigo', una declaración musical de recuerdo al cantante.",
+        "en": "Robe Iniesta's former teammates publish the song 'Vértigo', a musical declaration of remembrance of the singer.",
+        "cn": "罗贝·伊涅斯塔的前队友发表了歌曲“Vértigo”，这是纪念这位歌手的音乐宣言。",
         "audio": "./assets/audios/story_8_s1.mp3"
       },
       {
         "id": 2,
-        "es": "La Fundación Mutua Madrileña inaugura un nuevo espacio cultural en un histórico edificio y con el humanismo de Cervantes",
-        "en": "The Mutua Madrileña Foundation inaugurates a new cultural space in a historic building and with the humanism of Cervantes",
-        "cn": "Mutua Madrileña 基金会在一座历史建筑中开设了一个新的文化空间，并体现了塞万提斯的人文主义",
+        "es": "Los excompañeros de Robe Iniesta publican la canción 'Vértigo', una declaración musical de recuerdo al cantante",
+        "en": "Robe Iniesta's former teammates publish the song 'Vértigo', a musical declaration of remembrance of the singer",
+        "cn": "罗贝·伊涅斯塔的前队友发布了歌曲“Vértigo”，这是纪念这位歌手的音乐宣言",
         "audio": "./assets/audios/story_8_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "fundación",
+        "word": "excompañeros",
         "pos": "voc.",
-        "cn": "基础",
-        "en": "foundation",
-        "example": "Una gran exposición inmersiva sobre el autor del 'Quijote' viste de largo la presentación de un edificio que ha vivido 28 meses de obras y una inversión de 30 millones de euros.",
+        "cn": "前同事",
+        "en": "ex-colleagues",
+        "example": "Los excompañeros de Robe Iniesta publican la canción 'Vértigo', una declaración musical de recuerdo al cantante.",
         "audio": "./assets/audios/vocab_story_8_1.mp3"
       },
       {
-        "word": "mutua",
+        "word": "iniesta",
         "pos": "voc.",
-        "cn": "相互的",
-        "en": "mutual",
-        "example": "La Fundación Mutua Madrileña inaugura un nuevo espacio cultural en un histórico edificio y con el humanismo de Cervantes",
+        "cn": "伊涅斯塔",
+        "en": "iniesta",
+        "example": "Los excompañeros de Robe Iniesta publican la canción 'Vértigo', una declaración musical de recuerdo al cantante",
         "audio": "./assets/audios/vocab_story_8_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「fundación」在文中的表达",
-      "detail": "「fundación」在本文语境下表示“基础”，是地道西语新闻常用表达。"
+      "point": "核心词汇「excompañeros」在文中的表达",
+      "detail": "「excompañeros」在本文语境下表示“前同事”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「fundación」在文中的中文含义是？",
+      "question": "西语单词「excompañeros」在文中的中文含义是？",
       "options": [
-        "A. 基础",
+        "A. 前同事",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「fundación」在此处意为：基础。"
+      "explanation": "「excompañeros」在此处意为：前同事。"
     },
     "audio_full_normal": "./assets/audios/story_8_normal.mp3",
     "audio_full_slow": "./assets/audios/story_8_slow.mp3"
@@ -491,60 +491,60 @@ const DAILY_STORIES = [
   {
     "id": "story_9",
     "tag": "生活 / 资讯",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "title": {
-      "es": "Feijóo apela a la \"decencia\" y a la \"gestión\" ante un Sánchez que pide votar \"con el alma\"",
-      "en": "Feijóo appeals to \"decency\" and \"management\" before Sánchez who asks to vote \"with the soul\"",
-      "cn": "09. 费约在要求“用灵魂”投票的桑切斯面前呼吁“正派”和“管理”"
+      "es": "El Supremo ordena que ninguno de los 163.355 afectados por las cautelares sobre la 'ley de nietos' figure como votante",
+      "en": "The Supreme Court orders that none of the 163,355 affected by the precautionary measures on the 'grandchildren law' appear as voters",
+      "cn": "09. 最高法院下令，受“孙子法”预防措施影响的 163,355 人中，不得以选民身份出现"
     },
-    "intro": "人民党领导人带头谴责腐败、住房和交通问题，而桑克",
+    "intro": "相反，“出示领事证明的901人”将被允许对其移民身份进行投票。",
     "sentences": [
       {
         "id": 1,
-        "es": "El líder del PP ha llevado la iniciativa con sus reproches por la corrupción, la vivienda y el transporte, mientras Sánchez ha defendido su gestión con un tono bastante contenido y ha centrado su estrategia en alertar del giro que supondría un Gobierno de PP y Vox.",
-        "en": "The leader of the PP has led the initiative with his reproaches for corruption, housing and transport, while Sánchez has defended his management with a fairly restrained tone and has focused his strategy on warning of the turn that a PP and Vox Government would entail.",
-        "cn": "人民党领导人以对腐败、住房和交通问题的谴责为主导，而桑切斯则以相当克制的语气为他的管理层辩护，并将战略重点放在警告人民党和 Vox 政府将带来的转变上。",
+        "es": "Por el contrario, sí se dejará votar a \"las 901 personas que presentaron certificación consular\" sobre su condición de exiliados del franquismo y que la aporten antes del día de los comicios.",
+        "en": "On the contrary, \"the 901 people who presented consular certification\" regarding their status as exiles from Franco's regime will be allowed to vote and provide it before election day.",
+        "cn": "相反，“901名提供了佛朗哥政权流亡者身份的领事证明的人”将被允许投票并在选举日之前提供。",
         "audio": "./assets/audios/story_9_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Feijóo apela a la \"decencia\" y a la \"gestión\" ante un Sánchez que pide votar \"con el alma\"",
-        "en": "Feijóo appeals to \"decency\" and \"management\" before Sánchez who asks to vote \"with the soul\"",
-        "cn": "费约在要求“用灵魂”投票的桑切斯面前呼吁“正派”和“管理”",
+        "es": "El Supremo ordena que ninguno de los 163.355 afectados por las cautelares sobre la 'ley de nietos' figure como votante",
+        "en": "The Supreme Court orders that none of the 163,355 affected by the precautionary measures on the 'grandchildren law' appear as voters",
+        "cn": "最高法院下令，受“孙子法”预防措施影响的 163,355 人中，不得以选民身份出现",
         "audio": "./assets/audios/story_9_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "feijóo",
+        "word": "supremo",
         "pos": "voc.",
-        "cn": "费乔",
-        "en": "feijoo",
-        "example": "El líder del PP ha llevado la iniciativa con sus reproches por la corrupción, la vivienda y el transporte, mientras Sánchez ha defendido su gestión con un tono bastante contenido y ha centrado su estrategia en alertar del giro que supondría un Gobierno de PP y Vox.",
+        "cn": "最高",
+        "en": "supreme",
+        "example": "Por el contrario, sí se dejará votar a \"las 901 personas que presentaron certificación consular\" sobre su condición de exiliados del franquismo y que la aporten antes del día de los comicios.",
         "audio": "./assets/audios/vocab_story_9_1.mp3"
       },
       {
-        "word": "apela",
+        "word": "ordena",
         "pos": "voc.",
-        "cn": "上诉",
-        "en": "appeal",
-        "example": "Feijóo apela a la \"decencia\" y a la \"gestión\" ante un Sánchez que pide votar \"con el alma\"",
+        "cn": "命令",
+        "en": "order",
+        "example": "El Supremo ordena que ninguno de los 163.355 afectados por las cautelares sobre la 'ley de nietos' figure como votante",
         "audio": "./assets/audios/vocab_story_9_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「feijóo」在文中的表达",
-      "detail": "「feijóo」在本文语境下表示“费乔”，是地道西语新闻常用表达。"
+      "point": "核心词汇「supremo」在文中的表达",
+      "detail": "「supremo」在本文语境下表示“最高”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「feijóo」在文中的中文含义是？",
+      "question": "西语单词「supremo」在文中的中文含义是？",
       "options": [
-        "A. 费乔",
+        "A. 最高",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「feijóo」在此处意为：费乔。"
+      "explanation": "「supremo」在此处意为：最高。"
     },
     "audio_full_normal": "./assets/audios/story_9_normal.mp3",
     "audio_full_slow": "./assets/audios/story_9_slow.mp3"
@@ -552,60 +552,60 @@ const DAILY_STORIES = [
   {
     "id": "story_10",
     "tag": "生活 / 资讯",
-    "date": "2026-11-20",
+    "date": "2026-11-21",
     "title": {
-      "es": "\"Ábalos, Jessica, orgías...\": el momento en que Feijóo enumera los escándalos del PSOE y pide para España un \"presidente decente\"",
-      "en": "\"Ábalos, Jessica, orgies...\": the moment when Feijóo lists the PSOE scandals and asks for a \"decent president\" for Spain",
-      "cn": "10. “阿巴洛斯、杰西卡、狂欢……”：费约列出西班牙社会党丑闻并要求西班牙选出一位“体面的总统”的那一刻"
+      "es": "Bolaños tilda de \"discutible\" el veto del TS al voto de los nacionalizados por la 'ley de nietos': \"Discrepamos\"",
+      "en": "Bolaños calls the TS's veto of the vote of those nationalized by the 'grandchildren law' \"debatable\": \"We disagree\"",
+      "cn": "10. 博拉尼奥斯称TS对那些因“孙子法”而国有化的人的投票否决是“值得商榷的”：“我们不同意”"
     },
-    "intro": "人民党领导人通过评估社会党立法机构开始了选举辩论，他在其中提到了一些",
+    "intro": "司法部长确认“已经在四到五个程序中投票的人被剥夺了投票权”。",
     "sentences": [
       {
         "id": 1,
-        "es": "El líder del PP ha arrancado el debate electoral valorando la legislatura del PSOE, en la que ha mencionado algunas de las polémicas que han rodeado al partido socialista.",
-        "en": "The PP leader started the electoral debate by evaluating the PSOE legislature, in which he mentioned some of the controversies that have surrounded the socialist party.",
-        "cn": "这位人民党领导人通过评估社会党立法机构开始了选举辩论，其中他提到了围绕社会党的一些争议。",
+        "es": "El ministro de Justicia afirma que \"se está privando del derecho a voto a gente que ya ha votado en cuatro o cinco procesos electorales\".",
+        "en": "The Minister of Justice affirms that \"people who have already voted in four or five electoral processes are being deprived of the right to vote.\"",
+        "cn": "司法部长确认“已经在四到五次选举过程中投票的人被剥夺了投票权”。",
         "audio": "./assets/audios/story_10_s1.mp3"
       },
       {
         "id": 2,
-        "es": "\"Ábalos, Jessica, orgías...\": el momento en que Feijóo enumera los escándalos del PSOE y pide para España un \"presidente decente\"",
-        "en": "\"Ábalos, Jessica, orgies...\": the moment when Feijóo lists the PSOE scandals and asks for a \"decent president\" for Spain",
-        "cn": "“阿巴洛斯、杰西卡、狂欢……”：费约列出西班牙社会党丑闻并要求西班牙选出一位“体面的总统”的那一刻",
+        "es": "Bolaños tilda de \"discutible\" el veto del TS al voto de los nacionalizados por la 'ley de nietos': \"Discrepamos\"",
+        "en": "Bolaños calls the TS's veto of the vote of those nationalized by the 'grandchildren law' \"debatable\": \"We disagree\"",
+        "cn": "博拉尼奥斯称TS对那些因“孙子法”而国有化的人的投票否决是“值得商榷的”：“我们不同意”",
         "audio": "./assets/audios/story_10_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "ábalos",
+        "word": "bolaños",
         "pos": "voc.",
-        "cn": "阿巴洛斯",
-        "en": "abalos",
-        "example": "El líder del PP ha arrancado el debate electoral valorando la legislatura del PSOE, en la que ha mencionado algunas de las polémicas que han rodeado al partido socialista.",
+        "cn": "博拉尼奥斯",
+        "en": "bolaños",
+        "example": "El ministro de Justicia afirma que \"se está privando del derecho a voto a gente que ya ha votado en cuatro o cinco procesos electorales\".",
         "audio": "./assets/audios/vocab_story_10_1.mp3"
       },
       {
-        "word": "jessica",
+        "word": "tilda",
         "pos": "voc.",
-        "cn": "杰西卡",
-        "en": "jessica",
-        "example": "\"Ábalos, Jessica, orgías...\": el momento en que Feijóo enumera los escándalos del PSOE y pide para España un \"presidente decente\"",
+        "cn": "蒂尔达",
+        "en": "tilda",
+        "example": "Bolaños tilda de \"discutible\" el veto del TS al voto de los nacionalizados por la 'ley de nietos': \"Discrepamos\"",
         "audio": "./assets/audios/vocab_story_10_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「ábalos」在文中的表达",
-      "detail": "「ábalos」在本文语境下表示“阿巴洛斯”，是地道西语新闻常用表达。"
+      "point": "核心词汇「bolaños」在文中的表达",
+      "detail": "「bolaños」在本文语境下表示“博拉尼奥斯”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「ábalos」在文中的中文含义是？",
+      "question": "西语单词「bolaños」在文中的中文含义是？",
       "options": [
-        "A. 阿巴洛斯",
+        "A. 博拉尼奥斯",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「ábalos」在此处意为：阿巴洛斯。"
+      "explanation": "「bolaños」在此处意为：博拉尼奥斯。"
     },
     "audio_full_normal": "./assets/audios/story_10_normal.mp3",
     "audio_full_slow": "./assets/audios/story_10_slow.mp3"
