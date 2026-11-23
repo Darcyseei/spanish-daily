@@ -3,11 +3,11 @@ const DAILY_STORIES = [
   {
     "id": "story_1",
     "tag": "八卦 / 名人",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "title": {
-      "es": "Tu horóscopo diario: domingo 22 de noviembre de 2026",
-      "en": "Your daily horoscope: Sunday, November 22, 2026",
-      "cn": "01. 您的每日星座运势：2026 年 11 月 22 日星期日"
+      "es": "Tu horóscopo diario: lunes 23 de noviembre de 2026",
+      "en": "Your daily horoscope: Monday, November 23, 2026",
+      "cn": "01. 你的每日星座运势：2026 年 11 月 23 日星期一"
     },
     "intro": "在 20minutos.es 中查看昨天、今天和明天的星座运势",
     "sentences": [
@@ -20,9 +20,9 @@ const DAILY_STORIES = [
       },
       {
         "id": 2,
-        "es": "Tu horóscopo diario: domingo 22 de noviembre de 2026",
-        "en": "Your daily horoscope: Sunday, November 22, 2026",
-        "cn": "您的每日星座运势：2026 年 11 月 22 日星期日",
+        "es": "Tu horóscopo diario: lunes 23 de noviembre de 2026",
+        "en": "Your daily horoscope: Monday, November 23, 2026",
+        "cn": "你的每日星座运势：2026 年 11 月 23 日星期一",
         "audio": "./assets/audios/story_1_s2.mp3"
       }
     ],
@@ -40,7 +40,7 @@ const DAILY_STORIES = [
         "pos": "voc.",
         "cn": "日记",
         "en": "diary",
-        "example": "Tu horóscopo diario: domingo 22 de noviembre de 2026",
+        "example": "Tu horóscopo diario: lunes 23 de noviembre de 2026",
         "audio": "./assets/audios/vocab_story_1_2.mp3"
       }
     ],
@@ -64,60 +64,60 @@ const DAILY_STORIES = [
   {
     "id": "story_2",
     "tag": "八卦 / 名人",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "title": {
-      "es": "Críticas a la ex Spice Girl Geri Halliwell por saltarse el protocolo y abrazar a la reina Camilla: \"Es inapropiado\"",
-      "en": "Criticism of former Spice Girl Geri Halliwell for breaking protocol and hugging Queen Camilla: \"It's inappropriate\"",
-      "cn": "02. 前辣妹杰里·哈利韦尔因违反礼仪拥抱卡米拉女王而受到批评：“这是不合适的”"
+      "es": "La hija de Bruce Willis elimina la última foto del actor publicada en sus redes: \"Era demasiado íntima\"",
+      "en": "Bruce Willis' daughter deletes the last photo of the actor published on her networks: \"It was too intimate\"",
+      "cn": "02. 布鲁斯威利斯的女儿删除了在她的网络上发布的演员的最后一张照片：“太亲密了”"
     },
-    "intro": "从技术上讲，没有严格的法律或官方规则禁止拥抱卡米拉女王，但礼仪",
+    "intro": "塔卢拉遗憾地表示，她致力于“做得更好”。",
     "sentences": [
       {
         "id": 1,
-        "es": "Técnicamente, no existe ninguna ley estricta ni norma oficial que prohíba abrazar a la reina Camila, pero la etiqueta real tradicional desaconseja encarecidamente iniciar contacto físico no deseado.",
-        "en": "Technically, there is no strict law or official rule against hugging Queen Camilla, but traditional royal etiquette strongly advises against initiating unwanted physical contact.",
-        "cn": "从技术上讲，没有严格的法律或官方规则禁止拥抱卡米拉女王，但传统的皇室礼仪强烈建议不要发起不必要的身体接触。",
+        "es": "Arrepentinda, Tallulah asegura que se compromete \"a hacerlo mejor\".",
+        "en": "Regretful, Tallulah says she is committed \"to doing better.\"",
+        "cn": "塔卢拉遗憾地表示，她致力于“做得更好”。",
         "audio": "./assets/audios/story_2_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Críticas a la ex Spice Girl Geri Halliwell por saltarse el protocolo y abrazar a la reina Camilla: \"Es inapropiado\"",
-        "en": "Criticism of former Spice Girl Geri Halliwell for breaking protocol and hugging Queen Camilla: \"It's inappropriate\"",
-        "cn": "前辣妹杰里·哈利韦尔因违反礼仪拥抱卡米拉女王而受到批评：“这是不合适的”",
+        "es": "La hija de Bruce Willis elimina la última foto del actor publicada en sus redes: \"Era demasiado íntima\"",
+        "en": "Bruce Willis' daughter deletes the last photo of the actor published on her networks: \"It was too intimate\"",
+        "cn": "布鲁斯威利斯的女儿删除了在她的网络上发布的演员的最后一张照片：“太亲密了”",
         "audio": "./assets/audios/story_2_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "críticas",
+        "word": "bruce",
         "pos": "voc.",
-        "cn": "评论",
-        "en": "reviews",
-        "example": "Técnicamente, no existe ninguna ley estricta ni norma oficial que prohíba abrazar a la reina Camila, pero la etiqueta real tradicional desaconseja encarecidamente iniciar contacto físico no deseado.",
+        "cn": "布鲁斯",
+        "en": "Bruce",
+        "example": "Arrepentinda, Tallulah asegura que se compromete \"a hacerlo mejor\".",
         "audio": "./assets/audios/vocab_story_2_1.mp3"
       },
       {
-        "word": "spice",
+        "word": "willis",
         "pos": "voc.",
-        "cn": "香料",
-        "en": "spice",
-        "example": "Críticas a la ex Spice Girl Geri Halliwell por saltarse el protocolo y abrazar a la reina Camilla: \"Es inapropiado\"",
+        "cn": "威利斯",
+        "en": "willis",
+        "example": "La hija de Bruce Willis elimina la última foto del actor publicada en sus redes: \"Era demasiado íntima\"",
         "audio": "./assets/audios/vocab_story_2_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「críticas」在文中的表达",
-      "detail": "「críticas」在本文语境下表示“评论”，是地道西语新闻常用表达。"
+      "point": "核心词汇「bruce」在文中的表达",
+      "detail": "「bruce」在本文语境下表示“布鲁斯”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「críticas」在文中的中文含义是？",
+      "question": "西语单词「bruce」在文中的中文含义是？",
       "options": [
-        "A. 评论",
+        "A. 布鲁斯",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「críticas」在此处意为：评论。"
+      "explanation": "「bruce」在此处意为：布鲁斯。"
     },
     "audio_full_normal": "./assets/audios/story_2_normal.mp3",
     "audio_full_slow": "./assets/audios/story_2_slow.mp3"
@@ -125,60 +125,60 @@ const DAILY_STORIES = [
   {
     "id": "story_3",
     "tag": "八卦 / 名人",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "title": {
-      "es": "El hermano de Manolo Sarria espera que se esclarezca rápido la acusación de acoso sexual",
-      "en": "Manolo Sarria's brother hopes that the accusation of sexual harassment will be clarified quickly",
-      "cn": "03. 马诺洛·萨里亚弟弟希望性骚扰指控尽快得到澄清"
+      "es": "Giro en el robo en la casa de Elsa Pataky y Chris Hemsworth: un menor de 16 años, detenido",
+      "en": "Twist in the robbery at the house of Elsa Pataky and Chris Hemsworth: a minor under 16 years of age, arrested",
+      "cn": "03. 艾尔莎·帕塔基 (Elsa Pataky) 和克里斯·海姆斯沃斯 (Chris Hemsworth) 家遭抢劫，一名 16 岁以下未成年人被捕"
     },
-    "intro": "电视节目主持人否认了一名参加南运河竞赛 Atrápame si 的工作人员报道的事实",
+    "intro": "演员的房屋遭到袭击后，已找到三辆车。",
     "sentences": [
       {
         "id": 1,
-        "es": "El presentadror de televisión ha negado los hechos denunciados por una trabajadora del concurso de Canal Sur Atrápame si puedes.",
-        "en": "The television presenter has denied the facts reported by a worker from the Canal Sur contest Catch Me If You Can.",
-        "cn": "这位电视节目主持人否认了一名参与南运河竞赛的工作人员报道的事实。",
+        "es": "Tres vehículos han sido recuperados tras el asalto a la casa de los actores.",
+        "en": "Three vehicles have been recovered after the assault on the actors' house.",
+        "cn": "演员的房屋遭到袭击后，已找到三辆车。",
         "audio": "./assets/audios/story_3_s1.mp3"
       },
       {
         "id": 2,
-        "es": "El hermano de Manolo Sarria espera que se esclarezca rápido la acusación de acoso sexual",
-        "en": "Manolo Sarria's brother hopes that the accusation of sexual harassment will be clarified quickly",
-        "cn": "马诺洛·萨里亚弟弟希望性骚扰指控尽快得到澄清",
+        "es": "Giro en el robo en la casa de Elsa Pataky y Chris Hemsworth: un menor de 16 años, detenido",
+        "en": "Twist in the robbery at the house of Elsa Pataky and Chris Hemsworth: a minor under 16 years of age, arrested",
+        "cn": "艾尔莎·帕塔基 (Elsa Pataky) 和克里斯·海姆斯沃斯 (Chris Hemsworth) 家遭抢劫，一名 16 岁以下未成年人被捕",
         "audio": "./assets/audios/story_3_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "hermano",
+        "word": "pataky",
         "pos": "voc.",
-        "cn": "兄弟",
-        "en": "brother",
-        "example": "El presentadror de televisión ha negado los hechos denunciados por una trabajadora del concurso de Canal Sur Atrápame si puedes.",
+        "cn": "帕塔基",
+        "en": "pataki",
+        "example": "Tres vehículos han sido recuperados tras el asalto a la casa de los actores.",
         "audio": "./assets/audios/vocab_story_3_1.mp3"
       },
       {
-        "word": "manolo",
+        "word": "chris",
         "pos": "voc.",
-        "cn": "马诺洛",
-        "en": "manolo",
-        "example": "El hermano de Manolo Sarria espera que se esclarezca rápido la acusación de acoso sexual",
+        "cn": "克里斯",
+        "en": "Chris",
+        "example": "Giro en el robo en la casa de Elsa Pataky y Chris Hemsworth: un menor de 16 años, detenido",
         "audio": "./assets/audios/vocab_story_3_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「hermano」在文中的表达",
-      "detail": "「hermano」在本文语境下表示“兄弟”，是地道西语新闻常用表达。"
+      "point": "核心词汇「pataky」在文中的表达",
+      "detail": "「pataky」在本文语境下表示“帕塔基”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「hermano」在文中的中文含义是？",
+      "question": "西语单词「pataky」在文中的中文含义是？",
       "options": [
-        "A. 兄弟",
+        "A. 帕塔基",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「hermano」在此处意为：兄弟。"
+      "explanation": "「pataky」在此处意为：帕塔基。"
     },
     "audio_full_normal": "./assets/audios/story_3_normal.mp3",
     "audio_full_slow": "./assets/audios/story_3_slow.mp3"
@@ -186,26 +186,26 @@ const DAILY_STORIES = [
   {
     "id": "story_4",
     "tag": "体育 / 赛事",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "title": {
-      "es": "Carlos Alcaraz es de otro planeta: firma un remontadón agónico ante Shelton para avanzar a la final de la Copa de Maestros",
-      "en": "Carlos Alcaraz is from another planet: he makes an agonizing comeback against Shelton to advance to the final of the Masters Cup",
-      "cn": "04. 卡洛斯·阿尔卡拉斯来自另一个星球：他痛苦地复出，对阵谢尔顿，晋级大师杯决赛"
+      "es": "Carlos Alcaraz arrolla a Alexander Zverev, gana su primera Copa de Maestros y le demuestra quién es el número 1",
+      "en": "Carlos Alcaraz overwhelms Alexander Zverev, wins his first Masters Cup and shows him who is number 1",
+      "cn": "04. 卡洛斯·阿尔卡拉斯击败亚历山大·兹维列夫，赢得他的第一个大师杯并向他展示了谁是第一"
     },
-    "intro": "穆尔西亚人以3-6、6-3和7-6三盘击败了美国队。",
+    "intro": "穆尔西亚人在都灵击败德国人（2-6 和 6(7)-7），成为第一位赢得 ATP 总决赛的西班牙人",
     "sentences": [
       {
         "id": 1,
-        "es": "El murciano venció al americano en tres mangas, por 3-6, 6-3 y 7-6.",
-        "en": "The Murcian defeated the American in three sets, 3-6, 6-3 and 7-6.",
-        "cn": "穆尔西亚人以3-6、6-3和7-6三盘击败了美国队。",
+        "es": "El murciano se impuso al alemán (2-6 y 6(7)-7) en Turín para convertirse en el primer español que gana las ATP Finals en 28 años.",
+        "en": "The Murcian beat the German (2-6 and 6(7)-7) in Turin to become the first Spaniard to win the ATP Finals in 28 years.",
+        "cn": "穆尔西亚人在都灵击败德国人（2-6 和 6(7)-7），成为 28 年来第一位赢得 ATP 总决赛的西班牙人。",
         "audio": "./assets/audios/story_4_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Carlos Alcaraz es de otro planeta: firma un remontadón agónico ante Shelton para avanzar a la final de la Copa de Maestros",
-        "en": "Carlos Alcaraz is from another planet: he makes an agonizing comeback against Shelton to advance to the final of the Masters Cup",
-        "cn": "卡洛斯·阿尔卡拉斯来自另一个星球：他痛苦地复出，对阵谢尔顿，晋级大师杯决赛",
+        "es": "Carlos Alcaraz arrolla a Alexander Zverev, gana su primera Copa de Maestros y le demuestra quién es el número 1",
+        "en": "Carlos Alcaraz overwhelms Alexander Zverev, wins his first Masters Cup and shows him who is number 1",
+        "cn": "卡洛斯·阿尔卡拉斯击败亚历山大·兹维列夫，赢得他的第一个大师杯并向他展示了谁是第一",
         "audio": "./assets/audios/story_4_s2.mp3"
       }
     ],
@@ -215,7 +215,7 @@ const DAILY_STORIES = [
         "pos": "voc.",
         "cn": "卡洛斯",
         "en": "Carlos",
-        "example": "El murciano venció al americano en tres mangas, por 3-6, 6-3 y 7-6.",
+        "example": "El murciano se impuso al alemán (2-6 y 6(7)-7) en Turín para convertirse en el primer español que gana las ATP Finals en 28 años.",
         "audio": "./assets/audios/vocab_story_4_1.mp3"
       },
       {
@@ -223,7 +223,7 @@ const DAILY_STORIES = [
         "pos": "voc.",
         "cn": "阿尔卡拉斯",
         "en": "alcaraz",
-        "example": "Carlos Alcaraz es de otro planeta: firma un remontadón agónico ante Shelton para avanzar a la final de la Copa de Maestros",
+        "example": "Carlos Alcaraz arrolla a Alexander Zverev, gana su primera Copa de Maestros y le demuestra quién es el número 1",
         "audio": "./assets/audios/vocab_story_4_2.mp3"
       }
     ],
@@ -247,60 +247,60 @@ const DAILY_STORIES = [
   {
     "id": "story_5",
     "tag": "体育 / 赛事",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "title": {
-      "es": "El Real Madrid remonta al Celta con un Carlos Espí heroico y presiona al Barça en la lucha por LaLiga",
-      "en": "Real Madrid comes back against Celta with a heroic Carlos Espí and puts pressure on Barça in the fight for LaLiga",
-      "cn": "05. 皇马凭借卡洛斯·埃斯皮的英勇反击塞尔塔，在西甲争夺战中向巴萨施加压力"
+      "es": "Marc Márquez es más leyenda: gana su décimo mundial de motociclismo y destrona a Valentino Rossi",
+      "en": "Marc Márquez is more of a legend: he wins his tenth motorcycle world championship and dethrones Valentino Rossi",
+      "cn": "05. 马克·马尔克斯更像是一个传奇：他赢得了第十个摩托车世界冠军并取代了瓦伦蒂诺·罗西"
     },
-    "intro": "下半场，白队凭借贝灵汉姆和埃斯皮的进球，逆转维戈队，并与B队积分相同。",
+    "intro": "这位西班牙车手与阿戈斯蒂尼一样拥有八次 MotoGP 冠军头衔。",
     "sentences": [
       {
         "id": 1,
-        "es": "El club blanco remontó al conjunto vigués con los goles de Bellingham y Espí en la segunda parte y empatan a puntos al Barça (con un partido menos) en la clasificación.",
-        "en": "The white club came back against the Vigo team with goals from Bellingham and Espí in the second half and tied Barça on points (with one game less) in the standings.",
-        "cn": "白色俱乐部在下半场凭借贝灵汉姆和埃斯皮的进球逆转维戈队，并在积分榜上追平了巴萨（少赛一场）。",
+        "es": "El piloto español iguala Agostini con ocho títulos de MotoGP.",
+        "en": "The Spanish rider equals Agostini with eight MotoGP titles.",
+        "cn": "这位西班牙车手与阿戈斯蒂尼一样拥有八次 MotoGP 冠军头衔。",
         "audio": "./assets/audios/story_5_s1.mp3"
       },
       {
         "id": 2,
-        "es": "El Real Madrid remonta al Celta con un Carlos Espí heroico y presiona al Barça en la lucha por LaLiga",
-        "en": "Real Madrid comes back against Celta with a heroic Carlos Espí and puts pressure on Barça in the fight for LaLiga",
-        "cn": "皇马凭借卡洛斯·埃斯皮的英勇反击塞尔塔，在西甲争夺战中向巴萨施加压力",
+        "es": "Marc Márquez es más leyenda: gana su décimo mundial de motociclismo y destrona a Valentino Rossi",
+        "en": "Marc Márquez is more of a legend: he wins his tenth motorcycle world championship and dethrones Valentino Rossi",
+        "cn": "马克·马尔克斯更像是一个传奇：他赢得了第十个摩托车世界冠军并取代了瓦伦蒂诺·罗西",
         "audio": "./assets/audios/story_5_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "madrid",
+        "word": "márquez",
         "pos": "voc.",
-        "cn": "马德里",
-        "en": "Madrid",
-        "example": "El club blanco remontó al conjunto vigués con los goles de Bellingham y Espí en la segunda parte y empatan a puntos al Barça (con un partido menos) en la clasificación.",
+        "cn": "马尔克斯",
+        "en": "marquez",
+        "example": "El piloto español iguala Agostini con ocho títulos de MotoGP.",
         "audio": "./assets/audios/vocab_story_5_1.mp3"
       },
       {
-        "word": "remonta",
+        "word": "leyenda",
         "pos": "voc.",
-        "cn": "返回",
-        "en": "goes back",
-        "example": "El Real Madrid remonta al Celta con un Carlos Espí heroico y presiona al Barça en la lucha por LaLiga",
+        "cn": "传奇",
+        "en": "legend",
+        "example": "Marc Márquez es más leyenda: gana su décimo mundial de motociclismo y destrona a Valentino Rossi",
         "audio": "./assets/audios/vocab_story_5_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「madrid」在文中的表达",
-      "detail": "「madrid」在本文语境下表示“马德里”，是地道西语新闻常用表达。"
+      "point": "核心词汇「márquez」在文中的表达",
+      "detail": "「márquez」在本文语境下表示“马尔克斯”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「madrid」在文中的中文含义是？",
+      "question": "西语单词「márquez」在文中的中文含义是？",
       "options": [
-        "A. 马德里",
+        "A. 马尔克斯",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「madrid」在此处意为：马德里。"
+      "explanation": "「márquez」在此处意为：马尔克斯。"
     },
     "audio_full_normal": "./assets/audios/story_5_normal.mp3",
     "audio_full_slow": "./assets/audios/story_5_slow.mp3"
@@ -308,60 +308,60 @@ const DAILY_STORIES = [
   {
     "id": "story_6",
     "tag": "体育 / 赛事",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "title": {
-      "es": "Aleksandre Topuria no puede con Santiago Luna y cae por decisión dividida: primera derrota en su andadura en la UFC",
-      "en": "Aleksandre Topuria can't beat Santiago Luna and falls by split decision: first defeat in his career in the UFC",
-      "cn": "06. 亚历山大·托普里亚（Aleksandre Topuria）无法击败圣地亚哥·卢纳（Santiago Luna）并因分歧判定而倒下：他职业生涯在 UFC 的第一次失败"
+      "es": "Alcaraz confirma que estará en la Copa Davis: \"Es algo muy importante para mí\"",
+      "en": "Alcaraz confirms that he will be in the Davis Cup: \"It is something very important for me\"",
+      "cn": "06. 阿尔卡拉斯确认他将参加戴维斯杯：“这对我来说非常重要”"
     },
-    "intro": "伊利亚·托普里亚 (Ilia Topuria) 的弟弟在 UFC 比赛中输给了墨西哥选手圣地亚哥·卢纳 (Santiago Luna)，这是他在 UFC 中首次摔倒。",
+    "intro": "这位穆尔西亚网球运动员的左腿腿筋有些不适，他将随西班牙队出战",
     "sentences": [
       {
         "id": 1,
-        "es": "El hermano de Ilia Topuria cayó por primera vez en la UFC tras perder ante el mexicano Santiago Luna por decisión de los jueces.",
-        "en": "Ilia Topuria's brother fell for the first time in the UFC after losing to the Mexican Santiago Luna by decision of the judges.",
-        "cn": "伊利亚·托普里亚（Ilia Topuria）的弟弟在被评委判定输给墨西哥选手圣地亚哥·卢纳（Santiago Luna）后，首次在 UFC 中摔倒。",
+        "es": "El tenista murciano, que arrastra unas molestias físicas en el isquiotibial de la pierna izquierda, jugará con España la próxima semana en busca de la séptima Ensaladera.",
+        "en": "The Murcian tennis player, who has some physical discomfort in the hamstring of his left leg, will play with Spain next week in search of the seventh Saladera.",
+        "cn": "这位穆尔西亚网球运动员的左腿腿筋有些不适，他将于下周与西班牙队比赛，寻找第七位萨拉德拉。",
         "audio": "./assets/audios/story_6_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Aleksandre Topuria no puede con Santiago Luna y cae por decisión dividida: primera derrota en su andadura en la UFC",
-        "en": "Aleksandre Topuria can't beat Santiago Luna and falls by split decision: first defeat in his career in the UFC",
-        "cn": "亚历山大·托普里亚（Aleksandre Topuria）无法击败圣地亚哥·卢纳（Santiago Luna）并因分歧判定而倒下：他职业生涯在 UFC 的第一次失败",
+        "es": "Alcaraz confirma que estará en la Copa Davis: \"Es algo muy importante para mí\"",
+        "en": "Alcaraz confirms that he will be in the Davis Cup: \"It is something very important for me\"",
+        "cn": "阿尔卡拉斯确认他将参加戴维斯杯：“这对我来说非常重要”",
         "audio": "./assets/audios/story_6_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "aleksandre",
+        "word": "alcaraz",
         "pos": "voc.",
-        "cn": "亚历山大",
-        "en": "aleksandre",
-        "example": "El hermano de Ilia Topuria cayó por primera vez en la UFC tras perder ante el mexicano Santiago Luna por decisión de los jueces.",
+        "cn": "阿尔卡拉斯",
+        "en": "alcaraz",
+        "example": "El tenista murciano, que arrastra unas molestias físicas en el isquiotibial de la pierna izquierda, jugará con España la próxima semana en busca de la séptima Ensaladera.",
         "audio": "./assets/audios/vocab_story_6_1.mp3"
       },
       {
-        "word": "topuria",
+        "word": "confirma",
         "pos": "voc.",
-        "cn": "托普里亚",
-        "en": "topuria",
-        "example": "Aleksandre Topuria no puede con Santiago Luna y cae por decisión dividida: primera derrota en su andadura en la UFC",
+        "cn": "确认",
+        "en": "confirm",
+        "example": "Alcaraz confirma que estará en la Copa Davis: \"Es algo muy importante para mí\"",
         "audio": "./assets/audios/vocab_story_6_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「aleksandre」在文中的表达",
-      "detail": "「aleksandre」在本文语境下表示“亚历山大”，是地道西语新闻常用表达。"
+      "point": "核心词汇「alcaraz」在文中的表达",
+      "detail": "「alcaraz」在本文语境下表示“阿尔卡拉斯”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「aleksandre」在文中的中文含义是？",
+      "question": "西语单词「alcaraz」在文中的中文含义是？",
       "options": [
-        "A. 亚历山大",
+        "A. 阿尔卡拉斯",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「aleksandre」在此处意为：亚历山大。"
+      "explanation": "「alcaraz」在此处意为：阿尔卡拉斯。"
     },
     "audio_full_normal": "./assets/audios/story_6_normal.mp3",
     "audio_full_slow": "./assets/audios/story_6_slow.mp3"
@@ -369,7 +369,7 @@ const DAILY_STORIES = [
   {
     "id": "story_7",
     "tag": "文化 / 艺术",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "title": {
       "es": "'Sacamantecas', una novela gráfica sobre 13 mujeres asesinadas y olvidadas por la historia",
       "en": "'Sacamantecas', a graphic novel about 13 women murdered and forgotten by history",
@@ -430,7 +430,7 @@ const DAILY_STORIES = [
   {
     "id": "story_8",
     "tag": "文化 / 艺术",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "title": {
       "es": "'Los yoes' y 'los noes', cuando pronombres y adverbios se convierten en sustantivos",
       "en": "'The I's' and 'the noes', when pronouns and adverbs become nouns",
@@ -491,26 +491,26 @@ const DAILY_STORIES = [
   {
     "id": "story_9",
     "tag": "生活 / 资讯",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "title": {
-      "es": "Feijóo logra 'reventar' la plaza de toros de Valencia con 12.000 asistentes y pide no confiarse: \"Heridos son más peligrosos\"",
-      "en": "Feijóo manages to 'burst' the Valencia bullring with 12,000 attendees and asks not to be overconfident: \"Injured people are more dangerous\"",
-      "cn": "09. Feijóo 成功“爆爆”了 12,000 名观众的瓦伦西亚斗牛场，并要求不要过于自信：“受伤的人更危险”"
+      "es": "Feijóo pide un país que \"vuelva a funcionar\" y desacredita la \"educación\" del PSOE: \"A los de las bofetadas le vamos a parar con votos\"",
+      "en": "Feijóo calls for a country that \"works again\" and discredits the \"education\" of the PSOE: \"We are going to stop those who slap people with votes\"",
+      "cn": "09. 费乔呼吁一个国家“再次运转”，并抹黑社会工人党的“教育”：“我们将制止那些用选票打压人民的人”"
     },
-    "intro": "这位受欢迎的领导人警告说：“不要相信民意调查。我们了解他们，他们有能力做任何事情。”",
+    "intro": "人民党领导人呼吁以一票一票的方式进行斗争：“我们知道赢得选举而不是执政意味着什么，”他说。",
     "sentences": [
       {
         "id": 1,
-        "es": "\"No os fiéis de las encuestas.",
-        "en": "\"Don't trust the polls.",
-        "cn": "“不要相信民意调查。",
+        "es": "El líder del Partido Popular llama a pelear voto a voto: \"Sabemos lo que es ganar unas elecciones y no gobernar\", recordó.",
+        "en": "The leader of the Popular Party calls to fight vote by vote: \"We know what it is to win elections and not govern,\" he recalled.",
+        "cn": "人民党领导人呼吁以一票一票的方式进行斗争：“我们知道赢得选举而不是执政意味着什么，”他回忆道。",
         "audio": "./assets/audios/story_9_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Los conocemos, son capaces de todo\", advirtió el líder de los populares, que dice que a partir de este lunes \"empieza lo importante\" de la campaña.",
-        "en": "We know them, they are capable of anything,\" warned the popular leader, who says that starting this Monday \"the important part\" of the campaign begins.",
-        "cn": "我们了解他们，他们无所不能，”这位受欢迎的领导人警告说，他说从周一开始，竞选活动的“重要部分”就开始了。",
+        "es": "Feijóo pide un país que \"vuelva a funcionar\" y desacredita la \"educación\" del PSOE: \"A los de las bofetadas le vamos a parar con votos\"",
+        "en": "Feijóo calls for a country that \"works again\" and discredits the \"education\" of the PSOE: \"We are going to stop those who slap people with votes\"",
+        "cn": "费乔呼吁一个国家“再次运转”，并抹黑社会工人党的“教育”：“我们将制止那些用选票打压人民的人”",
         "audio": "./assets/audios/story_9_s2.mp3"
       }
     ],
@@ -520,15 +520,15 @@ const DAILY_STORIES = [
         "pos": "voc.",
         "cn": "费乔",
         "en": "feijoo",
-        "example": "\"No os fiéis de las encuestas.",
+        "example": "El líder del Partido Popular llama a pelear voto a voto: \"Sabemos lo que es ganar unas elecciones y no gobernar\", recordó.",
         "audio": "./assets/audios/vocab_story_9_1.mp3"
       },
       {
-        "word": "logra",
+        "word": "vuelva",
         "pos": "voc.",
-        "cn": "达到",
-        "en": "achieve",
-        "example": "Los conocemos, son capaces de todo\", advirtió el líder de los populares, que dice que a partir de este lunes \"empieza lo importante\" de la campaña.",
+        "cn": "回来",
+        "en": "come back",
+        "example": "Feijóo pide un país que \"vuelva a funcionar\" y desacredita la \"educación\" del PSOE: \"A los de las bofetadas le vamos a parar con votos\"",
         "audio": "./assets/audios/vocab_story_9_2.mp3"
       }
     ],
@@ -552,60 +552,60 @@ const DAILY_STORIES = [
   {
     "id": "story_10",
     "tag": "生活 / 资讯",
-    "date": "2026-11-22",
+    "date": "2026-11-23",
     "title": {
-      "es": "Sánchez anuncia que el Consejo de Ministros prorrogará el impuesto a la banca hasta 2027: \"1.400 millones que se destinen a vivienda\"",
-      "en": "Sánchez announces that the Council of Ministers will extend the banking tax until 2027: \"1.4 billion will be allocated to housing\"",
-      "cn": "10. 桑切斯宣布部长会议将银行税延长至2027年：“14亿将分配给住房”"
+      "es": "Comparador de programas electorales para las elecciones generales de 2026: ¿Qué propone cada partido en materia de vivienda, pensiones, salarios o inmigración este 29N?",
+      "en": "Comparator of electoral programs for the 2026 general elections: What does each party propose in terms of housing, pensions, salaries or immigration this 29N?",
+      "cn": "10. 2026 年大选的选举方案比较：今年 29 日各方在住房、养老金、工资或移民方面有何提议？"
     },
-    "intro": "政府计划利用这笔资金建设 6,000 多套经济适用房，修复 52.0",
+    "intro": "查阅并比较 PP、PSOE、Vox、Frente Amplio 和 Podemos 的 29N 选举计划。从它的测量来看",
     "sentences": [
       {
         "id": 1,
-        "es": "Con esta recaudación, el Gobierno prevé financiar la construcción de más de 6.",
-        "en": "With this collection, the Government plans to finance the construction of more than 6.",
-        "cn": "政府计划利用这笔资金资助建设超过 6 座。",
+        "es": "Consulta y compara los programas electorales de PP, PSOE, Vox, Frente Amplio y Podemos para el 29N.",
+        "en": "Consult and compare the electoral programs of PP, PSOE, Vox, Frente Amplio and Podemos for 29N.",
+        "cn": "查阅并比较 PP、PSOE、Vox、Frente Amplio 和 Podemos 的 29N 选举计划。",
         "audio": "./assets/audios/story_10_s1.mp3"
       },
       {
         "id": 2,
-        "es": "000 viviendas asequibles, rehabilitar 52.",
-        "en": "000 affordable homes, rehabilitate 52.",
-        "cn": "000 套经济适用房，修复 52 套。",
+        "es": "Desde sus medidas sobre vivienda e inmigración hasta sus propuestas en educación, sanidad o IA.",
+        "en": "From its measures on housing and immigration to its proposals in education, health or AI.",
+        "cn": "从住房和移民措施到教育、健康或人工智能方面的建议。",
         "audio": "./assets/audios/story_10_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "sánchez",
+        "word": "comparador",
         "pos": "voc.",
-        "cn": "桑切斯",
-        "en": "sanchez",
-        "example": "Con esta recaudación, el Gobierno prevé financiar la construcción de más de 6.",
+        "cn": "比较器",
+        "en": "comparator",
+        "example": "Consulta y compara los programas electorales de PP, PSOE, Vox, Frente Amplio y Podemos para el 29N.",
         "audio": "./assets/audios/vocab_story_10_1.mp3"
       },
       {
-        "word": "anuncia",
+        "word": "programas",
         "pos": "voc.",
-        "cn": "宣布",
-        "en": "announces",
-        "example": "000 viviendas asequibles, rehabilitar 52.",
+        "cn": "节目",
+        "en": "programs",
+        "example": "Desde sus medidas sobre vivienda e inmigración hasta sus propuestas en educación, sanidad o IA.",
         "audio": "./assets/audios/vocab_story_10_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「sánchez」在文中的表达",
-      "detail": "「sánchez」在本文语境下表示“桑切斯”，是地道西语新闻常用表达。"
+      "point": "核心词汇「comparador」在文中的表达",
+      "detail": "「comparador」在本文语境下表示“比较器”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「sánchez」在文中的中文含义是？",
+      "question": "西语单词「comparador」在文中的中文含义是？",
       "options": [
-        "A. 桑切斯",
+        "A. 比较器",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「sánchez」在此处意为：桑切斯。"
+      "explanation": "「comparador」在此处意为：比较器。"
     },
     "audio_full_normal": "./assets/audios/story_10_normal.mp3",
     "audio_full_slow": "./assets/audios/story_10_slow.mp3"
