@@ -3,11 +3,133 @@ const DAILY_STORIES = [
   {
     "id": "story_1",
     "tag": "八卦 / 名人",
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "title": {
-      "es": "Tu horóscopo diario: martes 24 de noviembre de 2026",
-      "en": "Your daily horoscope: Tuesday, November 24, 2026",
-      "cn": "01. 您的每日星座运势：2026 年 11 月 24 日星期二"
+      "es": "Un jurado de EEUU acusa al padre de Meghan Markle de posesión de pornografía infantil",
+      "en": "A US jury charges Meghan Markle's father with possession of child pornography",
+      "cn": "01. 美国陪审团指控梅根·马克尔的父亲持有儿童色情制品"
+    },
+    "intro": "根据指控，马克尔在 10 月 30 日和 11 月 4 日持有 35 毫米底片，她知道这些底片是",
+    "sentences": [
+      {
+        "id": 1,
+        "es": "Según la acusación, Markle tenía en su poder los días 30 de octubre y 4 de noviembre negativos de 35 mm que sabía que contenían material de abuso sexual infantil.",
+        "en": "According to the indictment, Markle had in her possession on October 30 and November 4 35 mm negatives that she knew contained child sexual abuse material.",
+        "cn": "根据起诉书，马克尔在 10 月 30 日和 11 月 4 日持有 35 毫米底片，她知道这些底片包含儿童性虐待材料。",
+        "audio": "./assets/audios/story_1_s1.mp3"
+      },
+      {
+        "id": 2,
+        "es": "Un jurado de EEUU acusa al padre de Meghan Markle de posesión de pornografía infantil",
+        "en": "A US jury charges Meghan Markle's father with possession of child pornography",
+        "cn": "美国陪审团指控梅根·马克尔的父亲持有儿童色情制品",
+        "audio": "./assets/audios/story_1_s2.mp3"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "jurado",
+        "pos": "voc.",
+        "cn": "陪审团",
+        "en": "jury",
+        "example": "Según la acusación, Markle tenía en su poder los días 30 de octubre y 4 de noviembre negativos de 35 mm que sabía que contenían material de abuso sexual infantil.",
+        "audio": "./assets/audios/vocab_story_1_1.mp3"
+      },
+      {
+        "word": "acusa",
+        "pos": "voc.",
+        "cn": "控",
+        "en": "accuse",
+        "example": "Un jurado de EEUU acusa al padre de Meghan Markle de posesión de pornografía infantil",
+        "audio": "./assets/audios/vocab_story_1_2.mp3"
+      }
+    ],
+    "grammar": {
+      "point": "核心词汇「jurado」在文中的表达",
+      "detail": "「jurado」在本文语境下表示“陪审团”，是地道西语新闻常用表达。"
+    },
+    "quiz": {
+      "question": "西语单词「jurado」在文中的中文含义是？",
+      "options": [
+        "A. 陪审团",
+        "B. 另一个意思",
+        "C. 错误含义"
+      ],
+      "correct_index": 0,
+      "explanation": "「jurado」在此处意为：陪审团。"
+    },
+    "audio_full_normal": "./assets/audios/story_1_normal.mp3",
+    "audio_full_slow": "./assets/audios/story_1_slow.mp3"
+  },
+  {
+    "id": "story_2",
+    "tag": "八卦 / 名人",
+    "date": "2026-11-25",
+    "title": {
+      "es": "Aldo Comas, sobre la polémica de Macarena Gómez y Fernando Tejero: \"Cuando quiera una birra... yo me he reído mucho con él\"",
+      "en": "Aldo Comas, on the controversy between Macarena Gómez and Fernando Tejero: \"Whenever he wants a beer... I have laughed a lot with him\"",
+      "cn": "02. 阿尔多·科马斯谈及马卡雷纳·戈麦斯和费尔南多·特赫罗之间的争议：“每当他想喝啤酒时......我和他一起笑了很多”"
+    },
+    "intro": "《El tiempo just》的合作者向媒体谈到了演员最近与他的作品的分歧",
+    "sentences": [
+      {
+        "id": 1,
+        "es": "El colaborador de 'El tiempo justo' habló ante los medios de comunicación sobre el reciente desencuentro del actor con su mujer.",
+        "en": "The collaborator of 'The Just Time' spoke to the media about the actor's recent disagreement with his wife.",
+        "cn": "《恰逢其时》的合作者向媒体谈到了演员最近与妻子的分歧。",
+        "audio": "./assets/audios/story_2_s1.mp3"
+      },
+      {
+        "id": 2,
+        "es": "Aldo Comas, sobre la polémica de Macarena Gómez y Fernando Tejero: \"Cuando quiera una birra... yo me he reído mucho con él\"",
+        "en": "Aldo Comas, on the controversy between Macarena Gómez and Fernando Tejero: \"Whenever he wants a beer... I have laughed a lot with him\"",
+        "cn": "阿尔多·科马斯谈及马卡雷纳·戈麦斯和费尔南多·特赫罗之间的争议：“每当他想喝啤酒时......我和他一起笑了很多”",
+        "audio": "./assets/audios/story_2_s2.mp3"
+      }
+    ],
+    "vocabulary": [
+      {
+        "word": "comas",
+        "pos": "voc.",
+        "cn": "逗号",
+        "en": "commas",
+        "example": "El colaborador de 'El tiempo justo' habló ante los medios de comunicación sobre el reciente desencuentro del actor con su mujer.",
+        "audio": "./assets/audios/vocab_story_2_1.mp3"
+      },
+      {
+        "word": "sobre",
+        "pos": "voc.",
+        "cn": "关于",
+        "en": "about",
+        "example": "Aldo Comas, sobre la polémica de Macarena Gómez y Fernando Tejero: \"Cuando quiera una birra... yo me he reído mucho con él\"",
+        "audio": "./assets/audios/vocab_story_2_2.mp3"
+      }
+    ],
+    "grammar": {
+      "point": "核心词汇「comas」在文中的表达",
+      "detail": "「comas」在本文语境下表示“逗号”，是地道西语新闻常用表达。"
+    },
+    "quiz": {
+      "question": "西语单词「comas」在文中的中文含义是？",
+      "options": [
+        "A. 逗号",
+        "B. 另一个意思",
+        "C. 错误含义"
+      ],
+      "correct_index": 0,
+      "explanation": "「comas」在此处意为：逗号。"
+    },
+    "audio_full_normal": "./assets/audios/story_2_normal.mp3",
+    "audio_full_slow": "./assets/audios/story_2_slow.mp3"
+  },
+  {
+    "id": "story_3",
+    "tag": "八卦 / 名人",
+    "date": "2026-11-25",
+    "title": {
+      "es": "Tu horóscopo diario: miércoles 25 de noviembre de 2026",
+      "en": "Your daily horoscope: Wednesday, November 25, 2026",
+      "cn": "03. 您的每日星座运势：2026 年 11 月 25 日星期三"
     },
     "intro": "在 20minutos.es 中查看昨天、今天和明天的星座运势",
     "sentences": [
@@ -16,14 +138,14 @@ const DAILY_STORIES = [
         "es": "Consultar el horóscopo de ayer, hoy y mañana en 20minutos.",
         "en": "Consult the horoscope for yesterday, today and tomorrow in 20 minutes.",
         "cn": "20 分钟内查看昨天、今天和明天的星座运势。",
-        "audio": "./assets/audios/story_1_s1.mp3"
+        "audio": "./assets/audios/story_3_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Tu horóscopo diario: martes 24 de noviembre de 2026",
-        "en": "Your daily horoscope: Tuesday, November 24, 2026",
-        "cn": "您的每日星座运势：2026 年 11 月 24 日星期二",
-        "audio": "./assets/audios/story_1_s2.mp3"
+        "es": "Tu horóscopo diario: miércoles 25 de noviembre de 2026",
+        "en": "Your daily horoscope: Wednesday, November 25, 2026",
+        "cn": "您的每日星座运势：2026 年 11 月 25 日星期三",
+        "audio": "./assets/audios/story_3_s2.mp3"
       }
     ],
     "vocabulary": [
@@ -33,15 +155,15 @@ const DAILY_STORIES = [
         "cn": "星座运势",
         "en": "horoscope",
         "example": "Consultar el horóscopo de ayer, hoy y mañana en 20minutos.",
-        "audio": "./assets/audios/vocab_story_1_1.mp3"
+        "audio": "./assets/audios/vocab_story_3_1.mp3"
       },
       {
         "word": "diario",
         "pos": "voc.",
         "cn": "日记",
         "en": "diary",
-        "example": "Tu horóscopo diario: martes 24 de noviembre de 2026",
-        "audio": "./assets/audios/vocab_story_1_2.mp3"
+        "example": "Tu horóscopo diario: miércoles 25 de noviembre de 2026",
+        "audio": "./assets/audios/vocab_story_3_2.mp3"
       }
     ],
     "grammar": {
@@ -58,188 +180,66 @@ const DAILY_STORIES = [
       "correct_index": 0,
       "explanation": "「horóscopo」在此处意为：星座运势。"
     },
-    "audio_full_normal": "./assets/audios/story_1_normal.mp3",
-    "audio_full_slow": "./assets/audios/story_1_slow.mp3"
-  },
-  {
-    "id": "story_2",
-    "tag": "八卦 / 名人",
-    "date": "2026-11-24",
-    "title": {
-      "es": "Aitana Sánchez-Gijón, sobre lo que votaría su madre en las elecciones generales: \"Iría a defender los derechos por los que luchó\"",
-      "en": "Aitana Sánchez-Gijón, on what her mother would vote for in the general elections: \"She would go to defend the rights she fought for\"",
-      "cn": "02. 艾塔娜·桑切斯·希洪 (Aitana Sánchez-Gijón) 谈到她母亲在大选中将投票的内容：“她会去捍卫她为之奋斗的权利”"
-    },
-    "intro": "这位女演员在她的 Instagram 个人资料上发表了一条文字，讲述了她去年去世的母亲的处境。",
-    "sentences": [
-      {
-        "id": 1,
-        "es": "La actriz ha ofrecido en su perfil de Instagram un texto acerca de la posición de su progenitora, que falleció el pasado mes de abril.",
-        "en": "The actress has offered a text on her Instagram profile about the position of her mother, who died last April.",
-        "cn": "这位女演员在她的 Instagram 个人资料中提供了一条关于她去年四月去世的母亲的立场的文字。",
-        "audio": "./assets/audios/story_2_s1.mp3"
-      },
-      {
-        "id": 2,
-        "es": "Aitana Sánchez-Gijón, sobre lo que votaría su madre en las elecciones generales: \"Iría a defender los derechos por los que luchó\"",
-        "en": "Aitana Sánchez-Gijón, on what her mother would vote for in the general elections: \"She would go to defend the rights she fought for\"",
-        "cn": "艾塔娜·桑切斯·希洪 (Aitana Sánchez-Gijón) 谈到她母亲在大选中将投票的内容：“她会去捍卫她为之奋斗的权利”",
-        "audio": "./assets/audios/story_2_s2.mp3"
-      }
-    ],
-    "vocabulary": [
-      {
-        "word": "aitana",
-        "pos": "voc.",
-        "cn": "艾塔纳",
-        "en": "aitana",
-        "example": "La actriz ha ofrecido en su perfil de Instagram un texto acerca de la posición de su progenitora, que falleció el pasado mes de abril.",
-        "audio": "./assets/audios/vocab_story_2_1.mp3"
-      },
-      {
-        "word": "sánchez",
-        "pos": "voc.",
-        "cn": "桑切斯",
-        "en": "sanchez",
-        "example": "Aitana Sánchez-Gijón, sobre lo que votaría su madre en las elecciones generales: \"Iría a defender los derechos por los que luchó\"",
-        "audio": "./assets/audios/vocab_story_2_2.mp3"
-      }
-    ],
-    "grammar": {
-      "point": "核心词汇「aitana」在文中的表达",
-      "detail": "「aitana」在本文语境下表示“艾塔纳”，是地道西语新闻常用表达。"
-    },
-    "quiz": {
-      "question": "西语单词「aitana」在文中的中文含义是？",
-      "options": [
-        "A. 艾塔纳",
-        "B. 另一个意思",
-        "C. 错误含义"
-      ],
-      "correct_index": 0,
-      "explanation": "「aitana」在此处意为：艾塔纳。"
-    },
-    "audio_full_normal": "./assets/audios/story_2_normal.mp3",
-    "audio_full_slow": "./assets/audios/story_2_slow.mp3"
-  },
-  {
-    "id": "story_3",
-    "tag": "八卦 / 名人",
-    "date": "2026-11-24",
-    "title": {
-      "es": "Anabel Gil Silgado desvela por qué ha denunciado a su padre, José María Gil Silgado: \"Se dedica a acosarme\"",
-      "en": "Anabel Gil Silgado reveals why she has denounced her father, José María Gil Silgado: \"He is dedicated to harassing me\"",
-      "cn": "03. 安娜贝尔·吉尔·西尔加多 (Anabel Gil Silgado) 透露了她为何谴责父亲何塞·玛丽亚·吉尔·西尔加多 (José María Gil Silgado)：“他致力于骚扰我”"
-    },
-    "intro": "这位商人的女儿是玛丽亚·赫苏斯·鲁伊斯 (María Jesús Ruiz) 的前合伙人，她在《现在的 Sonsoles》中解释了导致她选择",
-    "sentences": [
-      {
-        "id": 1,
-        "es": "La hija del empresario, expareja de María Jesús Ruiz, ha explicado en 'Y ahora Sonsoles' los motivos que la llevaron a emprender acciones legales contra su progenitor.",
-        "en": "The businessman's daughter, former partner of María Jesús Ruiz, has explained in 'And now Sonsoles' the reasons that led her to take legal action against her father.",
-        "cn": "这位商人的女儿是玛丽亚·赫苏斯·鲁伊斯的前合伙人，她在《现在的桑索斯》中解释了导致她对父亲采取法律行动的原因。",
-        "audio": "./assets/audios/story_3_s1.mp3"
-      },
-      {
-        "id": 2,
-        "es": "Anabel Gil Silgado desvela por qué ha denunciado a su padre, José María Gil Silgado: \"Se dedica a acosarme\"",
-        "en": "Anabel Gil Silgado reveals why she has denounced her father, José María Gil Silgado: \"He is dedicated to harassing me\"",
-        "cn": "安娜贝尔·吉尔·西尔加多 (Anabel Gil Silgado) 透露了她为何谴责父亲何塞·玛丽亚·吉尔·西尔加多 (José María Gil Silgado)：“他致力于骚扰我”",
-        "audio": "./assets/audios/story_3_s2.mp3"
-      }
-    ],
-    "vocabulary": [
-      {
-        "word": "anabel",
-        "pos": "voc.",
-        "cn": "安娜贝尔",
-        "en": "Anabel",
-        "example": "La hija del empresario, expareja de María Jesús Ruiz, ha explicado en 'Y ahora Sonsoles' los motivos que la llevaron a emprender acciones legales contra su progenitor.",
-        "audio": "./assets/audios/vocab_story_3_1.mp3"
-      },
-      {
-        "word": "silgado",
-        "pos": "voc.",
-        "cn": "锡尔加多",
-        "en": "silgado",
-        "example": "Anabel Gil Silgado desvela por qué ha denunciado a su padre, José María Gil Silgado: \"Se dedica a acosarme\"",
-        "audio": "./assets/audios/vocab_story_3_2.mp3"
-      }
-    ],
-    "grammar": {
-      "point": "核心词汇「anabel」在文中的表达",
-      "detail": "「anabel」在本文语境下表示“安娜贝尔”，是地道西语新闻常用表达。"
-    },
-    "quiz": {
-      "question": "西语单词「anabel」在文中的中文含义是？",
-      "options": [
-        "A. 安娜贝尔",
-        "B. 另一个意思",
-        "C. 错误含义"
-      ],
-      "correct_index": 0,
-      "explanation": "「anabel」在此处意为：安娜贝尔。"
-    },
     "audio_full_normal": "./assets/audios/story_3_normal.mp3",
     "audio_full_slow": "./assets/audios/story_3_slow.mp3"
   },
   {
     "id": "story_4",
     "tag": "体育 / 赛事",
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "title": {
-      "es": "Marc Márquez, sobre Valentino Rossi: \"Tenía que salir el nombre... No hay felicitación ni la espero\"",
-      "en": "Marc Márquez, on Valentino Rossi: \"The name had to come out... There is no congratulations nor do I expect one\"",
-      "cn": "04. 马克·马尔克斯 (Marc Márquez) 评价瓦伦蒂诺·罗西 (Valentino Rossi)：“这个名字必须被揭晓……没有人表示祝贺，我也不期待有人祝贺”"
+      "es": "El Betis sigue lanzado en Champions y vence al Slovan Bratislava con un doblete del 'Cucho' para encarrilar la clasificación",
+      "en": "Betis remains launched in the Champions League and beats Slovan Bratislava with a double from 'Cucho' to get the classification back on track",
+      "cn": "04. 贝蒂斯继续征战欧冠联赛，并凭借“库乔”的梅开二度击败斯洛伐克布拉迪斯拉发，让联赛重回正轨"
     },
-    "intro": "这位十届世界冠军在上周末获得世界杯冠军后超越了前意大利车手的头衔。",
+    "intro": "库乔·埃尔南德斯的梅开二度几乎锁定了欧冠下一阶段的资格。",
     "sentences": [
       {
         "id": 1,
-        "es": "El 10 veces campeón del mundo superó los títulos del expiloto italiano tras certificar el Mundial este pasado fin de semana en Portimao.",
-        "en": "The 10-time world champion surpassed the titles of the former Italian driver after certifying the World Championship this past weekend in Portimao.",
-        "cn": "这位十届世界冠军在上周末在波尔蒂芒获得世界冠军后超越了前意大利车手的头衔。",
+        "es": "Un doblete del Cucho Hernández deja prácticamente sellada la clasificación a la siguiente fase de la Champions.",
+        "en": "A double from Cucho Hernández practically seals qualification for the next phase of the Champions League.",
+        "cn": "库乔·埃尔南德斯的梅开二度几乎锁定了欧冠下一阶段的资格。",
         "audio": "./assets/audios/story_4_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Marc Márquez, sobre Valentino Rossi: \"Tenía que salir el nombre... No hay felicitación ni la espero\"",
-        "en": "Marc Márquez, on Valentino Rossi: \"The name had to come out... There is no congratulations nor do I expect one\"",
-        "cn": "马克·马尔克斯 (Marc Márquez) 评价瓦伦蒂诺·罗西 (Valentino Rossi)：“这个名字必须被揭晓……没有人表示祝贺，我也不期待有人祝贺”",
+        "es": "El Betis sigue lanzado en Champions y vence al Slovan Bratislava con un doblete del 'Cucho' para encarrilar la clasificación",
+        "en": "Betis remains launched in the Champions League and beats Slovan Bratislava with a double from 'Cucho' to get the classification back on track",
+        "cn": "贝蒂斯继续征战欧冠联赛，并凭借“库乔”的梅开二度击败斯洛伐克布拉迪斯拉发，让联赛重回正轨",
         "audio": "./assets/audios/story_4_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "márquez",
+        "word": "betis",
         "pos": "voc.",
-        "cn": "马尔克斯",
-        "en": "marquez",
-        "example": "El 10 veces campeón del mundo superó los títulos del expiloto italiano tras certificar el Mundial este pasado fin de semana en Portimao.",
+        "cn": "贝蒂斯",
+        "en": "betis",
+        "example": "Un doblete del Cucho Hernández deja prácticamente sellada la clasificación a la siguiente fase de la Champions.",
         "audio": "./assets/audios/vocab_story_4_1.mp3"
       },
       {
-        "word": "sobre",
+        "word": "sigue",
         "pos": "voc.",
-        "cn": "关于",
-        "en": "about",
-        "example": "Marc Márquez, sobre Valentino Rossi: \"Tenía que salir el nombre... No hay felicitación ni la espero\"",
+        "cn": "继续",
+        "en": "go on",
+        "example": "El Betis sigue lanzado en Champions y vence al Slovan Bratislava con un doblete del 'Cucho' para encarrilar la clasificación",
         "audio": "./assets/audios/vocab_story_4_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「márquez」在文中的表达",
-      "detail": "「márquez」在本文语境下表示“马尔克斯”，是地道西语新闻常用表达。"
+      "point": "核心词汇「betis」在文中的表达",
+      "detail": "「betis」在本文语境下表示“贝蒂斯”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「márquez」在文中的中文含义是？",
+      "question": "西语单词「betis」在文中的中文含义是？",
       "options": [
-        "A. 马尔克斯",
+        "A. 贝蒂斯",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「márquez」在此处意为：马尔克斯。"
+      "explanation": "「betis」在此处意为：贝蒂斯。"
     },
     "audio_full_normal": "./assets/audios/story_4_normal.mp3",
     "audio_full_slow": "./assets/audios/story_4_slow.mp3"
@@ -247,60 +247,60 @@ const DAILY_STORIES = [
   {
     "id": "story_5",
     "tag": "体育 / 赛事",
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "title": {
-      "es": "Una fiesta para para celebrar la gesta histórica de Marc Márquez: \"Cuando se baja la visera, el punto racional ya no existe\"",
-      "en": "A party to celebrate the historic feat of Marc Márquez: \"When the visor is lowered, the rational point no longer exists\"",
-      "cn": "05. 庆祝马克·马尔克斯历史性壮举的派对：“当遮阳板降下时，理性点不再存在”"
+      "es": "Recital al son de Bellingham: el Real Madrid remonta y golea al PSV y duerme líder en solitario de la Champions",
+      "en": "Recital to the sound of Bellingham: Real Madrid comes back and thrashes PSV and sleeps as the sole leader of the Champions League",
+      "cn": "05. 贝灵厄姆之声朗诵：皇马卷土重来，力压埃因霍温，成为欧冠唯一领头羊"
     },
-    "intro": "这位西班牙车手本周末在波尔蒂芒赢得了他的第十个世界冠军，周一在",
+    "intro": "这位英国人彻底改变了比赛，带领白队逆转战胜了后来居上的埃因霍温。",
     "sentences": [
       {
         "id": 1,
-        "es": "El piloto español, que ganó su décimo título mundial este fin de semana en Portimao, celebró este lunes el campeonato en Madrid, en una rueda de prensa en la que le arroparon sus aficionados.",
-        "en": "The Spanish driver, who won his tenth world title this weekend in Portimao, celebrated the championship this Monday in Madrid, in a press conference in which his fans supported him.",
-        "cn": "这位西班牙车手本周末在波尔蒂芒赢得了第十个世界冠军，本周一在马德里举行的新闻发布会上庆祝了冠军，他的车迷们在新闻发布会上支持了他。",
+        "es": "El inglés cambió el partido por completo y lideró la remontada del conjunto blanco ante un PSV que se fue ganando al descanso (5-1).",
+        "en": "The Englishman changed the game completely and led the white team's comeback against a PSV that led at half-time (5-1).",
+        "cn": "这位英国人彻底改变了比赛，带领白队逆转了半场领先的埃因霍温（5-1）。",
         "audio": "./assets/audios/story_5_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Una fiesta para para celebrar la gesta histórica de Marc Márquez: \"Cuando se baja la visera, el punto racional ya no existe\"",
-        "en": "A party to celebrate the historic feat of Marc Márquez: \"When the visor is lowered, the rational point no longer exists\"",
-        "cn": "庆祝马克·马尔克斯历史性壮举的派对：“当遮阳板降下时，理性点不再存在”",
+        "es": "Recital al son de Bellingham: el Real Madrid remonta y golea al PSV y duerme líder en solitario de la Champions",
+        "en": "Recital to the sound of Bellingham: Real Madrid comes back and thrashes PSV and sleeps as the sole leader of the Champions League",
+        "cn": "贝灵厄姆之声朗诵：皇马卷土重来，力压埃因霍温，成为欧冠唯一领头羊",
         "audio": "./assets/audios/story_5_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "fiesta",
+        "word": "recital",
         "pos": "voc.",
-        "cn": "派对",
-        "en": "party",
-        "example": "El piloto español, que ganó su décimo título mundial este fin de semana en Portimao, celebró este lunes el campeonato en Madrid, en una rueda de prensa en la que le arroparon sus aficionados.",
+        "cn": "独奏会",
+        "en": "recital",
+        "example": "El inglés cambió el partido por completo y lideró la remontada del conjunto blanco ante un PSV que se fue ganando al descanso (5-1).",
         "audio": "./assets/audios/vocab_story_5_1.mp3"
       },
       {
-        "word": "celebrar",
+        "word": "bellingham",
         "pos": "voc.",
-        "cn": "庆祝",
-        "en": "celebrate",
-        "example": "Una fiesta para para celebrar la gesta histórica de Marc Márquez: \"Cuando se baja la visera, el punto racional ya no existe\"",
+        "cn": "贝灵厄姆",
+        "en": "bellingham",
+        "example": "Recital al son de Bellingham: el Real Madrid remonta y golea al PSV y duerme líder en solitario de la Champions",
         "audio": "./assets/audios/vocab_story_5_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「fiesta」在文中的表达",
-      "detail": "「fiesta」在本文语境下表示“派对”，是地道西语新闻常用表达。"
+      "point": "核心词汇「recital」在文中的表达",
+      "detail": "「recital」在本文语境下表示“独奏会”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「fiesta」在文中的中文含义是？",
+      "question": "西语单词「recital」在文中的中文含义是？",
       "options": [
-        "A. 派对",
+        "A. 独奏会",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「fiesta」在此处意为：派对。"
+      "explanation": "「recital」在此处意为：独奏会。"
     },
     "audio_full_normal": "./assets/audios/story_5_normal.mp3",
     "audio_full_slow": "./assets/audios/story_5_slow.mp3"
@@ -308,60 +308,60 @@ const DAILY_STORIES = [
   {
     "id": "story_6",
     "tag": "体育 / 赛事",
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "title": {
-      "es": "Jannik Sinner será operado de la rodilla: peligra el Open de Australia y su regreso es una incógnita",
-      "en": "Jannik Sinner will undergo knee surgery: the Australian Open is in danger and his return is an unknown",
-      "cn": "06. 詹尼克·辛纳将接受膝盖手术：澳网面临危险，回归未知"
+      "es": "Así fue el golazo de Jude Bellingham ante el PSV: una auténtica obra de arte que dio pie a la remontada",
+      "en": "This was Jude Bellingham's great goal against PSV: a true work of art that led to the comeback",
+      "cn": "06. 这是裘德·贝林汉姆对阵埃因霍温的伟大进球：真正的艺术品，导致了球队的逆转"
     },
-    "intro": "这位意大利网球运动员的右膝外侧患有肌腱病，这就是他将经历的原因",
+    "intro": "这位英格兰足球运动员在下半场上场，成为皇马逆转埃因霍温的关键。",
     "sentences": [
       {
         "id": 1,
-        "es": "El tenista italiano arrastraría una tendinopatía en la parte externa de la rodilla derecha, motivo por el que pasará por quirófano.",
-        "en": "The Italian tennis player would have tendinopathy on the outside of his right knee, which is why he will undergo surgery.",
-        "cn": "这位意大利网球运动员的右膝外侧患有肌腱病，这就是他将接受手术的原因。",
+        "es": "El futbolista inglés salió al campo en la segunda parte y fue clave para la remontada del Real Madrid ante el PSV.",
+        "en": "The English footballer took the field in the second half and was key to Real Madrid's comeback against PSV.",
+        "cn": "这位英格兰足球运动员在下半场上场，成为皇马逆转埃因霍温的关键。",
         "audio": "./assets/audios/story_6_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Jannik Sinner será operado de la rodilla: peligra el Open de Australia y su regreso es una incógnita",
-        "en": "Jannik Sinner will undergo knee surgery: the Australian Open is in danger and his return is an unknown",
-        "cn": "詹尼克·辛纳将接受膝盖手术：澳网面临危险，回归未知",
+        "es": "Así fue el golazo de Jude Bellingham ante el PSV: una auténtica obra de arte que dio pie a la remontada",
+        "en": "This was Jude Bellingham's great goal against PSV: a true work of art that led to the comeback",
+        "cn": "这是裘德·贝林汉姆对阵埃因霍温的伟大进球：真正的艺术品，导致了球队的逆转",
         "audio": "./assets/audios/story_6_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "jannik",
+        "word": "golazo",
         "pos": "voc.",
-        "cn": "詹尼克",
-        "en": "jannik",
-        "example": "El tenista italiano arrastraría una tendinopatía en la parte externa de la rodilla derecha, motivo por el que pasará por quirófano.",
+        "cn": "伟大的目标",
+        "en": "great goal",
+        "example": "El futbolista inglés salió al campo en la segunda parte y fue clave para la remontada del Real Madrid ante el PSV.",
         "audio": "./assets/audios/vocab_story_6_1.mp3"
       },
       {
-        "word": "sinner",
+        "word": "bellingham",
         "pos": "voc.",
-        "cn": "罪人",
-        "en": "sinner",
-        "example": "Jannik Sinner será operado de la rodilla: peligra el Open de Australia y su regreso es una incógnita",
+        "cn": "贝灵厄姆",
+        "en": "bellingham",
+        "example": "Así fue el golazo de Jude Bellingham ante el PSV: una auténtica obra de arte que dio pie a la remontada",
         "audio": "./assets/audios/vocab_story_6_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「jannik」在文中的表达",
-      "detail": "「jannik」在本文语境下表示“詹尼克”，是地道西语新闻常用表达。"
+      "point": "核心词汇「golazo」在文中的表达",
+      "detail": "「golazo」在本文语境下表示“伟大的目标”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「jannik」在文中的中文含义是？",
+      "question": "西语单词「golazo」在文中的中文含义是？",
       "options": [
-        "A. 詹尼克",
+        "A. 伟大的目标",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「jannik」在此处意为：詹尼克。"
+      "explanation": "「golazo」在此处意为：伟大的目标。"
     },
     "audio_full_normal": "./assets/audios/story_6_normal.mp3",
     "audio_full_slow": "./assets/audios/story_6_slow.mp3"
@@ -369,60 +369,60 @@ const DAILY_STORIES = [
   {
     "id": "story_7",
     "tag": "文化 / 艺术",
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "title": {
-      "es": "Christian Nodal paraliza su gira por México en medio de un conflicto legal con su padre por los derechos de su nombre artístico",
-      "en": "Christian Nodal paralyzes his tour of Mexico amid a legal conflict with his father over the rights to his stage name",
-      "cn": "07. 克里斯蒂安·诺达尔因艺名权与父亲发生法律冲突，墨西哥之旅陷入瘫痪"
+      "es": "Los libreros piden a los partidos en campaña que se les reconozca como espacios culturales",
+      "en": "Booksellers ask campaign parties to recognize them as cultural spaces",
+      "cn": "07. 书商要求竞选团体承认它们是文化空间"
     },
-    "intro": "这位墨西哥歌手通过他的 Instagram 故事传达了这一决定。",
+    "intro": "西班牙行会和书店协会联合会 (CEGAL) 要求，除其他外，保护电子产品",
     "sentences": [
       {
         "id": 1,
-        "es": "El cantante mexicano ha comunicado esta decisión a través de sus historias de Instagram.",
-        "en": "The Mexican singer has communicated this decision through his Instagram stories.",
-        "cn": "这位墨西哥歌手通过他的 Instagram 故事传达了这一决定。",
+        "es": "La Confederación Española de Gremios y Asociaciones de Librerías (CEGAL) pide, entre otras cosas, protección frente al encarecimiento de los alquileres y el mantenimiento del precio fijo del libro.",
+        "en": "The Spanish Confederation of Bookstore Guilds and Associations (CEGAL) requests, among other things, protection against rising rent prices and the maintenance of the fixed price of books.",
+        "cn": "西班牙书店公会和协会联合会（CEGAL）呼吁，除其他事项外，要求保护书店免受租金上涨的影响，并维持图书的固定价格。",
         "audio": "./assets/audios/story_7_s1.mp3"
       },
       {
         "id": 2,
-        "es": "Christian Nodal paraliza su gira por México en medio de un conflicto legal con su padre por los derechos de su nombre artístico",
-        "en": "Christian Nodal paralyzes his tour of Mexico amid a legal conflict with his father over the rights to his stage name",
-        "cn": "克里斯蒂安·诺达尔因艺名权与父亲发生法律冲突，墨西哥之旅陷入瘫痪",
+        "es": "Los libreros piden a los partidos en campaña que se les reconozca como espacios culturales",
+        "en": "Booksellers ask campaign parties to recognize them as cultural spaces",
+        "cn": "书商要求竞选团体承认它们是文化空间",
         "audio": "./assets/audios/story_7_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "christian",
+        "word": "libreros",
         "pos": "voc.",
-        "cn": "基督教",
-        "en": "Christian",
-        "example": "El cantante mexicano ha comunicado esta decisión a través de sus historias de Instagram.",
+        "cn": "书店",
+        "en": "booksellers",
+        "example": "La Confederación Española de Gremios y Asociaciones de Librerías (CEGAL) pide, entre otras cosas, protección frente al encarecimiento de los alquileres y el mantenimiento del precio fijo del libro.",
         "audio": "./assets/audios/vocab_story_7_1.mp3"
       },
       {
-        "word": "nodal",
+        "word": "piden",
         "pos": "voc.",
-        "cn": "节点",
-        "en": "nodal",
-        "example": "Christian Nodal paraliza su gira por México en medio de un conflicto legal con su padre por los derechos de su nombre artístico",
+        "cn": "他们问",
+        "en": "they ask",
+        "example": "Los libreros piden a los partidos en campaña que se les reconozca como espacios culturales",
         "audio": "./assets/audios/vocab_story_7_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「christian」在文中的表达",
-      "detail": "「christian」在本文语境下表示“基督教”，是地道西语新闻常用表达。"
+      "point": "核心词汇「libreros」在文中的表达",
+      "detail": "「libreros」在本文语境下表示“书店”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「christian」在文中的中文含义是？",
+      "question": "西语单词「libreros」在文中的中文含义是？",
       "options": [
-        "A. 基督教",
+        "A. 书店",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「christian」在此处意为：基督教。"
+      "explanation": "「libreros」在此处意为：书店。"
     },
     "audio_full_normal": "./assets/audios/story_7_normal.mp3",
     "audio_full_slow": "./assets/audios/story_7_slow.mp3"
@@ -430,60 +430,60 @@ const DAILY_STORIES = [
   {
     "id": "story_8",
     "tag": "文化 / 艺术",
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "title": {
-      "es": "La orquesta del Teatro Real de Madrid actúa en China por segunda vez con una agenda titulada 'De este apacible rincón de Madrid'",
-      "en": "The Teatro Real de Madrid orchestra performs in China for the second time with an agenda titled 'From this peaceful corner of Madrid'",
-      "cn": "08. 马德里皇家剧院管弦乐团第二次来华演出，议程为“来自马德里这个宁静的角落”"
+      "es": "Santiago Lorenzo, autor de 'Contenta', \"Me da igual que mis libros se vendan o no; lo normal es que a mí no me haga caso nadie\"",
+      "en": "Santiago Lorenzo, author of 'Contenta', \"I don't care if my books sell or not; the normal thing is that no one pays attention to me\"",
+      "cn": "08. 《Contenta》一书的作者圣地亚哥·洛伦佐（Santiago Lorenzo）“我不在乎我的书卖不卖；正常的事情是没有人关注我”"
     },
-    "intro": "图里纳、华金·罗德里戈、莫雷诺·托罗巴、恩里克·格拉纳多斯……是丰富音乐节目的一部分",
+    "intro": "这位备受评论界赞誉的巴斯克作家在其最新小说中讲述了一位普通女性的生活。",
     "sentences": [
       {
         "id": 1,
-        "es": "Turina, Joaquín Rodrigo, Moreno Torroba, Enrique Granados.",
-        "en": "Turina, Joaquín Rodrigo, Moreno Torroba, and Enrique Granados.",
-        "cn": "图里纳、华金·罗德里戈、莫雷诺·托罗巴、恩里克·格拉纳多斯。",
+        "es": "El escritor vasco, uno de los más alabados por la crítica, cuenta en su última novela la vida de una mujer corriente envuelta en una trama sin quererlo en un pueblo insignificante.",
+        "en": "The Basque writer, one of the most praised by critics, tells in his latest novel the life of an ordinary woman unwittingly involved in a plot in an insignificant town.",
+        "cn": "这位巴斯克作家是最受评论家称赞的作家之一，他在最新的小说中讲述了一位普通妇女的生活，她无意中卷入了一个不起眼的小镇的情节中。",
         "audio": "./assets/audios/story_8_s1.mp3"
       },
       {
         "id": 2,
-        "es": "forman parte de un amplio programa musical.",
-        "en": "They are part of a broad musical program.",
-        "cn": "它们是广泛的音乐节目的一部分。",
+        "es": "Santiago Lorenzo, autor de 'Contenta', \"Me da igual que mis libros se vendan o no; lo normal es que a mí no me haga caso nadie\"",
+        "en": "Santiago Lorenzo, author of 'Contenta', \"I don't care if my books sell or not; the normal thing is that no one pays attention to me\"",
+        "cn": "《Contenta》一书的作者圣地亚哥·洛伦佐（Santiago Lorenzo）“我不在乎我的书卖不卖；正常的事情是没有人关注我”",
         "audio": "./assets/audios/story_8_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "orquesta",
+        "word": "santiago",
         "pos": "voc.",
-        "cn": "乐队",
-        "en": "orchestra",
-        "example": "Turina, Joaquín Rodrigo, Moreno Torroba, Enrique Granados.",
+        "cn": "圣地亚哥",
+        "en": "Santiago",
+        "example": "El escritor vasco, uno de los más alabados por la crítica, cuenta en su última novela la vida de una mujer corriente envuelta en una trama sin quererlo en un pueblo insignificante.",
         "audio": "./assets/audios/vocab_story_8_1.mp3"
       },
       {
-        "word": "teatro",
+        "word": "lorenzo",
         "pos": "voc.",
-        "cn": "剧院",
-        "en": "theater",
-        "example": "forman parte de un amplio programa musical.",
+        "cn": "洛伦佐",
+        "en": "Lorenzo",
+        "example": "Santiago Lorenzo, autor de 'Contenta', \"Me da igual que mis libros se vendan o no; lo normal es que a mí no me haga caso nadie\"",
         "audio": "./assets/audios/vocab_story_8_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「orquesta」在文中的表达",
-      "detail": "「orquesta」在本文语境下表示“乐队”，是地道西语新闻常用表达。"
+      "point": "核心词汇「santiago」在文中的表达",
+      "detail": "「santiago」在本文语境下表示“圣地亚哥”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「orquesta」在文中的中文含义是？",
+      "question": "西语单词「santiago」在文中的中文含义是？",
       "options": [
-        "A. 乐队",
+        "A. 圣地亚哥",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「orquesta」在此处意为：乐队。"
+      "explanation": "「santiago」在此处意为：圣地亚哥。"
     },
     "audio_full_normal": "./assets/audios/story_8_normal.mp3",
     "audio_full_slow": "./assets/audios/story_8_slow.mp3"
@@ -491,60 +491,60 @@ const DAILY_STORIES = [
   {
     "id": "story_9",
     "tag": "生活 / 资讯",
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "title": {
-      "es": "El bipartidismo apela al \"voto útil\" en la recta final de la campaña entre críticas de Vox, Frente Amplio y Podemos",
-      "en": "The bipartisanship appeals to the \"useful vote\" in the final stretch of the campaign amid criticism from Vox, Frente Amplio and Podemos",
-      "cn": "09. 在 Vox、Frente Amplio 和 Podemos 的批评下，两党合作呼吁在竞选的最后阶段进行“有用的投票”"
+      "es": "Pedro Sánchez: \"La vivienda será nuestra gran prioridad, hay que construir más y regular contra los que especulan\"",
+      "en": "Pedro Sánchez: \"Housing will be our great priority, we must build more and regulate against those who speculate\"",
+      "cn": "09. 佩德罗·桑切斯：“住房将是我们的首要任务，我们必须建设更多住房并针对投机者进行监管”"
     },
-    "intro": "社会工人党和人民党加强呼吁集中投票，以吸引犹豫不决和类似势力的选民，m",
+    "intro": "政府总统在大选最后阶段接受《20minutos》采访",
     "sentences": [
       {
         "id": 1,
-        "es": "PSOE y PP intensifican sus llamadas a concentrar el voto para atraer a los indecisos y los votantes de fuerzas afines, mientras el resto de la izquierda y de la derecha advierten del riesgo de intentar fagocitarlos.",
-        "en": "PSOE and PP intensify their calls to concentrate the vote to attract undecided voters and voters of similar forces, while the rest of the left and right warn of the risk of trying to engulf them.",
-        "cn": "社会工人党和人民党强化呼吁集中选票，以吸引犹豫不决的选民和类似势力的选民，而其余左翼和右翼则警告称，存在试图吞没他们的风险。",
+        "es": "El presidente del Gobierno concede esta entrevista a '20minutos' en la recta final de la campaña de las elecciones generales del 29-N.",
+        "en": "The President of the Government grants this interview to '20minutos' in the final stretch of the 29-N general election campaign.",
+        "cn": "政府总统在 29-N 大选的最后阶段接受了《20minutos》的采访。",
         "audio": "./assets/audios/story_9_s1.mp3"
       },
       {
         "id": 2,
-        "es": "El bipartidismo apela al \"voto útil\" en la recta final de la campaña entre críticas de Vox, Frente Amplio y Podemos",
-        "en": "The bipartisanship appeals to the \"useful vote\" in the final stretch of the campaign amid criticism from Vox, Frente Amplio and Podemos",
-        "cn": "在 Vox、Frente Amplio 和 Podemos 的批评下，两党合作呼吁在竞选的最后阶段进行“有用的投票”",
+        "es": "Pedro Sánchez: \"La vivienda será nuestra gran prioridad, hay que construir más y regular contra los que especulan\"",
+        "en": "Pedro Sánchez: \"Housing will be our great priority, we must build more and regulate against those who speculate\"",
+        "cn": "佩德罗·桑切斯：“住房将是我们的首要任务，我们必须建设更多住房并针对投机者进行监管”",
         "audio": "./assets/audios/story_9_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "bipartidismo",
+        "word": "pedro",
         "pos": "voc.",
-        "cn": "两党合作",
-        "en": "bipartisanship",
-        "example": "PSOE y PP intensifican sus llamadas a concentrar el voto para atraer a los indecisos y los votantes de fuerzas afines, mientras el resto de la izquierda y de la derecha advierten del riesgo de intentar fagocitarlos.",
+        "cn": "彼得",
+        "en": "peter",
+        "example": "El presidente del Gobierno concede esta entrevista a '20minutos' en la recta final de la campaña de las elecciones generales del 29-N.",
         "audio": "./assets/audios/vocab_story_9_1.mp3"
       },
       {
-        "word": "apela",
+        "word": "sánchez",
         "pos": "voc.",
-        "cn": "上诉",
-        "en": "appeal",
-        "example": "El bipartidismo apela al \"voto útil\" en la recta final de la campaña entre críticas de Vox, Frente Amplio y Podemos",
+        "cn": "桑切斯",
+        "en": "sanchez",
+        "example": "Pedro Sánchez: \"La vivienda será nuestra gran prioridad, hay que construir más y regular contra los que especulan\"",
         "audio": "./assets/audios/vocab_story_9_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「bipartidismo」在文中的表达",
-      "detail": "「bipartidismo」在本文语境下表示“两党合作”，是地道西语新闻常用表达。"
+      "point": "核心词汇「pedro」在文中的表达",
+      "detail": "「pedro」在本文语境下表示“彼得”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「bipartidismo」在文中的中文含义是？",
+      "question": "西语单词「pedro」在文中的中文含义是？",
       "options": [
-        "A. 两党合作",
+        "A. 彼得",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「bipartidismo」在此处意为：两党合作。"
+      "explanation": "「pedro」在此处意为：彼得。"
     },
     "audio_full_normal": "./assets/audios/story_9_normal.mp3",
     "audio_full_slow": "./assets/audios/story_9_slow.mp3"
@@ -552,60 +552,60 @@ const DAILY_STORIES = [
   {
     "id": "story_10",
     "tag": "生活 / 资讯",
-    "date": "2026-11-24",
+    "date": "2026-11-25",
     "title": {
-      "es": "Votar sin miedo ni revanchismo",
-      "en": "Vote without fear or revenge",
-      "cn": "10. 毫无恐惧或报复地投票"
+      "es": "La lista de medidas sociales que el Gobierno ha anunciado antes del 29-N: cuáles son de efecto inmediato y cuáles van a la Diputación",
+      "en": "The list of social measures that the Government has announced before 29-N: which are of immediate effect and which go to the Provincial Council",
+      "cn": "10. 政府在 29-N 之前宣布的社会措施清单：立即生效并提交省议会"
     },
-    "intro": "民主要求接受对手的胜利而不将选民变成敌人。真正的承诺演示",
+    "intro": "政府已批准了皇家法令、皇家法令和内阁协议中的数十项措施",
     "sentences": [
       {
         "id": 1,
-        "es": "La democracia exige aceptar la victoria del adversario sin convertir al votante en enemigo.",
-        "en": "Democracy requires accepting the victory of the adversary without turning the voter into an enemy.",
-        "cn": "民主要求接受对手的胜利而不将选民变成敌人。",
+        "es": "El Gobierno ha aprobado decenas de medidas agrupadas en reales decretos-ley, reales decretos y acuerdos del Consejo de Ministros.",
+        "en": "The Government has approved dozens of measures grouped in royal decree-laws, royal decrees and agreements of the Council of Ministers.",
+        "cn": "政府已批准了皇家法令、皇家法令和部长会议协议中的数十项措施。",
         "audio": "./assets/audios/story_10_s1.mp3"
       },
       {
         "id": 2,
-        "es": "El verdadero compromiso democrático se demuestra respetando las reglas, también cuando gana quien piensa diferente.",
-        "en": "True democratic commitment is demonstrated by respecting the rules, also when those who think differently win.",
-        "cn": "真正的民主承诺是通过尊重规则来体现的，而且当那些有不同想法的人获胜时也是如此。",
+        "es": "La lista de medidas sociales que el Gobierno ha anunciado antes del 29-N: cuáles son de efecto inmediato y cuáles van a la Diputación",
+        "en": "The list of social measures that the Government has announced before 29-N: which are of immediate effect and which go to the Provincial Council",
+        "cn": "政府在 29-N 之前宣布的社会措施清单：立即生效并提交省议会",
         "audio": "./assets/audios/story_10_s2.mp3"
       }
     ],
     "vocabulary": [
       {
-        "word": "votar",
+        "word": "lista",
         "pos": "voc.",
-        "cn": "投票",
-        "en": "vote",
-        "example": "La democracia exige aceptar la victoria del adversario sin convertir al votante en enemigo.",
+        "cn": "列表",
+        "en": "list",
+        "example": "El Gobierno ha aprobado decenas de medidas agrupadas en reales decretos-ley, reales decretos y acuerdos del Consejo de Ministros.",
         "audio": "./assets/audios/vocab_story_10_1.mp3"
       },
       {
-        "word": "miedo",
+        "word": "medidas",
         "pos": "voc.",
-        "cn": "害怕",
-        "en": "fear",
-        "example": "El verdadero compromiso democrático se demuestra respetando las reglas, también cuando gana quien piensa diferente.",
+        "cn": "措施",
+        "en": "measures",
+        "example": "La lista de medidas sociales que el Gobierno ha anunciado antes del 29-N: cuáles son de efecto inmediato y cuáles van a la Diputación",
         "audio": "./assets/audios/vocab_story_10_2.mp3"
       }
     ],
     "grammar": {
-      "point": "核心词汇「votar」在文中的表达",
-      "detail": "「votar」在本文语境下表示“投票”，是地道西语新闻常用表达。"
+      "point": "核心词汇「lista」在文中的表达",
+      "detail": "「lista」在本文语境下表示“列表”，是地道西语新闻常用表达。"
     },
     "quiz": {
-      "question": "西语单词「votar」在文中的中文含义是？",
+      "question": "西语单词「lista」在文中的中文含义是？",
       "options": [
-        "A. 投票",
+        "A. 列表",
         "B. 另一个意思",
         "C. 错误含义"
       ],
       "correct_index": 0,
-      "explanation": "「votar」在此处意为：投票。"
+      "explanation": "「lista」在此处意为：列表。"
     },
     "audio_full_normal": "./assets/audios/story_10_normal.mp3",
     "audio_full_slow": "./assets/audios/story_10_slow.mp3"
